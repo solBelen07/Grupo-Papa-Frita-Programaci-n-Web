@@ -1,14 +1,36 @@
+
+body {
+  background-color: #f4f4f9; 
+  color: #333333;         
+  font-family: Arial, sans-serif;
+}
 /* Estilos del HEADER  */
 .main-header {
     display: flex;
     align-items: center;
     padding: 1em 2em;
-    background-color: #ffffff;
+    background-color:  #6a0dad;
+    color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     gap: 1em;
-    flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
 }
 
+/* Carrito */
+.main-header .user-actions {
+    margin-left: 1.5em;
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.main-header .cart-count {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.8em;
+}
 /* Logo */
 .main-header .logo {
     flex-shrink: 0;
@@ -33,7 +55,7 @@
 }
 
 .nav-link {
-    color: #555;
+    color: #ffffff;
     font-weight: 600;
     font-size: 1em;
     padding: 0.5em 0;
@@ -41,8 +63,8 @@
     transition: border-color 0.3s ease, color 0.3s ease;
 }
 .nav-link:hover {
-    border-bottom: 3px solid #007BFF;
-    color: #007BFF;
+    color: #f4f4f9;
+   text-decoration: underline;
 }
 
 /* Barra de búsqueda */
@@ -60,35 +82,21 @@
     font-size: 1em;
 }
 .main-header .search-bar .search-button {
-    background-color: #28a745;
-    color: white;
-    border: 1px solid #28a745;
+    background-color: #6a0dad;
+    color: #ffffff;
+    border: none;
     padding: 8px 12px;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    
 }
+button:hover,
 .main-header .search-bar .search-button:hover {
-    background-color: #218838;
+  background-color: #520b9e; 
 }
 
 
-/* Carrito */
-.main-header .user-actions {
-    margin-left: 1.5em;
-    font-weight: bold;
-    color: #555;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-}
-.main-header .cart-count {
-    background-color: #dc3545;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 7px;
-    font-size: 0.8em;
-}
+
 
 /* Pasos */
 .steps-container {
@@ -97,14 +105,31 @@
     gap: 1.5em;
     margin: 2em 0;
 }
+
+.steps h2 {
+    text-align: center;
+    color: #6a0dad; 
+    margin-bottom: 1em;
+}
+
+.steps p {
+    color: #ffffff;
+    margin-top: 0.5em;
+}
+.steps h3 {
+    color: #ffffff;
+    margin-top: 0.5em;
+}
 .step-card {
     flex: 1;
     max-width: 250px;
     text-align: center;
     padding: 1em;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+    background-color: #f4f4f9;
+    color: #333333;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #6a0dad, #9b4dff);
 }
 
 /* --- Ajuste imágenes generales --- */
@@ -118,18 +143,19 @@ img {
 /* Cursos Destacados */
 
 .courses-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5em;
-    margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: center;  
+  gap: 2em;
 }
 .course-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #fff;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  flex: 0 0 calc(33.333% - 2em); 
+  box-sizing: border-box;        
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 .course-card img {
     width: 100%;
@@ -139,33 +165,42 @@ img {
     margin-bottom: 0.5em;
 }
 .course-card h3 {
+    color: #6a0dad;
     margin: 0.5em 0;
 }
 .course-card .price {
     font-weight: bold;
-    color: #007bff;
+    color: #333333;
+}
+.course-card a {
+  color: #6a0dad;
+  font-weight: bold;
 }
 
 /* Logos de medios de pago */
+.payment-methods {
+    text-align: center;
+}
 .payment-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2em;
-    margin: 2em 0;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
 }
 .payment-icons img {
     height: 40px;
-    margin: 0 10px;
     object-fit: contain;
 }
+
 
 
 /* Secciones del footer */
 
 .container-footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #6a0dad;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     padding: 1.5em 2em;
@@ -182,10 +217,10 @@ img {
 .menu-inferior,
 .redes-sociales {
     flex: 1;
-    min-width: 200px; /* Ancho mínimo para cada columna */
+    min-width: 200px; 
 }
 
-/* Lista de datos del equipo */
+/* datos del equipo */
 .datos-equipo ul {
     list-style: none;
     padding-left: 0;
@@ -210,7 +245,7 @@ img {
 }
 
 .menu-inferior a:hover {
-    color: #007bff;
+    color: #f4f4f9;
     text-decoration: none;
 }
 
@@ -222,13 +257,18 @@ img {
 .redes-sociales p {
     font-weight: bold;
     margin-bottom: 0.8em;
-    color: #333;
+    color: #ffffff;
 }
 
 .redes-sociales a {
     margin-left: 1em;
 }
 
+.redes-sociales .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
 .redes-sociales .social-icon {
     width: 35px;
     height: 35px;
