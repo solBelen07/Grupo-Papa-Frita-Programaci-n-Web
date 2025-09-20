@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: lightgreen;
+}
+
+
+
+
+
+/* Estilos del FOOTER */
+.container-footer{
+ background-color: #f4cccc;
+  display: flex;
+  flex-direction: row; 
+ justify-content: space-between; 
+ align-items: flex-start;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.datos-equipo {
+  text-align: left;
+
+}
+.datos-equipo li{
+ margin-top:0.3em ;
+}
+
+.redes-sociales {
+  text-align: right;
+}
+
+.menu-inferior{
+    display: flex;
+    gap: 2em;
+}
+
+
+/* PAGINA CALENDARIO */
+
+.body-calendario{
+    padding: 1em;
+    background-color: #f5f5f5;
+}
+
+.calendar-container{
+    
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.calendar-header{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.diaSemana{
+    background-color: pink;
+    display: flex;
+    justify-content: center;     
+    align-items: center;         
+    border-radius: 4px;          
+    font-weight: bold;
+     height:3em;
+}
+.dia{
+    background-color: #e0f7fa;
+        display: flex;
+    justify-content: center;     
+    align-items: center;         
+    border-radius: 4px;     
+    font-weight: bold;
+     height:4em;
+}
+
+.dia:hover {
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+.calendar-daysOfWeek, .calendar-numbers{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.3125em;
+   
+}
+
