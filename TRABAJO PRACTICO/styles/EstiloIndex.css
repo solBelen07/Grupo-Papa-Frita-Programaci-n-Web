@@ -1,0 +1,250 @@
+/* Estilos del HEADER  */
+.main-header {
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 1em;
+    flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+}
+
+/* Logo */
+.main-header .logo {
+    flex-shrink: 0;
+}
+.main-header .logo-img {
+    height: 50px;
+    width: auto;
+}
+
+/* Barra de navegación */
+.navbar {
+    flex-grow: 1;
+    margin-left: 2em;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-link {
+    color: #555;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 0.5em 0;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+.nav-link:hover {
+    border-bottom: 3px solid #007BFF;
+    color: #007BFF;
+}
+
+/* Barra de búsqueda */
+.main-header .search-bar {
+    display: flex;
+    flex-grow: 0;
+    max-width: 300px;
+    margin-left: auto;
+}
+.main-header .search-bar input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+}
+.main-header .search-bar .search-button {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #28a745;
+    padding: 8px 12px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.main-header .search-bar .search-button:hover {
+    background-color: #218838;
+}
+
+
+/* Carrito */
+.main-header .user-actions {
+    margin-left: 1.5em;
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.main-header .cart-count {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.8em;
+}
+
+/* Pasos */
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 2em 0;
+}
+.step-card {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- Ajuste imágenes generales --- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Cursos Destacados */
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5em;
+    margin-top: 2em;
+}
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.course-card img {
+    width: 100%;
+    height: 180px; /* Altura fija para que queden todas iguales */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0.5em;
+}
+.course-card h3 {
+    margin: 0.5em 0;
+}
+.course-card .price {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Logos de medios de pago */
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 2em 0;
+}
+.payment-icons img {
+    height: 40px;
+    margin: 0 10px;
+    object-fit: contain;
+}
+
+
+/* Secciones del footer */
+
+.container-footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 2em;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+.container-footer section {
+    flex: 1;
+    min-width: 200px;
+}
+
+
+.datos-equipo,
+.menu-inferior,
+.redes-sociales {
+    flex: 1;
+    min-width: 200px; /* Ancho mínimo para cada columna */
+}
+
+/* Lista de datos del equipo */
+.datos-equipo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.datos-equipo li {
+    margin-top: 0.3em;
+    color: #fff;
+}
+
+/* Menú inferior */
+.menu-inferior {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.menu-inferior a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-inferior a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    text-align: right;
+}
+
+.redes-sociales p {
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    color: #333;
+}
+
+.redes-sociales a {
+    margin-left: 1em;
+}
+
+.redes-sociales .social-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    margin-left: 0.8em;
+}
+
+.redes-sociales .social-icon:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
