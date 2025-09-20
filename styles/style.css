@@ -7,7 +7,9 @@
 ul{
     list-style: none;
 }
-a{text-decoration: none;
+a{
+    text-decoration: none;
+    color: black;
 }
 
 a:hover{
@@ -20,11 +22,10 @@ a:hover{
 
 /* Estilos del FOOTER */
 .container-footer{
- background-color: #f0f0f0;
- border: 1px solid black;
+ background-color: #f4cccc;
   display: flex;
+  flex-direction: row; 
  justify-content: space-between; 
- flex-direction: row;  
  align-items: flex-start;
   padding-left: 1em;
   padding-right: 1em;
