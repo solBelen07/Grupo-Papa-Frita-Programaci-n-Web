@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Link a CSS  -->
+    <link rel="stylesheet" href="../styles/contactostyle.css">
+    <link rel="stylesheet" href="../styles/header_footer.css">
+</head>
+<body>
+
+   <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo">LOGO</div>
+       <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="../paginas/index.html"  class="nav-link">Inicio</a></li>
+            <li><a href="./paginas/giftCard.html"  class="nav-link">GiftCard</a></li>
+            <li><a href="./paginas/cursos.html"  class="nav-link">Cursos</a></li>
+            <li><a href="./paginas/inscripcionCursoEmpresa.html"  class="nav-link">Inscripción</a></li>
+            <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li> 
+         
+        </ul>
+       </nav>    
+
+       <div class = "search-bar">  
+        <input list="Cursos" placeholder="Buscar curso...">
+        <datalist id="Cursos">
+            <option value="Programación de videojuegos">
+            <option value="Marketing Digital">
+            <option value="Diseño Gráfico">
+            <option value="Desarrollo Web">
+            <option value="Ciberseguridad">
+            <option value="Inteligencia Artificial">
+            <option value="Finanzas Personales">
+            <option value="Ingles">
+        </datalist>
+        <button class="search-button">Buscar</button>
+        </div>
+
+        <div class="user-actions">
+            <button class="login-button">Iniciar Sesión</button>
+            <button class="signup-button">Registrarse</button>
+
+            <div class="carrito">
+                Carrito <span class="cart-count">0</span>
+            </div>
+        </div>
+        
+
+    </header> 
+  <!-- PRINCIPAL  -->
+    <main class="container-main">
+      <section class="container-contacto">
+        <form action="" method="get">
+            <h2>Contactanos </h2>
+           <label for="name">
+            <input type="text" name="name" id="name" placeholder="Nombre">
+           </label>
+           
+           <label for="mail">
+            <input type="email" name="mail" id="mail" placeholder="Email" required>
+           </label>
+
+           <label for="telefono">
+            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+           </label>
+
+           <label for="mensaje">
+            <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+          </label>
+        <button type="submit">Enviar</button>
+        </form>
+      
+
+      <section>
+      <h2> DONDE ESTAMOS </h2>
+      <p>Dirrecion : Viamonte 600 , CABA. </p>
+      <p>Teléfono: 11293804</p>
+     <p>Email: atencionalcliente@cursosarg.com</p>
+     <p>Horario de Atención:</strong> Lunes a Viernes, de 9:00 a 18:00</p>
+     <p>Redes Sociales:</p>
+      </section>
+
+</section>
+
+
+      <section class="section-ubicacion">
+        <h2>Ubicación</h2>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1722542319603!2d-58.3747252!3d-34.599805499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9cd73c85%3A0x787117dc783ca80f!2sViamonte%20600-502%2C%20C1053ABL%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1758410839183!5m2!1ses!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+    </main>
+
+
+
+
+
+
+<!-- Footer -->
+    <footer class="container-footer">
+        <section class="datos-equipo">
+            <ul>
+                <li>EQUIPO : Grupo PapaFrita</li>
+                <li>Collado, Camila</li>
+                <li>Martelli, Rocio Belen DNI: 44.161.046</li>
+                <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
+                <li>Moyano Vivas, Matias Ernesto</li>
+                <li>Viana, Sol Belen</li>
+            </ul>
+        </section>
+
+
+        <section class="menu-inferior">
+            <a href="../paginas/index.html">Inicio</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="./paginas/inscripcionCursoEmpresa.html">Formulario</a>
+
+        </section>
+
+        
+        <section class="redes-sociales">
+            <p class="social-media">REDES SOCIALES</p>
+            <a href="https://www.instagram.com/unlamoficial/" target="_blank"> 
+              <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">  
+            </a>
+
+            <a href="https://www.facebook.com/UnlamOficial/" target="_blank"> 
+                <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+            </a>
+            <a href="https://wa.me/5491155844612" target="_blank">
+                <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+            </a>
+        </section>
+
+    </footer>
+
+</body>
+</html>

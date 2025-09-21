@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-main{
+    width: 80%;
+    margin: 0 auto;
+}
+.container-contacto{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-contacto form , .container-contacto h2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-ubicacion{
+    text-align: center;
+    padding-bottom: 1em;
+
+}
