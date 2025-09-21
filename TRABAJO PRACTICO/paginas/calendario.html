@@ -6,41 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario</title>
     <!-- Link a CSS  -->
-    <link rel="stylesheet" href="../styles/calendariostyle.css">
     <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/calendariostyle.css">
+
 </head>
 
 <body>
-    
-     <!-- Encabezado -->
+    <!-- Encabezado -->
     <header class="main-header">
         <div class="logo">LOGO</div>
 
-      <!-- Barra de Navegación -->
-       <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="./paginas/Index.html"  class="nav-link">Inicio</a></li>
-            <li><a href="../paginas/giftCard.html"  class="nav-link">GiftCard</a></li>
-            <li><a href="../paginas/detalleCurso.html"  class="nav-link">Cursos</a></li>
-            <li><a href="../paginas/inscripcionCursoEmpresa.html"  class="nav-link">Inscripción</a></li>
-            <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li> 
-         
-        </ul>
-       </nav>    
+        <!-- Barra de Navegación -->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../paginas/Index.html" class="nav-link">Inicio</a></li>
+                <li><a href="../paginas/giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="../paginas/detalleCurso.html" class="nav-link">Cursos</a></li>
+                <li><a href="../paginas/inscripcionCursoEmpresa.html" class="nav-link">Inscripción</a></li>
+                <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li>
 
-       <div class = "search-bar">  
-        <input list="Cursos" placeholder="Buscar curso...">
-        <datalist id="Cursos">
-            <option value="Programación de videojuegos">
-            <option value="Marketing Digital">
-            <option value="Diseño Gráfico">
-            <option value="Desarrollo Web">
-            <option value="Ciberseguridad">
-            <option value="Inteligencia Artificial">
-            <option value="Finanzas Personales">
-            <option value="Ingles">
-        </datalist>
-        <button class="search-button">Buscar</button>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Ingles">
+            </datalist>
+            <button class="search-button">Buscar</button>
         </div>
 
         <div class="user-actions">
@@ -51,79 +51,95 @@
                 Carrito <span class="cart-count">0</span>
             </div>
         </div>
-        
 
-    </header> 
 
-   
+    </header>
+    <section class="container-tittle">
+        <h1>Enterate nuestros proximos cursos..</h1>
+    </section>
+
+
     <main class="calendar-container">
 
-    <header class="calendar-header">
-        <button> ← </button>
-        <h2>Octubre 2025</h2>
-        <button>→ </button>
-    </header>
+        <section class="calendar-header">
+            <button class="botones"> ← </button>
+            <h2>Octubre 2025</h2>
+            <button class="botones">→ </button>
+        </section>
 
-    <!-- DE LUNES A DOMINGOS -->
-    <section class="calendar-daysOfWeek">
-        <article class="diaSemana">Lun</article>
-        <article class="diaSemana">Mar</article>
-        <article class="diaSemana">Mié</article>
-        <article class="diaSemana">Jue</article>
-        <article class="diaSemana">Vie</article>
-        <article class="diaSemana">Sáb</article>
-        <article class="diaSemana">Dom</article>
-    </section>
+        <!-- DE LUNES A DOMINGOS -->
+        <section class="calendar-daysOfWeek">
+            <article class="diaSemana">Lun</article>
+            <article class="diaSemana">Mar</article>
+            <article class="diaSemana">Mié</article>
+            <article class="diaSemana">Jue</article>
+            <article class="diaSemana">Vie</article>
+            <article class="diaSemana">Sáb</article>
+            <article class="diaSemana">Dom</article>
+        </section>
 
-    <!-- NUMEROS DEL 1 AL 31 -->
-     <section class="calendar-numbers">
-    <article class="dia"></article>
-    <article class="dia"></article>
-    <article class="dia diaValido">1</article>
-    <article class="dia diaValido">2</article>
-    <article class="dia diaValido">3</article>
-    <article class="dia diaValido">4</article>
-    <article class="dia diaValido">5</article>
+        <!-- NUMEROS DEL 1 AL 31 -->
+        <section class="calendar-numbers">
+            <article class="dia"></article>
+            <article class="dia"></article>
+            <article class="dia diaValido dia-actual">1</article>
+            <article class="dia diaValido">2</article>
+            <article class="dia diaValido">3</article>
+            <article class="dia diaValido">4</article>
+            <article class="dia diaValido">5</article>
 
-    <article class="dia diaValido">6</article>
-    <article class="dia diaValido">7</article>
-    <article class="dia diaValido">8</article>
-    <article class="dia diaValido">9</article>
-    <article class="dia diaValido">10</article>
-    <article class="dia diaValido">11</article>
-    <article class="dia diaValido">12</article>
+            <article class="dia diaValido dia-curso">6 <br>
+                <article id="cursoJava" idCurso="5" class="course">Poner curso</article>
+            </article>
+            <article class="dia diaValido">7</article>
+            <article class="dia diaValido">8</article>
+            <article class="dia diaValido">9</article>
+            <article class="dia diaValido">10</article>
+            <article class="dia diaValido">11</article>
+            <article class="dia diaValido">12</article>
 
-    <article class="dia diaValido">13</article>
-    <article class="dia diaValido">14</article>
-    <article class="dia diaValido">15</article>
-    <article class="dia diaValido">16</article>
-    <article class="dia diaValido">17</article>
-    <article class="dia diaValido">18</article>
-    <article class="dia diaValido">19</article>
+            <article class="dia diaValido dia-curso">13
+                <article id="cursoJava" idCurso="5" class="course">Poner curso</article>
 
-    <article class="dia diaValido">20</article>
-    <article class="dia diaValido">21</article>
-    <article class="dia diaValido">22</article>
-    <article class="dia diaValido">23</article>
-    <article class="dia diaValido">24</article>
-    <article class="dia diaValido">25</article>
-    <article class="dia diaValido">26</article>
+            </article>
 
-    <article class="dia diaValido">27</article>
-    <article class="dia diaValido">28</article>
-    <article class="dia diaValido">29</article>
-    <article class="dia diaValido">30</article>
-    <article class="dia diaValido">31</article>
-    <article class="dia"></article>
-    <article class="dia"></article>
-    </section>
-    </section>
+            <article class="dia diaValido">14</article>
+            <article class="dia diaValido">15</article>
+            <article class="dia diaValido">16</article>
+            <article class="dia diaValido">17</article>
+            <article class="dia diaValido">18</article>
+            <article class="dia diaValido">19
+            </article>
 
-</main>
+            <article class="dia diaValido dia-curso">20
+                <article id="cursoJava" idCurso="5" class="course">Poner curso</article>
+
+            </article>
+            <article class="dia diaValido dia-curso">21
+                <article id="cursoJava" idCurso="5" class="course">Poner curso</article>
+
+            </article>
+            <article class="dia diaValido">22</article>
+            <article class="dia diaValido">23</article>
+            <article class="dia diaValido">24</article>
+            <article class="dia diaValido">25</article>
+            <article class="dia diaValido">26 </article>
+
+            <article class="dia diaValido">27</article>
+            <article class="dia diaValido">28</article>
+            <article class="dia diaValido">29</article>
+            <article class="dia diaValido">30</article>
+            <article class="dia diaValido">31</article>
+            <article class="dia"></article>
+            <article class="dia"></article>
+        </section>
+        </section>
+
+    </main>
 
 
 
-   <!-- Footer -->
+    <!-- Footer -->
     <footer class="container-footer">
         <section class="datos-equipo">
             <ul>
@@ -144,19 +160,19 @@
 
         </section>
 
-       <section class="redes-sociales">
+        <section class="redes-sociales">
             <p class="parrafo-socialMedia">REDES SOCIALES</p>
-           <nav class="redes-sociales-nav">
-            <a href="https://www.instagram.com/unlamoficial/" target="_blank"> 
-              <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">  
-            </a>
+            <nav class="redes-sociales-nav">
+                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                </a>
 
-            <a href="https://www.facebook.com/UnlamOficial/" target="_blank"> 
-                <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
-            </a>
-            <a href="https://wa.me/5491155844612" target="_blank">
-                <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
-            </a>
+                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                </a>
+                <a href="https://wa.me/5491155844612" target="_blank">
+                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                </a>
             </nav>
         </section>
     </footer>

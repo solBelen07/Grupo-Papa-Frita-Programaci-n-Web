@@ -9,6 +9,7 @@ body {
 }
 /* Estilos del HEADER  */
 .main-header {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 1em 2em;
@@ -78,6 +79,24 @@ body {
 }
 .main-header .search-bar .search-button:hover {
     background-color:#7E57C2; 
+}
+
+/* Carrito del header */
+.main-header .user-actions {
+    margin-left: 1.5em;
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.main-header .cart-count {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.8em;
 }
 
 
