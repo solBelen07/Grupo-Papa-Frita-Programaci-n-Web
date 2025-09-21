@@ -171,6 +171,12 @@ flex-direction: row;
     height: 2.1875em;
     margin-left: 0.8em;
     align-items: flex-end;
+    /* Para suavizar la transformacion cuando se haga el hover 
+    transition : propiedad a utilizar - duracion*/
+     transition: transform 0.3s  
 }
 
-
+.redes-sociales .social-icon:hover {
+    transform: scale(1.3); 
+ 
+}
