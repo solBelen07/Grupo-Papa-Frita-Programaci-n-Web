@@ -8,6 +8,47 @@
     <link rel="stylesheet" href="../styles/styleDetalleCurso.css">
 </head>
 <body>
+        <header class="main-header">
+        <div class="logo">LOGO</div>
+
+      <!-- Barra de Navegación -->
+       <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="../paginas/Index.html"  class="nav-link">Inicio</a></li>
+            <li><a href="../paginas/giftCard.html"  class="nav-link">GiftCard</a></li>
+            <li><a href="../paginas/detalleCurso.html"  class="nav-link">Cursos</a></li>
+            <li><a href="../paginas/inscripcionCursoEmpresa.html"  class="nav-link">Inscripción</a></li>
+            <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li> 
+         
+        </ul>
+       </nav>  
+
+       <div class = "search-bar">  
+        <input list="Cursos" placeholder="Buscar curso...">
+        <datalist id="Cursos">
+            <option value="Programación de videojuegos"/>
+            <option value="Marketing Digital"/>
+            <option value="Diseño Gráfico"/>
+            <option value="Desarrollo Web"/>
+            <option value="Ciberseguridad">
+            <option value="Inteligencia Artificial"/>
+            <option value="Finanzas Personales"/>
+            <option value="Ingles"/>
+        </datalist>
+        <button class="search-button">Buscar</button>
+        </div>
+
+        <div class="user-actions">
+            <button class="login-button">Iniciar Sesión</button>
+            <button class="signup-button">Registrarse</button>
+
+            <div class="carrito">
+                Carrito <span class="cart-count">0</span>
+            </div>
+        </div>
+
+
+    </header> 
     <section class="block-informacion-curso">
         <!-- Contenidos del curso-->
         <article class="block-informacion-curso__imagen">
