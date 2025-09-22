@@ -6,6 +6,7 @@
     <title>Document</title>
     <!-- Link a CSS  -->
     <link rel="stylesheet" href="../styles/styleDetalleCurso.css">
+    <link rel="stylesheet" href="../styles/header_footer.css">
 </head>
 <body>
          <!-- Encabezado -->
@@ -63,22 +64,25 @@
                 <li>Descripcion del Curso:</li>
                 <li>Requisitos Previos:</li>
             </ul>  
-        <button>Inscribirse</button>
+        <button class="block-informacion-curso__boton">Inscribirse</button>
     
         </article>
     </section>
     <!-- Contenidos del curso-->
     <section class="block-informacion-contenidos">
         <article>
-            <h1>Contenidos Por Clase</h1>
+            <h2>Contenidos Por Clase</h2>
             <details open>
-            <summary>INTRODUCCIÓN</summary>
-                <ul>
-                    <li><span class="icon">Introducción a Base de Datos</span>  <span class="time">10 min </span></li>
-                    <li><span class="icon">Modelo Entidad-Relación</span>  <span class="time">10 min</span></li>
-                    <li><span class="icon">Modelo Entidad-Relación extendido</span>  <span class="time">10 min</span></li>
-                    <li><span class="icon">Modelo Relacional</span>  <span class="time">60 min</span></li>
-                </ul>
+            <summary class="summary-contenidos">INTRODUCCIÓN</summary>
+                <article class="summary-contenidos_desplegable">
+                    <ul>
+                        <li><span class="icon">Introducción a Base de Datos</span>  <span class="time">10 min </span></li>
+                        <li><span class="icon">Modelo Entidad-Relación</span>  <span class="time">10 min</span></li>
+                        <li><span class="icon">Modelo Entidad-Relación extendido</span>  <span class="time">10 min</span></li>
+                        <li><span class="icon">Modelo Relacional</span>  <span class="time">60 min</span></li>
+                    </ul>
+                </article>
+                
             </details>
             <details>
                 <summary>UNIDAD 2</summary>
