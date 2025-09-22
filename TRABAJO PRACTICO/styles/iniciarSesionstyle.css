@@ -23,6 +23,11 @@ a {
     text-decoration: none;
 }
 
+.container-nav img{
+    width: 10em;
+    height: 10em;
+}
+
 section {
     border: 4px solid #9575CD;
     border-radius: 40px;
