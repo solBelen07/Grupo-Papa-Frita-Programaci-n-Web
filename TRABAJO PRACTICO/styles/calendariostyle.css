@@ -19,7 +19,6 @@ body{
     margin-top: 1em;
     text-align: center;
     color: #7E57C2; 
-
     animation-name: bounceInLeft;
     animation-duration: 1.5s;      
 }
