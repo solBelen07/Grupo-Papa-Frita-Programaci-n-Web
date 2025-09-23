@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma de cursos - Inicio</title>
     <!-- Link a CSS  -->
-    <link rel="stylesheet" href="../styles/indexStyle.css">
-    <link rel="stylesheet" href="../styles/calendarStyle.css">
+     <link rel="stylesheet" href="../styles/header_footer.css">
+    
+
 </head>
 
 <body>
@@ -19,23 +20,25 @@
        <nav class="navbar">
         <ul class="nav-list">
             <li><a href="./paginas/Index.html"  class="nav-link">Inicio</a></li>
-            <li><a href="./paginas/giftCard.html"  class="nav-link">GiftCard</a></li>
-            <li><a href="./paginas/cursos.html"  class="nav-link">Cursos</a></li>
-            <li><a href="./paginas/inscripcionCursoEmpresa.html"  class="nav-link">Inscripción</a></li>
+            <li><a href="../paginas/giftCard.html"  class="nav-link">GiftCard</a></li>
+            <li><a href="../paginas/detalleCurso.html"  class="nav-link">Cursos</a></li>
+            <li><a href="../paginas/inscripcionCursoEmpresa.html"  class="nav-link">Inscripción</a></li>
+            <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li> 
+         
         </ul>
        </nav>    
 
        <div class = "search-bar">  
         <input list="Cursos" placeholder="Buscar curso...">
         <datalist id="Cursos">
-            <option value="Programación de videojuegos"/>
-            <option value="Marketing Digital"/>
-            <option value="Diseño Gráfico"/>
-            <option value="Desarrollo Web"/>
+            <option value="Programación de videojuegos">
+            <option value="Marketing Digital">
+            <option value="Diseño Gráfico">
+            <option value="Desarrollo Web">
             <option value="Ciberseguridad">
-            <option value="Inteligencia Artificial"/>
-            <option value="Finanzas Personales"/>
-            <option value="Ingles"/>
+            <option value="Inteligencia Artificial">
+            <option value="Finanzas Personales">
+            <option value="Ingles">
         </datalist>
         <button class="search-button">Buscar</button>
         </div>
@@ -48,9 +51,7 @@
                 Carrito <span class="cart-count">0</span>
             </div>
         </div>
-       <!-- REFERENCIA CELENDARIO <nav>
-            <a href="./paginas/calendario.html"> IR A CALENDARIO</a>
-        </nav> -->
+        
 
     </header> 
 
@@ -89,7 +90,7 @@
             </div>
         </section>
 
-        <section id="featured-courses" class="featured-courses">
+                <section id="featured-courses" class="featured-courses">
             <h2>Cursos Destacados</h2>
             <div class="courses-grid">
                 <article class="course-card">
@@ -124,27 +125,8 @@
                     <a href="./paginas/detalleCurso">Ver Detalle</a>
                 </article>
 
-                <article class="course-card">
-                    <img src="Imagen forntend" alt="Curso Diseño Gráfico">
-                    <h3>Diseño Gráfico</h3>
-                    <p>Duración: 40 horas</p>
-                    <p class="price">$180.000</p>
-                    <a href="./paginas/detalleCurso">Ver Detalle</a>
-                </article>
-
-                <article class="course-card">
-                    <img src="Imagen forntend" alt="Curso Ciberseguridad">
-                    <h3>Ciberseguridad</h3>
-                    <p>Duración: 65 horas</p>
-                    <p class="price">$480.000</p>
-                    <a href="./paginas/detalleCurso">Ver Detalle</a>
-                </article>
-
             </div>
         </section>
-
-
-
 
          <!-- Medios de Pago -->
         <section class="payment-methods">
@@ -159,7 +141,7 @@
 
 
 
-    <!-- Footer -->
+  <!-- Footer -->
     <footer class="container-footer">
         <section class="datos-equipo">
             <ul>
@@ -174,28 +156,26 @@
 
 
         <section class="menu-inferior">
-            <a href="">Inicio</a>
-            <a href="./paginas/contacto.html">Contacto</a>
+            <a href="../paginas/index.html">Inicio</a>
+            <a href="../paginas/contacto.html">Contacto</a>
             <a href="./paginas/inscripcionCursoEmpresa.html">Formulario</a>
 
         </section>
 
-        
-        <section class="redes-sociales">
-            <p class="social-media">REDES SOCIALES</p>
-
-            <div class="social-icons">
+       <section class="redes-sociales">
+            <p class="parrafo-socialMedia">REDES SOCIALES</p>
+           <nav class="redes-sociales-nav">
             <a href="https://www.instagram.com/unlamoficial/" target="_blank"> 
-              <img src="../img/insta-logo.png" alt="Logo Instagram" class="social-icon">  
+              <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">  
             </a>
 
-            <a href="https://x.com/UnlamOficial/" target="_blank"> 
-                <img src="../img/x-logo.png" alt="Logo X" class="social-icon">
+            <a href="https://www.facebook.com/UnlamOficial/" target="_blank"> 
+                <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
             </a>
-            <a href="./paginas/calendario.html">
-                <img src="../img/calendario-icono.png" alt="Logo Calendario" class="social-icon">
+            <a href="https://wa.me/5491155844612" target="_blank">
+                <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
             </a>
-        </div>
+            </nav>
         </section>
 
     </footer>

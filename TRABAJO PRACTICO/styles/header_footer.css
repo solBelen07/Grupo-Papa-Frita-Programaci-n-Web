@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {        
+  font-family: Arial, sans-serif;
+}
+/* Estilos del HEADER  */
+.main-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    background-color:  #9575CD;
+    color: #ffffff;  /* Este color es del LOGO*/
+}
+
+/* Logo */
+.main-header .logo {
+    flex-shrink: 0;  
+}
+.main-header .logo-img {
+    height: 50px;
+    width: auto;
+}
+
+/* Barra de navegación */
+.navbar {
+    flex-grow: 1;
+    margin-left: 2em;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+.nav-link {  
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 0.5em 0;
+   
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #7E57C2;
+    color: #7E57C2;
+}
+
+/* Barra de búsqueda */
+.main-header .search-bar {
+    display: flex;
+    flex-grow: 0;
+    max-width: 18.75em;
+    margin-left: auto;
+}
+.main-header .search-bar input {
+    flex-grow: 1;
+    padding: 0.5em 0.75px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+}
+
+.main-header .search-bar .search-button {
+    background-color: #AB7DEB;
+    padding: 0.5em 0.75px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.main-header .search-bar .search-button:hover {
+    background-color:#7E57C2; 
+}
+
+/* Carrito del header */
+.main-header .user-actions {
+    margin-left: 1.5em;
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.main-header .cart-count {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.8em;
+}
+
+
+/* FOOTER*/
+.container-footer a {
+    text-decoration: none;    
+}
+
+.container-footer a:hover{
+     color: #7E57C2;    
+}
+
+.container-footer {
+    width: 100%;
+  background-color: #B39DDB;
+     color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em;
+    flex-wrap: wrap;
+    gap:2em;
+}
+
+
+/* Lista de datos del equipo */
+.datos-equipo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.datos-equipo li {
+    margin-top: 0.3em;
+}
+
+/* Menú inferior */
+.menu-inferior {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+     margin-right: 6em; 
+}
+
+.menu-inferior a {
+   text-decoration: none;
+   color:black;
+}
+
+
+.menu-inferior a:hover {
+    color: #7E57C2; 
+}
+
+/* Redes sociales */
+
+.parrafo-socialMedia {
+    margin-bottom: 1em;
+    color: black;
+    text-align: center;
+}
+
+
+.redes-sociales-nav{
+    display: flex;
+flex-direction: row;
+
+}
+
+.redes-sociales .social-icon {
+
+    gap: 1em;
+    width: 2.1875em;
+    height: 2.1875em;
+    margin-left: 0.8em;
+    align-items: flex-end;
+    /* Para suavizar la transformacion cuando se haga el hover 
+    transition : propiedad a utilizar - duracion*/
+     transition: transform 0.3s  
+}
+
+.redes-sociales .social-icon:hover {
+    transform: scale(1.3); 
+ 
+}
+
