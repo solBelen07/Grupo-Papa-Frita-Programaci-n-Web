@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Link a CSS  -->
-    <link rel="stylesheet" href="../styles/style.css">
-     <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/styleDetalleCurso.css">
+    <link rel="stylesheet" href="../styles/header_footer.css">
 </head>
 <body>
-     <!-- Encabezado -->
+         <!-- Encabezado -->
     <header class="main-header">
         <div class="logo">LOGO</div>
 
@@ -50,46 +50,48 @@
         </div>
         
 
-    </header> 
-    <section>
-
-    </section>
-
-    <img src="../Imagenes/imagenRepresentativa.jpg">
-
-    <section>
-      <h1>Titulo del Curso</h1>
-        <article>
+    </header>
+    <section class="block-informacion-curso">
+        <!-- Contenidos del curso-->
+        <article class="block-informacion-curso__imagen">
+            <img class="block-informacion-curso__imagen-propiedades" src="../Imagenes/BBDD-747x747.jpg">
+        </article>
+        <article class="block-informacion-curso__informacion">
+            <h1>Introduccion a Base de datos relacionales</h1>
             <ul>
                 <li>Valor:</li>
                 <li>Tiempo de Dedicación Necesario:</li>
                 <li>Descripcion del Curso:</li>
                 <li>Requisitos Previos:</li>
             </ul>  
-        <button>Inscribirse</button>
-
+        <button class="block-informacion-curso__boton">Inscribirse</button>
+    
         </article>
+    </section>
+    <!-- Contenidos del curso-->
+    <section class="block-informacion-contenidos">
         <article>
-            <h1>Contenidos Por Clase</h1>
+            <h2>Contenidos Por Clase</h2>
             <details open>
-            <summary>INTRODUCCIÓN</summary>
-                <ul>
-                    <li><span class="icon">▶</span> 1283-1 Taller Modelo de Mecánica <span class="time">10 min ✔</span></li>
-                    <li><span class="icon">🔊</span> 283-2 Desarmado del Motor de Gasolina <span class="time">10 min</span></li>
-                    <li><span class="icon">📄</span> 284-2 Motores <span class="time">10 min</span></li>
-                    <li><span class="icon">☑</span> Examen <span class="time">60 min</span></li>
-                </ul>
+            <summary class="summary-contenidos">INTRODUCCIÓN</summary>
+                <article class="summary-contenidos_desplegable">
+                    <ul>
+                        <li><span class="icon">Introducción a Base de Datos</span>  <span class="time">10 min </span></li>
+                        <li><span class="icon">Modelo Entidad-Relación</span>  <span class="time">10 min</span></li>
+                        <li><span class="icon">Modelo Entidad-Relación extendido</span>  <span class="time">10 min</span></li>
+                        <li><span class="icon">Modelo Relacional</span>  <span class="time">60 min</span></li>
+                    </ul>
+                </article>
+                
             </details>
-
             <details>
                 <summary>UNIDAD 2</summary>
                     <ul>
                         <li>Contenido ejemplo...</li>
                     </ul>
             </details>
-
             <details>
-                <summary>UNIDAD 3</summary>
+                <summary >UNIDAD 3</summary>
                     <ul>
                         <li>Contenido ejemplo...</li>
                     </ul>
@@ -97,19 +99,26 @@
         </article>
         
     </section>
-    <section>
+        
+        
+    
+     <!-- Informacion del docente -->
+    <section class="block-informacion-cdocente">
         <h2>Docente a Cargo</h2>
+        <article>
+            <img src="" alt="">
+        </article>
         <article>
             <h3>Nombre y Apellido</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis obcaecati aliquid ipsa accusamus error facilis eveniet dolore, molestiae et consequuntur suscipit id odit repellendus doloribus, dolores quaerat, quos pariatur excepturi?</p>
         </article>
     </section>
+     <!-- Links a otros cursos -->
     <aside>
 
     </aside>
 
-    
-       <!-- Footer -->
+    <!-- Footer -->
     <footer class="container-footer">
         <section class="datos-equipo">
             <ul>
