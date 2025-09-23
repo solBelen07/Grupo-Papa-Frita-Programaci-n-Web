@@ -23,9 +23,13 @@ a {
     text-decoration: none;
 }
 
+.container-nav{
+
+    text-align: center;
+}
 .container-nav img{
-    width: 10em;
-    height: 10em;
+    width: 9em;
+   
 }
 
 section {

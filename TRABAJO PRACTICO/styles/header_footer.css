@@ -17,14 +17,7 @@ body {
     color: #ffffff;  /* Este color es del LOGO*/
 }
 
-/* Logo */
-.main-header .logo {
-    flex-shrink: 0;  
-}
-.main-header .logo-img {
-    height: 50px;
-    width: auto;
-}
+
 
 /* Barra de navegación */
 .navbar {
