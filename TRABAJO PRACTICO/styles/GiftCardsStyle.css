@@ -130,8 +130,8 @@
 
 
   .fondo{
-  width: 11em;
-  height: 10em;
+  width: 9em;
+  height: 9em;
   
   }
   input[type="radio"]:checked ~ .fondo{
