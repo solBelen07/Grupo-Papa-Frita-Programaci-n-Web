@@ -17,13 +17,14 @@
 .container-contacto h2{
     text-align: left;
     color:#9575CD;
+    
 }
 .container-contacto form{
     background-color: #EDE7F6;
  padding: 2em;
       gap:0.8em;
        width: 50%;
-           border-radius: 5px;
+           border-radius: 23px;
     
 
 }
@@ -36,17 +37,19 @@
 
 /* Cajas del input */
 .caja-form{
-    width: 21em;
-    height: 2em;
-  
+    /* width: 21em; */
+    width: 100%;
+    padding: 0.4em;
+  border: 2px solid #9575CD;
 }
 
 .caja-form:hover{
      border: 2px solid #7E57C2;
 }
 .caja-textarea{
-width: 21em;
+width: 100%;
     height: 6em;
+    border: 2px solid #9575CD;
 }
 
 .caja-textarea:hover{
@@ -82,7 +85,7 @@ width: 21em;
     background-color: #EDE7F6;
    width: 50%;
     padding: 2em;
-      border-radius: 5px;
+      border-radius: 23px;
 }
 .datos-dondeEstamos{
     display: flex;
@@ -97,29 +100,58 @@ width: 21em;
 
 }
 
-/* --- Responsive --- */
-@media (max-width: 900px) {
-    .container-contacto {
-        flex-direction: column;
-        align-items: center;
-    }
-    .container-contacto form, .container-dondeEstamos {
-        width: 90%;
-    }
-    .caja-form, .caja-textarea {
-        width: 100%;
-    }
-    .label-email input {
-        margin-left: 0; /* para que no se desplace en móvil */
-    }
+
+
+/* RESPONSIVE MEDIA QUERYS */
+
+/* 0 A 480 TELEFONO
+480 A 960 TABLET
+960 A 1238 ESCRITORIO  */
+
+/* Teléfonos: 0 a 480px */
+@media screen and (min-width: 200px) and (max-width: 480px) {
+  .container-contacto{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    font-size: 0.8em;
+
+}
+.datos-dondeEstamos{
+  
+    gap:1em;
 }
 
-@media (max-width: 500px) {
-    .container-main {
-        width: 95%;
-    }
-    .boton-enviar {
-        width: 100%;
-        height: 3em;
-    }
+.container-dondeEstamos , .container-contacto form{
+
+      gap:0.8em;
+
 }
+.section-ubicacion h2 {
+    display: none;
+}
+}
+
+/* Tablets: 481px a 960px */
+@media screen and (min-width: 481px) and (max-width: 960px) {
+   .container-contacto{
+    display: flex;
+    flex-direction: column;
+    gap:1em
+
+}
+
+.container-dondeEstamos , .container-contacto form{
+
+      gap:0.8em;
+      width: 90%;
+      color: red; 
+      /* solo para probar si funciona */
+}
+.section-ubicacion h2 {
+    display: none;
+}
+
+}
+
+/* OJO CON RESPONSIVE  */

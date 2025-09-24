@@ -23,6 +23,15 @@ a {
     text-decoration: none;
 }
 
+.container-nav{
+
+    text-align: center;
+}
+.container-nav img{
+    width: 9em;
+   
+}
+
 section {
     border: 4px solid #9575CD;
     border-radius: 40px;

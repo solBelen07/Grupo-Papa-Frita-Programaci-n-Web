@@ -17,14 +17,7 @@ body {
     color: #ffffff;  /* Este color es del LOGO*/
 }
 
-/* Logo */
-.main-header .logo {
-    flex-shrink: 0;  
-}
-.main-header .logo-img {
-    height: 50px;
-    width: auto;
-}
+
 
 /* Barra de navegación */
 .navbar {
@@ -85,7 +78,6 @@ body {
 .main-header .user-actions {
     margin-left: 1.5em;
     font-weight: bold;
-    color: #555;
     display: flex;
     align-items: center;
     gap: 0.5em;
@@ -124,7 +116,7 @@ body {
 /* Lista de datos del equipo */
 .datos-equipo ul {
     list-style: none;
-    padding-left: 0;
+  
 }
 
 .datos-equipo li {
@@ -180,4 +172,83 @@ flex-direction: row;
     transform: scale(1.3); 
  
 }
+ 
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+          
+            .navbar {
+                display: none; 
+            }
 
+            .nav-list {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-list a {
+                display: block;
+                padding: 0.5em 0;
+                color: white;
+            }
+
+            .main-header .search-bar input {
+                width:70%;
+            }
+            .search-bar {
+
+                width: 100%;
+            }
+
+            .user-actions button{
+                display:none;
+            }
+            
+            .user-action .carrito{
+                font-size: 0.6em;
+            }
+        .main-header .user-actions {
+            font-size: 0.9em;
+    margin-left: 0.5em;
+        }
+
+    }
+
+ /* RESPONSIVE FOOTER  */
+@media screen and (max-width: 480px) {
+   
+
+   .container-footer {
+ padding: 1em;
+    flex-wrap: nowrap;
+ font-size: 0.66em;
+}
+.menu-inferior {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-left: -6em;
+
+}
+.parrafo-socialMedia{
+    display: none;
+}
+
+.redes-sociales-nav{
+    display: flex;
+flex-direction: column;
+gap:1em;
+
+}
+.redes-sociales .social-icon {
+
+
+    width: 2em;
+    height: 2em;
+    align-items: flex-end;
+}
+.datos-equipo ul {
+    list-style: none;
+    margin: -0.3em 0;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {}
