@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Link a CSS  -->
-    <link rel="stylesheet" href="../styles/styleDetalleCurso.css">
+    <link rel="stylesheet" href="../styles/detalleCurso.css">
     <link rel="stylesheet" href="../styles/header_footer.css">
 </head>
 <body>
@@ -53,33 +53,35 @@
     </header>
     <section class="block-informacion-curso">
         <!-- Contenidos del curso-->
-        <article class="block-informacion-curso__imagen">
-            <img class="block-informacion-curso__imagen-propiedades" src="../Imagenes/BBDD-747x747.jpg">
+        <article class="block-informacion-curso__descripcion">
+            <h1>Diseño Gráfico</h1>
+            <h4>Curso intensivo de Diseño Web de 3 meses, donde aprenderás a crear sitios modernos y funcionales utilizando HTML, CSS y 
+                JavaScript. Ideal para quienes buscan dar sus primeros pasos en el desarrollo front-end y adquirir habilidades prácticas 
+                para proyectos reales.</h4>
         </article>
-        <article class="block-informacion-curso__informacion">
-            <h1>Introduccion a Base de datos relacionales</h1>
-            <ul>
-                <li>Valor:</li>
-                <li>Tiempo de Dedicación Necesario:</li>
-                <li>Descripcion del Curso:</li>
-                <li>Requisitos Previos:</li>
-            </ul>  
-        <button class="block-informacion-curso__boton">Inscribirse</button>
-    
+        <article>
+            <button class="block-informacion-curso__boton">Inscribirse</button>
+        </article>        
+    </section>
+    <section class="block-informacion-curso__informacion">
+        <article>
+            <span>Valor:</span>
+            <span>Tiempo de Dedicacion:</span>
+            <span>Requisitos Previos:</span>
         </article>
     </section>
     <!-- Contenidos del curso-->
     <section class="block-informacion-contenidos">
-        <article>
+        <article class="block-informacion-contenidos_temas">
             <h2>Contenidos Por Clase</h2>
-            <details open>
-            <summary class="summary-contenidos">INTRODUCCIÓN</summary>
+            <details>
+            <summary class="summary_top">INTRODUCCIÓN</summary>
                 <article class="summary-contenidos_desplegable">
                     <ul>
-                        <li><span class="icon">Introducción a Base de Datos</span>  <span class="time">10 min </span></li>
-                        <li><span class="icon">Modelo Entidad-Relación</span>  <span class="time">10 min</span></li>
-                        <li><span class="icon">Modelo Entidad-Relación extendido</span>  <span class="time">10 min</span></li>
-                        <li><span class="icon">Modelo Relacional</span>  <span class="time">60 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Introducción a Base de Datos</span>  <span class="time">10 min </span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación extendido</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Relacional</span>  <span class="time">60 min</span></li>
                     </ul>
                 </article>
                 
@@ -87,15 +89,25 @@
             <details>
                 <summary>UNIDAD 2</summary>
                     <ul>
-                        <li>Contenido ejemplo...</li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Introducción a Base de Datos</span>  <span class="time">10 min </span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación extendido</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Relacional</span>  <span class="time">60 min</span></li>
                     </ul>
             </details>
             <details>
-                <summary >UNIDAD 3</summary>
+                <summary class="summary_bottom">UNIDAD 3</summary>
                     <ul>
-                        <li>Contenido ejemplo...</li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Introducción a Base de Datos</span>  <span class="time">10 min </span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación extendido</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Relacional</span>  <span class="time">60 min</span></li>
                     </ul>
             </details>
+        </article>
+
+        <article class="block-informacion-curso__imagen">
+            <img class="block-informacion-curso__imagen-propiedades" src="../Imagenes/BBDD-747x747.jpg">
         </article>
         
     </section>

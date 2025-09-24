@@ -1,93 +1,133 @@
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+  /* Estilos generales */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
 
-/* Estilos de los Cusos */
-.block-informacion-curso {
-  align-items: center;
-  display: flex; 
-  flex-direction: row;
-  justify-content: center;        
-  gap: 20px;
-  background-color: rgb(191, 167, 216);            
-}
+  body{
+    background-color: rgb(191, 167, 216);    
+  }
 
-.block-informacion-curso__imagen-propiedades{
-width: 300px;
-height: 300px;
-}
+  /* Estilos de los Cusos */
+  .block-informacion-curso {
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;  
+    background-color: rgb(191, 167, 216);  
+    margin-left: 10%;      
+    margin-right: 10%;    
+  }
+
+  .block-informacion-curso__imagen-propiedades{
+  width: 400px;
+  height: 300px;
+  }
 
 
-.block-informacion-curso__informacion, .block-informacion-curso__imagen{
-  margin: auto;            
-  padding: 20px;
-}
+  .block-informacion-curso__descripcion{
+    margin: 1em;           
+    padding: 1em;
 
-.block-informacion-curso__boton{
-  padding: 10px 20px;
-  background-color: #a446cf;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+  }
 
-.block-informacion-contenidos{
-  border-radius: 6px;
-  margin: auto;
-  text-align: start;
-  gap: 20px;
-  width: 50%;
-  padding: 0.25em;
-}
+  .block-informacion-curso__boton{
+    padding: 10px 20px;
+    background-color: #a446cf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-summary{
-  border: 0.10em solid rgb(62, 14, 90);              
-  border-radius: 1em;        
-  cursor: pointer; 
-  display: list-item;
-  padding: 0.50em;
-  margin: 0.25em;
-  font-weight: bold;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
-}
-
-.summary-contenidos_desplegable{
-  display: flex;
-  align-items:flex-start;
-  justify-content: flex-start;
-}
-
-/* Estilos del FOOTER */
-.container-footer{
- background-color: #f4cccc;
-  display: flex;
-  flex-direction: row; 
- justify-content: space-between; 
- align-items: flex-start;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.datos-equipo {
-  text-align: left;
-
-}
-.datos-equipo li{
- margin-top:0.3em ;
-}
-
-.redes-sociales {
-  text-align: right;
-}
-
-.menu-inferior{
+  .block-informacion-curso__informacion{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    margin: 0.25em auto; 
+  }
+
+  .block-informacion-contenidos{
+    border-radius: 0.40em;
+    margin: auto;
+    text-align: start;
     gap: 2em;
-}
+    width: 80%;
+    padding: 0.25em;
+    background-color: rgb(225, 213, 238);
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+  .block-informacion-contenidos_temas{
+    width: 100%;
+    margin-left: 1em;
+  }
+
+  details{
+    width: 90%;
+  }
+
+  summary{
+    border: 0.10em solid rgb(62, 14, 90);   
+    display: block;
+    padding: 0.50em;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .summary_top{       
+    border-radius: 0.25em 0.25em 0 0 ;  
+  }
+
+  .summary_bottom{       
+    border-radius: 0 0 0.25em 0.25em;  
+  }
+
+  .summary-contenidos_desplegable_temas{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    border: 0.10em solid rgb(62, 14, 90);    
+    padding: 0.25em;
+    width: 100%;
+    background-color: #f7f7f7;
+  }
+
+  .block-informacion-curso__imagen{
+    margin-right: 2em;
+  }
+
+  /* Estilos del FOOTER */
+  .container-footer{
+  background-color: #f4cccc;
+    display: flex;
+    flex-direction: row; 
+  justify-content: space-between; 
+  align-items: flex-start;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .datos-equipo {
+    text-align: left;
+
+  }
+  .datos-equipo li{
+  margin-top:0.3em ;
+  }
+
+  .redes-sociales {
+    text-align: right;
+  }
+
+  .menu-inferior{
+      display: flex;
+      gap: 2em;
+  }
