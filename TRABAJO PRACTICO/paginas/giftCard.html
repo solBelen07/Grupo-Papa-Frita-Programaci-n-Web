@@ -58,27 +58,28 @@
 
 
     </header> 
+    <!-- MAIN -->
     <main class="Box_main">
+   <!--  BOTONES
     <input type="checkbox" id="trigger-boton1">
     <label for="trigger-boton1" class="boton1">Botón 1 - Haz clic aquí</label>
     <button id="boton2" class="boton2">Botón 2 - Me volveré azul</button>
+    -->
 </label>
+
   <section class="Box_form">
      <form>
         <section class="data">
             
               <label for="destinatario"
-                >Nombre del Destinatario :
+                >Nombre del Destinatario :</label>
                 <input type="text" id="destinatario" name="destinatario" />
-              </label>
-            
 
-            
               <label for="email"
-                >Email del Destinatario :
+                >Email del Destinatario : </label>
 
                 <input type="email" id="email" name="email" />
-              </label>
+             
          
 
           </section>
@@ -88,7 +89,7 @@
             <div class="Formulario_estilo">
               <label for="style">Fuente : </label>
 
-              <select name="style" id="style">
+              <select name="style" id="style" class="style_type">
                 <option disabled selected>Seleccione su fuente</option>
 
                 <option value="Arial">Arial</option>
@@ -118,55 +119,114 @@
               </select>
             </div>
             </section>
-<section class="colores">
-            <div class="Formulario_estilo_color">
-              <label for="Rojo">Rojo</label>
 
+<section class="colores">
+              
+              <label for="Rojo" > 
               <input
                 type="radio"
                 name="color_estilo"
-                id="color_estilo"
+                id="Rojo"
                 value="Rojo"
               />
-
-              <label for="Amarillo">Amarillo</label>
-
+              <div class="color circuloRojo"></div>
+              
+              </label>
+            
+              <label for="Amarillo">
+              
               <input
                 type="radio"
                 name="color_estilo"
-                id="color_estilo"
+                id="Amarillo"
                 value="Amarillo"
               />
+                <div class="color circuloAmarillo"></div>
+              </label>
+             
 
-              <label for="Azul">Azul</label>
-
+              <label for="Azul">
+              
               <input
                 type="radio"
                 name="color_estilo"
-                id="color_estilo"
+                id="Azul"
                 value="Azul"
               />
-            </div>
-</section>
+              <div class="color circuloAzul"></div>
+              </label>
+
+              <label for="Verde">
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Verde"
+                value="Verde"
+              />
+              <div class="color circuloVerde"></div>
+              </label>
+              <label for="Lila">
+              
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Lila"
+                value="Lila"
+              />
+              <div class="color circuloLila"></div>
+              </label>
+              <label for="Naranja">
+              
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Naranja"
+                value="Naranja"
+              />
+              <div class="color circuloNaranja"></div>
+              </label>
+            
+        </section>
             <div class="Formulario_fondo">
-              <label for="Fondo1"></label>
+              <label for="Fondo1" >
 
               <input type="radio" name="Fondo" id="Fondo1" value="Fondo1" />
 
-              <label for="Fondo2"></label>
+              <img src="../Imagenes/gc_fondo1.jpeg" class="fondo"></label>
+
+              <label for="Fondo2">
 
               <input type="radio" name="Fondo" id="Fondo2" value="Fondo2" />
 
-              <label for="Fondo3"></label>
+               <img src="../Imagenes/gc_fondo2.jpg"  class="fondo" ></label>
+
+              <label for="Fondo3">
 
               <input type="radio" name="Fondo" id="Fondo3" value="Fondo3" />
+
+              <img src="../Imagenes/gc_fondo3.jpg" class="fondo"></label>
+
+              <label for="Fondo4">
+
+              <input type="radio" name="Fondo" id="Fondo4" value="Fondo4" />
+
+               <img src="../Imagenes/gc_fondo4.jpg"class="fondo"></label>
+
+              <label for="Fondo5">
+
+              <input type="radio" name="Fondo" id="Fondo5" value="Fondo5" />
+
+              <img src="../Imagenes/gc_fondo5.jpg"class="fondo"></label>
+              
+
+
             </div>
           </form>
         
       </section>
 
       <section class="Box_Preview">
-        <div class="Carta">
+       
           <div class="Destinatario">  
             <h3>¡Felicidades! :</h3>
           </div>
@@ -178,7 +238,7 @@
           <div class="Mensaje">
             <h3>Contenido del mensaje</h2>
           </div>
-        </div>
+       
       </section>
 
       
