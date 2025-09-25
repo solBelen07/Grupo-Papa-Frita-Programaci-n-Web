@@ -103,3 +103,78 @@ body{
 .dia-actual { 
   color: #7E57C2;     
 }
+
+@media screen and (max-width: 320px) {
+ h1, h2 {
+    font-size: 0.8em;
+ }
+ .container-tittle{
+
+    animation: none;    
+}
+.calendar-container{
+    width: auto;
+    margin:1em;
+}
+.calendar-header{
+    margin-bottom: 0.5em;
+}
+.calendar-container .calendar-daysOfWeek{
+    font-size: 0.7em;
+}
+.calendar-container .calendar-numbers{
+    font-size: 0.7em;
+}
+
+.botones{
+    width: 3em;
+    background-color: #A58AD9;
+}
+
+.dia{
+    height: 3em;
+    width:3em;
+    font-weight: 300;
+}
+.diaSemana{
+    height: auto;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+ h1, h2 {
+    font-size: 0.8em;
+ }
+ .container-tittle{
+
+    animation: none;    
+}
+.calendar-container{
+    width: auto;
+    margin:1em;
+}
+.calendar-header{
+    margin-bottom: 0.5em;
+}
+.calendar-container .calendar-daysOfWeek{
+    font-size: 0.7em;
+}
+.calendar-container .calendar-numbers{
+    font-size: 0.7em;
+}
+
+.botones{
+    width: 3em;
+    background-color: #A58AD9;
+}
+
+.dia{
+    /* height: 3em; */
+    /* width:2em; */
+    font-weight: 300;
+}
+.diaSemana{
+    height: auto;
+}
+}

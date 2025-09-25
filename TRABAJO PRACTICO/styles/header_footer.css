@@ -12,7 +12,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 1em 2em;
+    padding: 1em 1em;
     background-color:  #9575CD;
     color: #ffffff;  /* Este color es del LOGO*/
 }
@@ -23,8 +23,7 @@ body {
 
 /* Barra de navegación */
 .navbar {
-    flex-grow: 1;
-    margin-left: 2em;
+    margin-left: 1.2em;
 }
 .nav-list {
     list-style: none;
@@ -53,13 +52,13 @@ body {
 /* Barra de búsqueda */
 .main-header .search-bar {
     display: flex;
-    flex-grow: 0;
-    max-width: 18.75em;
+    /* flex-grow: 0; */
+    /* max-width: 18.75em; */
     margin-left: auto;
 }
 .main-header .search-bar input {
-    flex-grow: 1;
-    padding: 0.5em 0.75px;
+    /* flex-grow: 1;
+    padding: 0.5em 0.75px; */
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
     font-size: 1em;
@@ -175,7 +174,7 @@ flex-direction: row;
  
 }
  
-        /* ===== RESPONSIVE ===== */
+      /* RESPONSIVE  HEADER*/
         @media (max-width: 768px) {
           
             .navbar {
@@ -218,8 +217,8 @@ flex-direction: row;
  /* RESPONSIVE FOOTER  */
 @media screen and (max-width: 480px) {
    
-
    .container-footer {
+ 
  padding: 1em;
     flex-wrap: nowrap;
  font-size: 0.66em;
@@ -231,6 +230,8 @@ flex-direction: row;
     margin-left: -6em;
 
 }
+
+
 .parrafo-socialMedia{
     display: none;
 }
@@ -242,8 +243,6 @@ gap:1em;
 
 }
 .redes-sociales .social-icon {
-
-
     width: 2em;
     height: 2em;
     align-items: flex-end;
