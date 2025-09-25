@@ -17,7 +17,9 @@ body {
     color: #ffffff;  /* Este color es del LOGO*/
 }
 
-
+.logo img{
+    width: 9em;
+}
 
 /* Barra de navegación */
 .navbar {

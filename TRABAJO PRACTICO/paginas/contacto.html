@@ -10,22 +10,22 @@
   
 </head>
 <body>
-
-   <!-- HEADER -->
+<!-- Encabezado -->
     <header class="main-header">
-        <div class="logo">LOGO</div>
+            <section class="logo">LOGO </section>
+      <!-- Barra de Navegación -->
        <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="../paginas/index.html"  class="nav-link">Inicio</a></li>
-            <li><a href="../paginas/giftCard.html" class="nav-link">GiftCard</a></li>
+            <li><a href="./paginas/Index.html"  class="nav-link">Inicio</a></li>
+            <li><a href="../paginas/giftCard.html"  class="nav-link">GiftCard</a></li>
             <li><a href="../paginas/detalleCurso.html"  class="nav-link">Cursos</a></li>
-            <li><a href="./paginas/inscripcionCursoEmpresa.html"  class="nav-link">Inscripción</a></li>
+            <li><a href="../paginas/inscripcionCursoEmpresa.html"  class="nav-link">Inscripción</a></li>
             <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li> 
          
         </ul>
        </nav>    
 
-       <div class = "search-bar">  
+       <section class = "search-bar">  
         <input list="Cursos" placeholder="Buscar curso...">
         <datalist id="Cursos">
             <option value="Programación de videojuegos">
@@ -38,23 +38,24 @@
             <option value="Ingles">
         </datalist>
         <button class="search-button">Buscar</button>
-        </div>
+        </section >
 
-        <div class="user-actions">
+        <section  class="user-actions">
+
             <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
-           <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
-
-            <div class="carrito">
+            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito">
                 Carrito <span class="cart-count">0</span>
-            </div>
-        </div>
+            </article>
+        </section >
         
 
     </header> 
   <!-- PRINCIPAL  -->
     <main class="container-main">
       <section class="container-contacto">
-        <form action="#" method="get">
+        <!--  VER ESTO DEL ACTION Y ENVIAR MSJ -->
+        <form action="./Index.html" method="get">
             <h2>CONTÁCTANOS </h2>
            <label for="name" class="label-form"> Nombre: 
             <input type="text" name="name" id="name"  class="caja-form">
