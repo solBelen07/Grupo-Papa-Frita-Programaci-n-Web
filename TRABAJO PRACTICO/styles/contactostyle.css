@@ -118,7 +118,9 @@
 
 /* Teléfonos: 0 a 480px */
 @media screen and (max-width: 320px) {
-
+ .container-main{
+    width: 100%;
+ }
     .label-form {
         display: flex;
         flex-direction: column;
