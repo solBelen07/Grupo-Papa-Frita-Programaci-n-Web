@@ -9,53 +9,65 @@
     <link rel="stylesheet" href="../styles/header_footer.css">
     <link rel="stylesheet" href="../styles/calendariostyle.css">
     <!-- Link a animate.css -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
 </head>
 
 <body>
-   <!-- Encabezado -->
+    <!-- Encabezado -->
     <header class="main-header">
-            <section class="logo">LOGO </section>
-      <!-- Barra de Navegación -->
-       <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="./paginas/Index.html"  class="nav-link">Inicio</a></li>
-            <li><a href="../paginas/giftCard.html"  class="nav-link">GiftCard</a></li>
-            <li><a href="../paginas/detalleCurso.html"  class="nav-link">Cursos</a></li>
-            <li><a href="../paginas/inscripcionCursoEmpresa.html"  class="nav-link">Inscripción</a></li>
-            <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li> 
-         
-        </ul>
-       </nav>    
+        <section class="logo">
+            <a href="../index.html"> <img src="../img/logoPag.png" alt="Logo de la plataforma"></a>
+        </section>
+        <!-- Barra de Navegación -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="./detalleCurso.html" class="nav-link">Cursos</a></li>
+                <li><a href="./inscripcionCursoEmpresa.html" class="nav-link">Inscripción</a></li>
+                <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
 
-       <section class = "search-bar">  
-        <input list="Cursos" placeholder="Buscar curso...">
-        <datalist id="Cursos">
-            <option value="Programación de videojuegos">
-            <option value="Marketing Digital">
-            <option value="Diseño Gráfico">
-            <option value="Desarrollo Web">
-            <option value="Ciberseguridad">
-            <option value="Inteligencia Artificial">
-            <option value="Finanzas Personales">
-            <option value="Ingles">
-        </datalist>
-        <button class="search-button">Buscar</button>
-        </section >
+            </ul>
+        </nav>
 
-        <section  class="user-actions">
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Inglés">
+            </datalist>
+            <button class="search-button">
+                <img src="../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
 
-            <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
-            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+        <section class="user-actions">
+
+            <a href="../index.html"><button class="login-button">Iniciar Sesión</button></a>
+            <a href="../paginas/registrarse.html" class="signup-button">Registrarse</button></a>
             <article class="carrito">
-                Carrito <span class="cart-count">0</span>
+                <img src="../img/carrito.png" alt="Carrito de compra">
+                <span class="cart-count">0</span>
             </article>
-        </section >
-        
+        </section>
+    </header>
 
-    </header> 
+
     <section class="container-tittle">
         <h1>Enterate nuestros proximos cursos..</h1>
     </section>
@@ -156,7 +168,7 @@
 
 
         <section class="menu-inferior">
-            <a href="../paginas/index.html">Inicio</a>
+            <a href="../index.html">Inicio</a>
             <a href="../paginas/contacto.html">Contacto</a>
             <a href="./paginas/inscripcionCursoEmpresa.html">Formulario</a>
 

@@ -12,8 +12,7 @@ img {
 }
 
 
-/* Estilos del HEADER  */
-
+/*MAIN*/
 .hero-slider {
   position: relative;
   text-align: center;
@@ -25,9 +24,6 @@ img {
   object-fit: cover;
   
 }
-
-
-
 
 /* Pasos */
 .steps-container {
@@ -63,8 +59,6 @@ img {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     background: linear-gradient(135deg, #6a0dad, #9b4dff);
 }
-
-
 
 
 /* Cursos Destacados */
