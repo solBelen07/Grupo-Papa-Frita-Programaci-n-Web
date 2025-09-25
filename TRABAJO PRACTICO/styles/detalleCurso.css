@@ -14,13 +14,8 @@
 
   /* Estilos de los Cusos */
   .block-informacion-curso {
-    align-items: center;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;  
-    background-color: rgb(191, 167, 216);  
-    margin-left: 10%;      
-    margin-right: 10%;    
+    margin: 2% 10% 2% 10%;
+    width: 80%; 
   }
 
   .block-informacion-curso__descripcion{
@@ -138,32 +133,4 @@
 
   .block-informacion-docente_presentacion{
     margin: 0.25em;
-  }
-
-  /* Estilos del FOOTER */
-  .container-footer{
-  background-color: #f4cccc;
-    display: flex;
-    flex-direction: row; 
-  justify-content: space-between; 
-  align-items: flex-start;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  .datos-equipo {
-    text-align: left;
-
-  }
-  .datos-equipo li{
-  margin-top:0.3em ;
-  }
-
-  .redes-sociales {
-    text-align: right;
-  }
-
-  .menu-inferior{
-      display: flex;
-      gap: 2em;
   }
