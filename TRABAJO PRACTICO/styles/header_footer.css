@@ -124,7 +124,7 @@ body {
 /* Lista de datos del equipo */
 .datos-equipo ul {
     list-style: none;
-    padding-left: 0;
+  
 }
 
 .datos-equipo li {
@@ -174,3 +174,41 @@ flex-direction: row;
 }
 
 
+@media screen and (max-width: 480px) {
+   
+
+   .container-footer {
+ padding: 1em;
+    flex-wrap: nowrap;
+ font-size: 0.66em;
+}
+.menu-inferior {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-left: -6em;
+
+}
+.parrafo-socialMedia{
+    display: none;
+}
+
+.redes-sociales-nav{
+    display: flex;
+flex-direction: column;
+gap:1em;
+
+}
+.redes-sociales .social-icon {
+
+
+    width: 2em;
+    height: 2em;
+    align-items: flex-end;
+}
+.datos-equipo ul {
+    list-style: none;
+    margin: -0.3em 0;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {}
