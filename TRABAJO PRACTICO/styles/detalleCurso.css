@@ -23,13 +23,18 @@
 
   }
 
-  .block-informacion-curso__boton{
+  .block-informacion-contenidos__boton{
     padding: 10px 20px;
     background-color: #a446cf;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 1em;
+  }
+
+  .block-informacion-contenidos_precio-y-boton{
+    flex-direction: row;
   }
 
   .block-informacion-curso__informacion{
@@ -38,6 +43,12 @@
     align-items: center;
     width: 80%; 
     margin: 0.25em auto; 
+  }
+
+  .span-block-informacion-curso__informacion{
+    display: flex;
+    align-items: center;  /* centra verticalmente el texto con el h4 */
+    gap: 0.5em; 
   }
 
   .block-informacion-contenidos{
@@ -54,7 +65,7 @@
     align-items: center; 
   }
 
-  .block-informacion-curso__imagen-propiedades{
+  .block-informacion-contenidos__imagen-propiedades{
   width: 400px;
   height: 300px;
   }
@@ -95,9 +106,10 @@
     background-color: #f7f7f7;
   }
 
-  .block-informacion-curso__imagen{
+  .block-informacion-contenidos__imagen{
     margin-right: 2em;
   }
+
   h2{
     width: 80%;
     margin: auto; 
@@ -133,4 +145,16 @@
 
   .block-informacion-docente_presentacion{
     margin: 0.25em;
+  }
+
+  .star {
+    font-size: 24px;
+    color: gray; /* Color predeterminado de las estrellas */
+    cursor: pointer;
+  }
+
+  .star-checked{
+    font-size: 24px;
+    color: gold; /* Color de las estrellas seleccionadas */
+    cursor: pointer;
   }
