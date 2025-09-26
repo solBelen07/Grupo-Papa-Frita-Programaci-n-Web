@@ -170,6 +170,7 @@ a {
 }
 
 .container-footer {
+<<<<<<< HEAD
   width: 100%;
   background-color: #B39DDB;
   color: black;
@@ -178,6 +179,16 @@ a {
   padding: 2em 2em;
   flex-wrap: wrap;
   gap: 2em;
+=======
+    width: 100%;
+  background-color: #312b3b;
+     color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em;
+    flex-wrap: wrap;
+    gap:2em;
+>>>>>>> rama-sol
 }
 
 
