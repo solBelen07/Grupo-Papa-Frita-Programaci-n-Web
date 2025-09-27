@@ -15,23 +15,49 @@ body{
     background-color: #f5f5f5;
 }
 
+.container-tittle{
+    margin-top: 1em;
+    text-align: center;
+    color: #7E57C2; 
+    animation-name: bounceInLeft;
+    animation-duration: 1.5s;      
+}
+
+.botones{
+    border: 1px solid #A58AD9;
+    border-radius: 2em;
+    width: 4em;
+    height: 3em;
+}
+
+.botones:hover{
+    background-color: #7E57C2; 
+    color:white;
+    cursor: pointer;
+}
 .calendar-container{
-    width: 60%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 1em;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 60%;
+     padding: 1em;
+    margin: 2em auto;  
 }
 
 .calendar-header{
-    background-color: aquamarine;
+    background-color: #A58AD9;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
+    align-items: center;
+    padding: 0.123em 0em;
+    border-radius: 6px;  
+    
 }
+
+/*  lunes a Domingo */
 .diaSemana{
-    background-color: pink;
+    background-color: #D1C4E9;
     display: flex;
     justify-content: center;     
     align-items: center;         
@@ -39,9 +65,10 @@ body{
     font-weight: bold;
      height:3em;
 }
+/* numeros */
 .dia{
-    background-color: #e0f7fa;
-        display: flex;
+    background-color: #EDE7F6;
+     display: flex;
     justify-content: center;     
     align-items: center;         
     border-radius: 4px;     
@@ -49,18 +76,107 @@ body{
      height:4em;
 }
 
+/* Para los dias del mes que no corresponden*/ 
+
 .dia:not(.diaValido) {
     opacity: 0.3;
 }
-.diaValido:hover {
-    background-color: black;
+
+.dia-curso:hover {
+    background-color: #7E57C2; 
     color:white;
     cursor: pointer;
 }
+
+.calendar-daysOfWeek{
+    margin-bottom: 0.5em;
+}
+
 .calendar-daysOfWeek, .calendar-numbers{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 0.3125em;
    
 }
+  
 
+.dia-actual { 
+  color: #7E57C2;     
+}
+
+@media screen and (max-width: 320px) {
+ h1, h2 {
+    font-size: 0.8em;
+ }
+ .container-tittle{
+
+    animation: none;    
+}
+.calendar-container{
+    width: auto;
+    margin:1em;
+}
+.calendar-header{
+    margin-bottom: 0.5em;
+}
+.calendar-container .calendar-daysOfWeek{
+    font-size: 0.7em;
+}
+.calendar-container .calendar-numbers{
+    font-size: 0.7em;
+}
+
+.botones{
+    width: 3em;
+    background-color: #A58AD9;
+}
+
+.dia{
+    height: 3em;
+    width:3em;
+    font-weight: 300;
+}
+.diaSemana{
+    height: auto;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+ h1, h2 {
+    font-size: 0.8em;
+ }
+ .container-tittle{
+
+    animation: none;    
+}
+.calendar-container{
+    width: auto;
+    margin:1em;
+}
+.calendar-header{
+    margin-bottom: 0.5em;
+}
+.calendar-container .calendar-daysOfWeek{
+    font-size: 0.7em;
+}
+.calendar-container .calendar-numbers{
+    font-size: 0.7em;
+}
+
+.botones{
+    width: 3em;
+    background-color: #A58AD9;
+}
+
+.dia{
+    /* height: 3em; */
+    /* width:2em; */
+    font-weight: 300;
+}
+.diaSemana{
+    height: auto;
+}
+
+
+}

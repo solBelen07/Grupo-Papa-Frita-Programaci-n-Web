@@ -6,129 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario</title>
     <!-- Link a CSS  -->
-    <link rel="stylesheet" href="../styles/calendariostyle.css">
     <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/calendariostyle.css">
+    <!-- Link a animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
 </head>
 
 <body>
-    
-     <!-- Encabezado -->
+    <!-- Encabezado -->
     <header class="main-header">
-        <div class="logo">LOGO</div>
+        <section class="logo">
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma"></a>
+        </section>
+        <!-- Barra de Navegación -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="../detalleCurso.html" class="nav-link">Cursos</a></li>
+                <li><a href="../inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
 
-      <!-- Barra de Navegación -->
-       <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="./paginas/Index.html"  class="nav-link">Inicio</a></li>
-            <li><a href="../paginas/giftCard.html"  class="nav-link">GiftCard</a></li>
-            <li><a href="../paginas/detalleCurso.html"  class="nav-link">Cursos</a></li>
-            <li><a href="../paginas/inscripcionCursoEmpresa.html"  class="nav-link">Inscripción</a></li>
-            <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li> 
-         
-        </ul>
-       </nav>    
+            </ul>
+        </nav>
 
-       <div class = "search-bar">  
-        <input list="Cursos" placeholder="Buscar curso...">
-        <datalist id="Cursos">
-            <option value="Programación de videojuegos">
-            <option value="Marketing Digital">
-            <option value="Diseño Gráfico">
-            <option value="Desarrollo Web">
-            <option value="Ciberseguridad">
-            <option value="Inteligencia Artificial">
-            <option value="Finanzas Personales">
-            <option value="Ingles">
-        </datalist>
-        <button class="search-button">Buscar</button>
-        </div>
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Inglés">
+            </datalist>
+            <button class="search-button">
+                <img src="../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
 
-        <div class="user-actions">
-            <button class="login-button">Iniciar Sesión</button>
-            <button class="signup-button">Registrarse</button>
-
-            <div class="carrito">
-                Carrito <span class="cart-count">0</span>
-            </div>
-        </div>
-        
-
-    </header> 
-
-   
-    <main class="calendar-container">
-
-    <header class="calendar-header">
-        <button> ← </button>
-        <h2>Octubre 2025</h2>
-        <button>→ </button>
+       <section class="user-actions">
+            <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
+            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito"><!-- icono carrito -->
+                <img src="../img/carrito.png" alt="Carrito de compra">
+                <span class="cart-count">0</span>
+            </article>
+        </section>
     </header>
 
-    <!-- DE LUNES A DOMINGOS -->
-    <section class="calendar-daysOfWeek">
-        <article class="diaSemana">Lun</article>
-        <article class="diaSemana">Mar</article>
-        <article class="diaSemana">Mié</article>
-        <article class="diaSemana">Jue</article>
-        <article class="diaSemana">Vie</article>
-        <article class="diaSemana">Sáb</article>
-        <article class="diaSemana">Dom</article>
+
+
+
+    <section class="container-tittle">
+        <h1>Enterate nuestros proximos cursos..</h1>
     </section>
 
-    <!-- NUMEROS DEL 1 AL 31 -->
-     <section class="calendar-numbers">
-    <article class="dia"></article>
-    <article class="dia"></article>
-    <article class="dia diaValido">1</article>
-    <article class="dia diaValido">2</article>
-    <article class="dia diaValido">3</article>
-    <article class="dia diaValido">4</article>
-    <article class="dia diaValido">5</article>
 
-    <article class="dia diaValido">6</article>
-    <article class="dia diaValido">7</article>
-    <article class="dia diaValido">8</article>
-    <article class="dia diaValido">9</article>
-    <article class="dia diaValido">10</article>
-    <article class="dia diaValido">11</article>
-    <article class="dia diaValido">12</article>
+    <main class="calendar-container">
 
-    <article class="dia diaValido">13</article>
-    <article class="dia diaValido">14</article>
-    <article class="dia diaValido">15</article>
-    <article class="dia diaValido">16</article>
-    <article class="dia diaValido">17</article>
-    <article class="dia diaValido">18</article>
-    <article class="dia diaValido">19</article>
+        <section class="calendar-header">
+            <button class="botones"> ← </button>
+            <h2>Octubre 2025</h2>
+            <button class="botones">→ </button>
+        </section>
 
-    <article class="dia diaValido">20</article>
-    <article class="dia diaValido">21</article>
-    <article class="dia diaValido">22</article>
-    <article class="dia diaValido">23</article>
-    <article class="dia diaValido">24</article>
-    <article class="dia diaValido">25</article>
-    <article class="dia diaValido">26</article>
+        <!-- DE LUNES A DOMINGOS -->
+        <section class="calendar-daysOfWeek">
+            <article class="diaSemana">Lun</article>
+            <article class="diaSemana">Mar</article>
+            <article class="diaSemana">Mié</article>
+            <article class="diaSemana">Jue</article>
+            <article class="diaSemana">Vie</article>
+            <article class="diaSemana">Sáb</article>
+            <article class="diaSemana">Dom</article>
+        </section>
 
-    <article class="dia diaValido">27</article>
-    <article class="dia diaValido">28</article>
-    <article class="dia diaValido">29</article>
-    <article class="dia diaValido">30</article>
-    <article class="dia diaValido">31</article>
-    <article class="dia"></article>
-    <article class="dia"></article>
-    </section>
-    </section>
+        <!-- NUMEROS DEL 1 AL 31 -->
+        <section class="calendar-numbers">
+            <article class="dia"></article>
+            <article class="dia"></article>
+            <article class="dia diaValido dia-actual">1</article>
+            <article class="dia diaValido">2</article>
+            <article class="dia diaValido">3</article>
+            <article class="dia diaValido">4</article>
+            <article class="dia diaValido">5</article>
 
-</main>
+            <article class="dia diaValido dia-curso">6 <br>
+                <article id="cursoJava" idCurso="5" class="course">Analisis de datos</article>
+            </article>
+            <article class="dia diaValido">7</article>
+            <article class="dia diaValido">8</article>
+            <article class="dia diaValido">9</article>
+            <article class="dia diaValido">10</article>
+            <article class="dia diaValido">11</article>
+            <article class="dia diaValido">12</article>
+
+            <article class="dia diaValido dia-curso">13
+                <article id="cursoJava" idCurso="5" class="course">Desarrollo de software</article>
+
+            </article>
+
+            <article class="dia diaValido">14</article>
+            <article class="dia diaValido">15</article>
+            <article class="dia diaValido">16</article>
+            <article class="dia diaValido">17</article>
+            <article class="dia diaValido">18</article>
+            <article class="dia diaValido">19
+            </article>
+
+            <article class="dia diaValido dia-curso">20 
+                <article id="cursoJava" idCurso="5" class="course">Diseño UX/UI</article>
+
+            </article>
+            <article class="dia diaValido dia-curso">21
+                <article id="cursoJava" idCurso="5" class="course">Impresion 3D</article>
+
+            </article>
+            <article class="dia diaValido">22</article>
+            <article class="dia diaValido">23</article>
+            <article class="dia diaValido">24</article>
+            <article class="dia diaValido">25</article>
+            <article class="dia diaValido">26 </article>
+
+            <article class="dia diaValido">27</article>
+            <article class="dia diaValido">28</article>
+            <article class="dia diaValido">29</article>
+            <article class="dia diaValido">30</article>
+            <article class="dia diaValido">31</article>
+            <article class="dia"></article>
+            <article class="dia"></article>
+        </section>
+        </section>
+
+    </main>
 
 
 
-   <!-- Footer -->
+    <!-- Footer -->
     <footer class="container-footer">
         <section class="datos-equipo">
             <ul>
                 <li>EQUIPO : Grupo PapaFrita</li>
-                <li>Collado, Camila</li>
+                <li>Collado, Camila Sol DNI: 43.098.593</li>
                 <li>Martelli, Rocio Belen DNI: 44.161.046</li>
                 <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
                 <li>Moyano Vivas, Matias Ernesto</li>
@@ -138,25 +169,25 @@
 
 
         <section class="menu-inferior">
-            <a href="../paginas/index.html">Inicio</a>
+            <a href="../index.html">Inicio</a>
             <a href="../paginas/contacto.html">Contacto</a>
             <a href="./paginas/inscripcionCursoEmpresa.html">Formulario</a>
 
         </section>
 
-       <section class="redes-sociales">
+        <section class="redes-sociales">
             <p class="parrafo-socialMedia">REDES SOCIALES</p>
-           <nav class="redes-sociales-nav">
-            <a href="https://www.instagram.com/unlamoficial/" target="_blank"> 
-              <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">  
-            </a>
+            <nav class="redes-sociales-nav">
+                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                </a>
 
-            <a href="https://www.facebook.com/UnlamOficial/" target="_blank"> 
-                <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
-            </a>
-            <a href="https://wa.me/5491155844612" target="_blank">
-                <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
-            </a>
+                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                </a>
+                <a href="https://wa.me/5491155844612" target="_blank">
+                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                </a>
             </nav>
         </section>
     </footer>

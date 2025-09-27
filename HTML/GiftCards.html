@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="Esta es la pagina para personalizar y regalar Gift Cards">
+    <title>Personalizar Regalo</title>
+    <link rel="stylesheet" href="style_GiftCards.css">
+    <link rel="icon" href="">
+</head>
+<body>
+    <main>
+        <section class="Box_Preview">
+            <div class="Carta">
+
+                <div class="Destinatario">
+                <h3> ¡Felicidades! : </h3>
+                </div>
+
+                <div class="Monto">
+                <h3> Monto </h3>
+                </div>
+ 
+                <div class="Mensaje">
+                 <h2>Contenido del mensaje</h2>   
+                </div>
+
+            </div>
+            
+
+        </section>
+        <section class="Box_form">
+            <div class="form">
+            <form>
+                <div class="Formulario_destinatario">
+                <label for="destinatario">Nombre del Destinatario : 
+                <input type="text" id="destinatario" name="destinatario">
+                </label>
+                </div>
+
+                 <div class="Formulario_email">
+                <label for="email">Email del Destinatario : 
+                <input type="email" id="email" name="email">
+                </label>
+                </div>
+
+               <div class="Formulario_estilo">
+                <label for="style">Fuente : </label>
+                <select name="style" id="style">
+                <option disabled selected >Seleccione su fuente</option>
+                <option value="Arial">Arial</option>
+                <option value="Calibri">Calibri</option>
+                <option value="Times New Roman">Times New Roman</option>
+                </select>
+                </div>
+
+                <div class="Formulario_estilo_tamaño">
+                <label for="tamaño_estilo">Tamaño:</label>
+                <select name="style_color" id="syle_color">
+                <option value="5">5</option>
+                <option selected value="11">11</option>
+                <option value="17">17</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                </select>
+                </div>
+
+                <div class="Formulario_estilo_color">
+                <label for="Rojo">Rojo</label>
+                <input type="radio" name="color_estilo" id="color_estilo" value="Rojo">
+                  <label for="Amarillo">Amarillo</label>
+                <input type="radio" name="color_estilo" id="color_estilo" value="Amarillo">
+                  <label for="Azul">Azul</label>
+                <input type="radio" name="color_estilo" id="color_estilo" value="Azul">
+                </div>
+
+                <div class="Formulario_fondo">
+                <label for="Fondo1"></label>
+                <input type="radio" name="Fondo1" id="Fondo1" value="Fondo1">
+                  <label for="Fondo2"></label>
+                <input type="radio" name="Fondo2" id="Fondo2" value="Fondo2">
+                  <label for="Fondo3"></label>
+                <input type="radio" name="Fondo3" id="Fondo3" value="Fondo3">
+                </div>
+
+            </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
