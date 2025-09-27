@@ -38,6 +38,17 @@ body{
   margin: 1em 1em 1em 1em;
 }
 
+.block-informacion-curso_titulo-y-precio{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.block-informacion-curso_titulo-y-precio_precio{
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
 h3{
   margin: 0.25em;
 }
