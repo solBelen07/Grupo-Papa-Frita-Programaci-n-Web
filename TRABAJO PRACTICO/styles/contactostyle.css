@@ -9,9 +9,15 @@
     margin: 2em;
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     justify-content: space-between;
     gap: 3em;
 
+=======
+    justify-content: center;
+    padding: 2em;
+    border: 1px solid black;
+>>>>>>> rama-sol
 }
 
 .container-contacto h2 {

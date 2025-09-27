@@ -6,120 +6,201 @@
     <title>Document</title>
     <!-- Link a CSS  -->
     <link rel="stylesheet" href="../styles/detalleCurso.css">
-     <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/header_footer.css">
 </head>
 <body>
-   <!-- Encabezado -->
+    <!-- Encabezado -->
     <header class="main-header">
-           <section class="logo">
+        <section class="logo">
             <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma"></a>
         </section>
-      <!-- Barra de Navegación -->
-       <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="../index.html"  class="nav-link">Inicio</a></li>
-            <li><a href="./giftCard.html"  class="nav-link">GiftCard</a></li>
-            <li><a href="./detalleCurso.html"  class="nav-link">Cursos</a></li>
-            <li><a href="./inscripcionCurso.html"  class="nav-link">Inscripción</a></li>
-            <li><a href="./calendario.html" class="nav-link"> Proximos </a></li> 
-         
-        </ul>
-       </nav>    
+        <!-- Barra de Navegación -->
 
-       <section class = "search-bar">  
-        <input list="Cursos" placeholder="Buscar curso...">
-        <datalist id="Cursos">
-            <option value="Programación de videojuegos">
-            <option value="Marketing Digital">
-            <option value="Diseño Gráfico">
-            <option value="Desarrollo Web">
-            <option value="Ciberseguridad">
-            <option value="Inteligencia Artificial">
-            <option value="Finanzas Personales">
-            <option value="Ingles">
-        </datalist>
-        <button class="search-button">Buscar</button>
-        </section >
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../paginas/index.html" class="nav-link">Inicio</a></li>
+                <li><a href="../paginas/giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="../paginas/detalleCurso.html" class="nav-link">Cursos</a></li>
+                <li><a href="../paginas/inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li>
 
-        <section  class="user-actions">
+            </ul>
+        </nav>
 
-            <a href="./inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
-            <a href="./registrarse.html"><button class="signup-button">Registrarse</button></a>
-            <article class="carrito">
-                Carrito <span class="cart-count">0</span>
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Inglés">
+            </datalist>
+            <button class="search-button">
+                <img src="../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
+
+        <section class="user-actions">
+            <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
+            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito"><!-- icono carrito -->
+                <img src="../img/carrito.png" alt="Carrito de compra">
+                <span class="cart-count">0</span>
             </article>
-        </section >
-        
+        </section>
 
-    </header> 
-    <section>
 
-    </section>
+    </header>
 
-    <img src="../Imagenes/imagenRepresentativa.jpg">
-
-    <section>
-      <h1>Titulo del Curso</h1>
-        <article>
-            <ul>
-                <li>Valor:</li>
-                <li>Tiempo de Dedicación Necesario:</li>
-                <li>Descripcion del Curso:</li>
-                <li>Requisitos Previos:</li>
-            </ul>  
-        <button>Inscribirse</button>
-
+    <!-- Informacion del curso-->
+    <section class="block-informacion-curso">
+        <!-- Contenidos del curso-->
+         <h1>Programación Back-End</h1>
+        <article class="block-informacion-curso__descripcion">
+            <p>Curso avanzado de Back-End orientado a desarrolladores con conocimientos previos en programación y bases de datos. A lo largo de la formación profundizarás en arquitectura de software, seguridad, optimización de consultas, integración de APIs, servicios en la nube y despliegue de aplicaciones escalables. El objetivo es que adquieras la capacidad de diseñar y mantener sistemas robustos, eficientes y preparados para entornos de alta demanda profesional.</p>
         </article>
-        <article>
-            <h1>Contenidos Por Clase</h1>
-            <details open>
-            <summary>INTRODUCCIÓN</summary>
-                <ul>
-                    <li><span class="icon">▶</span> 1283-1 Taller Modelo de Mecánica <span class="time">10 min ✔</span></li>
-                    <li><span class="icon">🔊</span> 283-2 Desarmado del Motor de Gasolina <span class="time">10 min</span></li>
-                    <li><span class="icon">📄</span> 284-2 Motores <span class="time">10 min</span></li>
-                    <li><span class="icon">☑</span> Examen <span class="time">60 min</span></li>
-                </ul>
+               
+    </section>
+    <!-- Requisitos y duracion -->
+    <section class="block-informacion-curso__informacion">
+        <span class="span-block-informacion-curso__informacion"><h4>Duración:</h4> 50 horas</span>
+        <span class="span-block-informacion-curso__informacion"><h4>Tiempo de Dedicacion:</h4> 2 horas diarias</span>
+        <span class="span-block-informacion-curso__informacion"><h4>Requisitos Previos:</h4> Conocimientos en Base de Datos y API's</span>
+    </section>
+    <!-- Contenidos del curso-->
+    <section class="block-informacion-contenidos">
+        <article class="block-informacion-contenidos_temas">
+            <span>Contenidos Por Clase</span>
+            <details>
+            <summary class="summary_top">INTRODUCCIÓN</summary>
+                <article class="summary-contenidos_desplegable">
+                    <ul>
+                        <li class="summary-contenidos_desplegable_temas"><span >Introducción a Base de Datos</span>  <span class="time">10 min </span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación extendido</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Relacional</span>  <span class="time">60 min</span></li>
+                    </ul>
+                </article>
+                
             </details>
-
             <details>
                 <summary>UNIDAD 2</summary>
                     <ul>
-                        <li>Contenido ejemplo...</li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Introducción a Base de Datos</span>  <span class="time">10 min </span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación extendido</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Relacional</span>  <span class="time">60 min</span></li>
                     </ul>
             </details>
-
             <details>
-                <summary>UNIDAD 3</summary>
+                <summary class="summary_bottom">UNIDAD 3</summary>
                     <ul>
-                        <li>Contenido ejemplo...</li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Introducción a Base de Datos</span>  <span class="time">10 min </span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Entidad-Relación extendido</span>  <span class="time">10 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span >Modelo Relacional</span>  <span class="time">60 min</span></li>
                     </ul>
             </details>
+        </article>        
+        <article class="block-informacion-contenidos__imagen">
+            <img class="block-informacion-contenidos__imagen-propiedades" src="../img/backend.jpg">
         </article>
+         <article class="block-informacion-contenidos_precio-y-boton">
+            <span>$250.000</span>
+            <button class="block-informacion-contenidos__boton">Inscribirse</button>
+        </article> 
+       
+    </section>
         
-    </section>
-    <section>
-        <h2>Docente a Cargo</h2>
-        <article>
-            <h3>Nombre y Apellido</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis obcaecati aliquid ipsa accusamus error facilis eveniet dolore, molestiae et consequuntur suscipit id odit repellendus doloribus, dolores quaerat, quos pariatur excepturi?</p>
-        </article>
-    </section>
-    <aside>
+     <!-- Informacion del docente -->
+    <div>
+        <h2 class="h2-docente-a-cargo">Docente a Cargo</h2>
+        <section class="block-informacion-docente">
+            <img class="block-informacion-docente_imagen" src="../Imagenes/istockphoto-2160473960-612x612.jpg" alt="">
+            <article>
+                <h3>Javier Rodrigo Dominguez</h3>
+                <h4>Ingeniero en Sistemas y Analista de Datos</h4>
+                <!-- valoracion en esrellas al docente -->
+                <div class="rating-container">
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="block-informacion-docente_presentacion">Soy Ingeniero en Sistemas y Analista de Datos, y en este curso de Back-End te voy a enseñar a construir la lógica que da vida a las aplicaciones web. Vamos a trabajar con bases de datos, servidores y APIs, para que aprendas a gestionar la información de forma segura y eficiente. Mi objetivo es que desarrolles una base sólida en programación del lado del servidor y adquieras las competencias necesarias para integrarte en proyectos profesionales de desarrollo de software.</p>
+            </article>
+        </section>
+    </div>
+    
+     <!-- Links a otros cursos -->
+    <aside class="carousel">
+        <h2 class="carousel-titulo">Tambien te puede interesar</h2>
+            <div class="courses-carousel">
+                <article class="course-card">
+                    <img src="../img/frontend.jpg" alt="Curso de Programación Front-end">
+                    <h3>Programación Front-end</h3>
+                    <p>Duración: 40 horas</p>
+                    <p class="price">$120.000</p>
+                    <a href="./paginas/detalleCurso">Ver Detalle</a>
+                </article>
+                <article class="course-card">
+                    <img src="../img/marketing.jpg" alt="Curso de Marketing Digital">
+                    <h3>Marketing Digital</h3>
+                    <p>Duración: 30 horas</p>
+                    <p class="price">$90.000</p>
+                    <a href="./paginas/detalleCurso">Ver Detalle</a>
+                </article>
+
+                <article class="course-card">
+                    <img src="../img/finanzasperso.jpg" alt="Curso de Finanzas Personales">
+                    <h3>Finanzas Personales</h3>
+                    <p>Duración: 25 horas</p>
+                    <p class="price">$75.000</p>
+                    <a href="./paginas/detalleCurso">Ver Detalle</a>
+                </article>
+
+                <article class="course-card">
+                    <img src="../img/ciberseguridad.jpg" alt="Curso de Ciberseguridad">
+                    <h3>Ciberseguridad</h3>
+                    <p>Duración: 65 horas</p>
+                    <p class="price">$400.000</p>
+                    <a href="./paginas/detalleCurso">Ver Detalle</a>
+                </article>
+
+                <article class="course-card">
+                    <img src="../img/ingles.jpg" alt="Curso de Inglés">
+                    <h3>Ingles avanzado</h3>
+                    <p>Duración: 25 horas</p>
+                    <p class="price">$120.000</p>
+                    <a href="./paginas/detalleCurso">Ver Detalle</a>
+                </article>
+
+            </div>
 
     </aside>
 
-    
-       <!-- Footer -->
+    <!-- Footer -->
     <footer class="container-footer">
         <section class="datos-equipo">
             <ul>
                 <li>EQUIPO : Grupo PapaFrita</li>
-                <li>Collado, Camila</li>
+                <li>Collado, Camila Sol DNI: 43.098.593</li>
                 <li>Martelli, Rocio Belen DNI: 44.161.046</li>
                 <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
                 <li>Moyano Vivas, Matias Ernesto</li>
-                <li>Viana, Sol Belen</li>
+                <li>Viana, Sol Belen DNI: 45.889.073</li>
             </ul>
         </section>
 
@@ -127,23 +208,23 @@
         <section class="menu-inferior">
             <a href="../paginas/index.html">Inicio</a>
             <a href="../paginas/contacto.html">Contacto</a>
-            <a href="./paginas/inscripcionCursoEmpresa.html">Formulario</a>
+            <a href="../paginas/inscripcionCursoEmpresa.html">Formulario</a>
 
         </section>
 
-       <section class="redes-sociales">
+        <section class="redes-sociales">
             <p class="parrafo-socialMedia">REDES SOCIALES</p>
-           <nav class="redes-sociales-nav">
-            <a href="https://www.instagram.com/unlamoficial/" target="_blank"> 
-              <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">  
-            </a>
+            <nav class="redes-sociales-nav">
+                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                </a>
 
-            <a href="https://www.facebook.com/UnlamOficial/" target="_blank"> 
-                <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
-            </a>
-            <a href="https://wa.me/5491155844612" target="_blank">
-                <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
-            </a>
+                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                </a>
+                <a href="https://wa.me/5491155844612" target="_blank">
+                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                </a>
             </nav>
         </section>
 
