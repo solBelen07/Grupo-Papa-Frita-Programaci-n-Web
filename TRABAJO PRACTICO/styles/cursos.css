@@ -12,3 +12,53 @@ body{
   color: #333333;         
   font-family: Arial, sans-serif;
 }
+
+.h2-cursos-disponibles{
+  width: 80%;
+  margin: auto; 
+  margin-top: 2em;
+}
+
+.block-informacion-curso{
+  width: 80%;
+  background-color: rgb(225, 213, 238);
+  align-items: center;
+  display: flex;
+  margin: auto;
+  margin-top: 1em;
+  padding: 0.25em;
+  border-radius: 0.40em;
+}
+
+.block-informacion-curso_imagen{
+  width: 150px; 
+  height: 150px; 
+  border-radius: 0.40em;
+  object-fit: cover; 
+  margin: 1em 1em 1em 1em;
+}
+
+h3{
+  margin: 0.25em;
+}
+
+h4{
+  color: rgb(48, 48, 48);
+  margin: 0.25em;
+}
+
+.block-informacion-curso_presentacion{
+  margin: 0.25em;
+}
+
+.star {
+  font-size: 24px;
+  color: gray; 
+  cursor: pointer;
+}
+
+.star-checked{
+  font-size: 24px;
+  color: gold; 
+  cursor: pointer;
+}
