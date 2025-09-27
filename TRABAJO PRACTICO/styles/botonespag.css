@@ -1,0 +1,30 @@
+.pagination-container {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+.pagination {
+    list-style: none; 
+    padding: 0;
+    display: inline-flex; 
+    gap: 5px; 
+}
+
+
+
+.page-link {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color:  #c300ff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #c300ff;
+    color: white;
+    border-color: #c300ff;
+}
+
