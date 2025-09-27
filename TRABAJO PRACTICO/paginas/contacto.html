@@ -15,7 +15,7 @@
     <!-- Encabezado -->
     <header class="main-header">
         <section class="logo">
-            <a href="../index.html"> <img src="../img/logoPag.png" alt="Logo de la plataforma"></a>
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma"></a>
         </section>
         <!-- Barra de Navegación -->
         <input type="checkbox" id="menu-toggle">
@@ -53,11 +53,10 @@
             </button>
         </section>
 
-        <section class="user-actions">
-
+      <section class="user-actions">
             <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
-            <a href="../paginas/registrarse.html" class="signup-button">Registrarse</button></a>
-            <article class="carrito">
+            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito"><!-- icono carrito -->
                 <img src="../img/carrito.png" alt="Carrito de compra">
                 <span class="cart-count">0</span>
             </article>
@@ -68,7 +67,7 @@
     <main class="container-main">
         <section class="container-contacto">
             <!--  VER ESTO DEL ACTION Y ENVIAR MSJ -->
-            <form action="./contactoMensaje.html" method="get">
+            <form action="#popup" method="get">
                 <h2>CONTÁCTANOS </h2>
                 <label for="name" class="label-form"> Nombre:
                     <input type="text" name="name" id="name" class="caja-form">
@@ -86,7 +85,21 @@
                     <textarea name="mensaje" id="mensaje" class="caja-textarea" maxlength="250" required></textarea>
                 </label>
                 <button type="submit" class="boton-enviar">Enviar</button>
+
+                <!-- Popup de confirmación -->
+  <section id="popup" class="popup-confirmacion">
+    <article class="popup-contenido">
+      <h3>✅ ¡Su mensaje ha sido enviado con éxito correctamente!</h3> 
+      <p> Nos estaremos comunicando brevemente.</p>
+      <a href="#" class="cerrar-popup">Cerrar</a>
+    </article>
+  </section>
             </form>
+
+          
+ 
+
+  
 
 
             <section class="container-dondeEstamos">
