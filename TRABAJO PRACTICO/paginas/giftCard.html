@@ -1,20 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Link a CSS  -->
-    <link rel="stylesheet" href="../styles/style.css">
-     <link rel="stylesheet" href="../styles/header_footer.css">
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="descripcion"
+      content="Esta es la pagina para personalizar y regalar Gift Cards"
+    />
+
+    <title>Personalizar Regalo</title>
+
+    <link rel="stylesheet" href="../styles/GiftCardsStyle.css" />
+    <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="icon" href="" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo">LOGO</div>
+       <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="../paginas/index.html"  class="nav-link">Inicio</a></li>
+            <li><a href="../paginas/giftCard.html" class="nav-link">GiftCard</a></li>
+            <li><a href="../paginas/detalleCurso.html"  class="nav-link">Cursos</a></li>
+            <li><a href="./paginas/inscripcionCursoEmpresa.html"  class="nav-link">Inscripción</a></li>
+            <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li> 
+         
+        </ul>
+       </nav>    
+
+       <div class = "search-bar">  
+        <input list="Cursos" placeholder="Buscar curso...">
+        <datalist id="Cursos">
+            <option value="Programación de videojuegos">
+            <option value="Marketing Digital">
+            <option value="Diseño Gráfico">
+            <option value="Desarrollo Web">
+            <option value="Ciberseguridad">
+            <option value="Inteligencia Artificial">
+            <option value="Finanzas Personales">
+            <option value="Ingles">
+        </datalist>
+        <button class="search-button">Buscar</button>
+        </div>
+
+        <div class="user-actions">
+            <button class="login-button">Iniciar Sesión</button>
+            <button class="signup-button">Registrarse</button>
+
+            <div class="carrito">
+                Carrito <span class="cart-count">0</span>
+            </div>
+        </div>
 
 
+    </header> 
+    <!-- MAIN -->
+    <main class="Box_main">
+   <!--  BOTONES
+    <input type="checkbox" id="trigger-boton1">
+    <label for="trigger-boton1" class="boton1">Botón 1 - Haz clic aquí</label>
+    <button id="boton2" class="boton2">Botón 2 - Me volveré azul</button>
+    -->
+</label>
+
+  <section class="Box_form">
+     <form>
+        <section class="data">
+            
+              <label for="destinatario"
+                >Nombre del Destinatario :</label>
+                <input type="text" id="destinatario" name="destinatario" placeholder="Ingrese su nombre..." />
+
+              <label for="email"
+                >Email del Destinatario : </label>
+
+                <input type="email" id="email" name="email" placeholder="Ingrese su email...." />
+             
+         
+
+          </section>
+
+          <section class="form_style">
+
+            <div class="Formulario_estilo">
+              <label for="style">Fuente : </label>
+
+              <select name="style" id="style" class="style_type">
+                <option disabled selected>Seleccione su fuente</option>
+
+                <option value="Arial">Arial</option>
+
+                <option value="Calibri">Calibri</option>
+
+                <option value="Times New Roman">Times New Roman</option>
+              </select>
+            </div>
+            
+
+            <div class="Formulario_estilo_tamaño">
+              <label for="tamaño_estilo">Tamaño:</label>
+
+              <select name="style_color" id="syle_color">
+                <option value="5">5</option>
+
+                <option selected value="11">11</option>
+
+                <option value="17">17</option>
+
+                <option value="20">20</option>
+
+                <option value="25">25</option>
+
+                <option value="30">30</option>
+              </select>
+            </div>
+            </section>
+
+<section class="colores">
+              
+              <label for="Rojo" > 
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Rojo"
+                value="Rojo"
+              />
+              <div class="color circuloRojo"></div>
+              
+              </label>
+            
+              <label for="Amarillo">
+              
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Amarillo"
+                value="Amarillo"
+              />
+                <div class="color circuloAmarillo"></div>
+              </label>
+             
+
+              <label for="Azul">
+              
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Azul"
+                value="Azul"
+              />
+              <div class="color circuloAzul"></div>
+              </label>
+
+              <label for="Verde">
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Verde"
+                value="Verde"
+              />
+              <div class="color circuloVerde"></div>
+              </label>
+              <label for="Lila">
+              
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Lila"
+                value="Lila"
+              />
+              <div class="color circuloLila"></div>
+              </label>
+              <label for="Naranja">
+              
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Naranja"
+                value="Naranja"
+              />
+              <div class="color circuloNaranja"></div>
+              </label>
+            
+        </section>
+            <div class="Formulario_fondo">
+              <label for="Fondo1" >
+
+              <input type="radio" name="Fondo" id="Fondo1" value="Fondo1" />
+
+              <img src="../Imagenes/gc_fondo1.jpeg" class="fondo"></label>
+
+              <label for="Fondo2">
+
+              <input type="radio" name="Fondo" id="Fondo2" value="Fondo2" />
+
+               <img src="../Imagenes/gc_fondo2.jpg"  class="fondo" ></label>
+
+              <label for="Fondo3">
+
+              <input type="radio" name="Fondo" id="Fondo3" value="Fondo3" />
+
+              <img src="../Imagenes/gc_fondo3.jpg" class="fondo"></label>
+
+              <label for="Fondo4">
+
+              <input type="radio" name="Fondo" id="Fondo4" value="Fondo4" />
+
+               <img src="../Imagenes/gc_fondo4.jpg"class="fondo"></label>
+
+              <label for="Fondo5">
+
+              <input type="radio" name="Fondo" id="Fondo5" value="Fondo5" />
+
+              <img src="../Imagenes/gc_fondo5.jpg"class="fondo"></label>
+              
 
 
-     <!-- Footer -->
+            </div>
+
+        <section class="confirmacion">
+        <div class="confirmar_carrito">
+        <button>Agregar al carrito</button> </div>
+        <div class="reset_form">
+        <button type="reset">Cancelar</button></div>
+       
+        </section>
+          </form>
+        
+
+      </section>
+<section class="Box_Preview">
+      <section class="Cuadro_Preview">
+       
+          <div class="Destinatario">  
+            <h3>¡Felicidades! :</h3>
+          </div>
+
+          <div class="Monto">
+            <h3>Monto</h3>
+          </div>
+
+          <div class="Mensaje">
+            <h3>Contenido del mensaje</h2>
+          </div>
+       
+      </section>
+      
+    <section class="Mensaje_vistaPrevia">
+      <h2>Vista previa de la gift card</h2>
+      </section>
+</section>
+    </main>
+    <!-- Footer -->
     <footer class="container-footer">
         <section class="datos-equipo">
             <ul>
@@ -35,7 +276,8 @@
 
         </section>
 
-       <section class="redes-sociales">
+        
+        <section class="redes-sociales">
             <p class="parrafo-socialMedia">REDES SOCIALES</p>
            <nav class="redes-sociales-nav">
             <a href="https://www.instagram.com/unlamoficial/" target="_blank"> 
@@ -51,6 +293,8 @@
             </nav>
         </section>
 
+           
+        </section>
     </footer>
-</body>
+  </body>
 </html>
