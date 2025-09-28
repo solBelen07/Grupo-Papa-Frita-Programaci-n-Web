@@ -48,11 +48,17 @@ body{
   padding: 0.25em;
   background-color: rgb(225, 213, 238);
   display: flex; 
-  flex-wrap: wrap;
+}
+
+
+.block-informacion-contenidos_temas{
+  width: 49%;
+  display: flex;
+  flex-direction: column; 
 }
 
 .block-informacion-contenidos__imagen{
-  width: 50%;
+  width: 49%;
 }
 
 .block-informacion-contenidos__imagen-propiedades{
@@ -61,10 +67,6 @@ body{
   border-radius: 0.40em;
 }
   
-.block-informacion-contenidos_temas{
-  width: 50%;
-
-}
 
 details{
   width: 90%;
@@ -97,8 +99,6 @@ summary{
   background-color: #f7f7f7;
 }
 
-
-  
 .block-informacion-contenidos__boton{
   padding: 10px 20px;
   background-color: #a446cf;
@@ -110,10 +110,13 @@ summary{
 }
 
 .block-informacion-contenidos_precio-y-boton{
-  flex-direction: row;
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
+/* css docente */
 .h2-docente-a-cargo{
   width: 80%;
   margin: auto; 
