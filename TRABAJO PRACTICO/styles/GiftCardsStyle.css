@@ -140,11 +140,14 @@ input[type=radio]:checked ~ .imagen_monto{
   margin-top: -3em;
   justify-content: center;
   gap: 2em;
+  button{
+ width: 12em;
+      height: 3em;
+  }
   .confirmar_carrito button{
   background-color: greenyellow;
   border-radius: 0.5em;
-  width: 9em;
-  height: 4em;
+ 
   color: darkviolet;
   }
   .reset_form{
@@ -152,8 +155,7 @@ input[type=radio]:checked ~ .imagen_monto{
   margin-top: 0.1em;
   button{
   background-color: red;
-  height: 3em;
-  width: 9em;
+  
   border-radius: 0.5em;
   color: white;
 
