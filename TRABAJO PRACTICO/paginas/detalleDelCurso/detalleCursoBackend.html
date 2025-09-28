@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Link a CSS  -->
-    <link rel="stylesheet" href="../styles/detalleCurso.css">
-    <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../../styles/detalleCurso.css">
+    <link rel="stylesheet" href="../../styles/header_footer.css">
 </head>
 <body>
     <!-- Encabezado -->
     <header class="main-header">
         <section class="logo">
-            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma"></a>
+            <a href="../../index.html"> <img src="../../img/logoPagBlanco.png" alt="Logo de la plataforma"></a>
         </section>
         <!-- Barra de Navegación -->
 
@@ -24,11 +24,11 @@
         </label>
         <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="../index.html" class="nav-link">Inicio</a></li>
-                <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
-                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
-                <li><a href="./inscripcionCurso.html" class="nav-link">Inscripción</a></li>
-                <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
+                <li><a href="../../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="../giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="../cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="../inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="../calendario.html" class="nav-link"> Proximos </a></li>
 
             </ul>
         </nav>
@@ -47,15 +47,15 @@
                 <option value="Inglés">
             </datalist>
             <button class="search-button">
-                <img src="../img/lupa.png" alt="Buscar">
+                <img src="../../img/lupa.png" alt="Buscar">
             </button>
         </section>
 
         <section class="user-actions">
-            <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
-            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <a href="../../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
+            <a href="../../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
             <article class="carrito"><!-- icono carrito -->
-                <img src="../img/carrito.png" alt="Carrito de compra">
+                <img src="../../img/carrito.png" alt="Carrito de compra">
                 <span class="cart-count">0</span>
             </article>
         </section>
@@ -172,7 +172,7 @@
             </article>       
         </article>        
         <article class="block-informacion-contenidos__imagen">
-            <img class="block-informacion-contenidos__imagen-propiedades" src="../img/backend.jpg">
+            <img class="block-informacion-contenidos__imagen-propiedades" src="../../img/backend.jpg">
         </article>
     </section>
         
@@ -180,7 +180,7 @@
     <div>
         <h2 class="h2-docente-a-cargo">Docente a Cargo</h2>
         <section class="block-informacion-docente">
-            <img class="block-informacion-docente_imagen" src="../Imagenes/istockphoto-2160473960-612x612.jpg" alt="">
+            <img class="block-informacion-docente_imagen" src="../../Imagenes/istockphoto-2160473960-612x612.jpg" alt="">
             <article>
                 <h3>Javier Rodrigo Dominguez</h3>
                 <h4>Ingeniero en Sistemas y Analista de Datos</h4>
@@ -198,51 +198,62 @@
     </div>
     
      <!-- Links a otros cursos -->
-    <aside class="carousel">
-        <h2 class="carousel-titulo">Tambien te puede interesar</h2>
-            <div class="courses-carousel">
-                <article class="course-card">
-                    <img src="../img/frontend.jpg" alt="Curso de Programación Front-end">
-                    <h3>Programación Front-end</h3>
-                    <p>Duración: 40 horas</p>
-                    <p class="price">$120.000</p>
-                    <a href="./paginas/detalleCurso">Ver Detalle</a>
-                </article>
-                <article class="course-card">
-                    <img src="../img/marketing.jpg" alt="Curso de Marketing Digital">
-                    <h3>Marketing Digital</h3>
-                    <p>Duración: 30 horas</p>
-                    <p class="price">$90.000</p>
-                    <a href="./paginas/detalleCurso">Ver Detalle</a>
-                </article>
+        <aside class="carousel">
+            <h2 class="carousel-titulo">Tambien te puede interesar</h2>
+                <div class="courses-carousel">
+                    <a href="./detalleCursoFrontend.html" class="course-card">
+                    <article>
+                        <img src="../../img/frontend.jpg" alt="Curso de Programación Front-end">
+                        <h3>Programación Front-end</h3>
+                        <p>Duración: 40 horas</p>
+                        <p class="price">$120.000</p>
+                        <h4>Ver Detalle</h4>
+                    </article>
+                    </a>
 
-                <article class="course-card">
-                    <img src="../img/finanzasperso.jpg" alt="Curso de Finanzas Personales">
-                    <h3>Finanzas Personales</h3>
-                    <p>Duración: 25 horas</p>
-                    <p class="price">$75.000</p>
-                    <a href="./paginas/detalleCurso">Ver Detalle</a>
-                </article>
+                    <a href="./detalleCursoMarketingDigital.html"  class="course-card">
+                    <article>
+                        <img src="../../img/marketing.jpg" alt="Curso de Marketing Digital">
+                        <h3>Marketing Digital</h3>
+                        <p>Duración: 30 horas</p>
+                        <p class="price">$90.000</p>
+                        <h4>Ver Detalle</h4>
+                    </article>
+                    </a>
 
-                <article class="course-card">
-                    <img src="../img/ciberseguridad.jpg" alt="Curso de Ciberseguridad">
-                    <h3>Ciberseguridad</h3>
-                    <p>Duración: 65 horas</p>
-                    <p class="price">$400.000</p>
-                    <a href="./paginas/detalleCurso">Ver Detalle</a>
-                </article>
+                    <a href="./detalleCursoFinanzasPersonales.html" class="course-card">
+                    <article>
+                        <img src="../../img/finanzasperso.jpg" alt="Curso de Finanzas Personales">
+                        <h3>Finanzas Personales</h3>
+                        <p>Duración: 25 horas</p>
+                        <p class="price">$75.000</p>
+                        <h4>Ver Detalle</h4>
+                    </article>
+                    </a>
 
-                <article class="course-card">
-                    <img src="../img/ingles.jpg" alt="Curso de Inglés">
-                    <h3>Ingles avanzado</h3>
-                    <p>Duración: 25 horas</p>
-                    <p class="price">$120.000</p>
-                    <a href="./paginas/detalleCurso">Ver Detalle</a>
-                </article>
+                    <a href="./detalleCursoCiberseguridad.html" class="course-card">
+                    <article>
+                        <img src="../../img/ciberseguridad.jpg" alt="Curso de Ciberseguridad">
+                        <h3>Ciberseguridad</h3>
+                        <p>Duración: 65 horas</p>
+                        <p class="price">$400.000</p>
+                        <h4>Ver Detalle</h4>
+                    </article>
+                    </a>
 
-            </div>
+                    <a href="../paginas/detalleCurso" class="course-card">
+                    <article>
+                        <img src="../../img/ingles.jpg" alt="Curso de Inglés">
+                        <h3>Ingles avanzado</h3>
+                        <p>Duración: 25 horas</p>
+                        <p class="price">$120.000</p>
+                        <h4>Ver Detalle</h4>
+                    </article>
+                    </a>
 
-    </aside>
+                </div>
+
+        </aside>
 
     <!-- Footer -->
     <footer class="container-footer">
@@ -259,9 +270,9 @@
 
 
         <section class="menu-inferior">
-            <a href="../paginas/index.html">Inicio</a>
-            <a href="../paginas/contacto.html">Contacto</a>
-            <a href="../paginas/inscripcionCursoEmpresa.html">Formulario</a>
+            <a href="../../paginas/index.html">Inicio</a>
+            <a href="../../paginas/contacto.html">Contacto</a>
+            <a href="../../paginas/inscripcionCursoEmpresa.html">Formulario</a>
 
         </section>
 
@@ -269,14 +280,14 @@
             <p class="parrafo-socialMedia">REDES SOCIALES</p>
             <nav class="redes-sociales-nav">
                 <a href="https://www.instagram.com/unlamoficial/" target="_blank">
-                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                    <img src="../../img/instagram.png" alt="Logo Instagram" class="social-icon">
                 </a>
 
                 <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
-                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                    <img src="../../img/facebook.png" alt="Logo de Facebook" class="social-icon">
                 </a>
                 <a href="https://wa.me/5491155844612" target="_blank">
-                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                    <img src="../../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
                 </a>
             </nav>
         </section>
