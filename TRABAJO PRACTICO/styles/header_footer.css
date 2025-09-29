@@ -242,89 +242,7 @@ a {
 }
 
 /* RESPONSIVE  HEADER*/
-/* @media (max-width: 768px) {
-          
-            .navbar {
-                display: none; 
-            }
 
-            .nav-list {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .nav-list a {
-                display: block;
-                padding: 0.5em 0;
-                color: white;
-            }
-
-            .main-header .search-bar input {
-                width:70%;
-            }
-            .search-bar {
-
-                width: 100%;
-            }
-
-            .user-actions button{
-                display:none;
-            }
-            
-            .user-action .carrito{
-                font-size: 0.6em;
-            }
-        .main-header .user-actions {
-            font-size: 0.9em;
-    margin-left: 0.5em;
-        }
-
-    }
-
-
-
-
-
- /* RESPONSIVE FOOTER  */
-/*@media screen and (max-width: 480px) {
-   
-   .container-footer {
- 
- padding: 1em;
-    flex-wrap: nowrap;
- font-size: 0.66em;
-}
-.menu-inferior {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-    margin-left: -6em;
-
-}
-
-
-.parrafo-socialMedia{
-    display: none;
-}
-
-.redes-sociales-nav{
-    display: flex;
-flex-direction: column;
-gap:1em;
-
-}
-.redes-sociales .social-icon {
-    width: 2em;
-    height: 2em;
-    align-items: flex-end;
-}
-.datos-equipo ul {
-    list-style: none;
-    margin: -0.3em 0;
-}
-}
-@media screen and (min-width: 481px) and (max-width: 960px) {}
-*/
 
 /*CELUS*/
 
@@ -432,8 +350,7 @@ gap:1em;
 
   /* HEADER */
   .main-header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
     padding: 1em;
     gap: 1em;
   }
@@ -443,7 +360,7 @@ gap:1em;
   }
 
   .logo img {
-    max-height: 40px;
+    max-height: 24em;
   }
 
   .navbar {
@@ -451,7 +368,7 @@ gap:1em;
   }
 
   .nav-list {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 1em;
   }
