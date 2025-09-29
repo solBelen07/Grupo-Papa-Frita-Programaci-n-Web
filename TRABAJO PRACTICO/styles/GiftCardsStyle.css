@@ -91,7 +91,7 @@
   grid-template-rows: 0.5fr 0.5fr 2fr 1fr ;
   h2{
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(128, 30, 128);
+  color: #9575CD;
   display: flex;
   justify-content: center;
   }
@@ -127,7 +127,8 @@ input[type=radio]:checked ~ .imagen_monto{
 .Box_form form {
   width:100%;
   background-color: white;
-  color: blueviolet;
+  color: #9575CD;
+  font-weight: bold;
   font-size: 1.7em;
   display: flex;
   flex-direction: column;
@@ -145,10 +146,10 @@ input[type=radio]:checked ~ .imagen_monto{
       height: 3em;
   }
   .confirmar_carrito button{
-  background-color: greenyellow;
+  background-color: #9575CD;
   border-radius: 0.5em;
  
-  color: darkviolet;
+  color: white;
   }
   .reset_form{
   
@@ -240,39 +241,40 @@ input[type=radio]:checked ~ .imagen_monto{
 .colores  {
   gap: 1.2em;
   align-self: center;
+
   .circuloRojo{
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
   background-color: red; 
   border-radius: 50%;
   }
   .circuloAmarillo{
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
   background-color: yellow; 
   border-radius: 50%;
   }
   .circuloAzul{
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
   background-color: blue; 
   border-radius: 50%;
   }
   .circuloVerde{
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
   background-color: green; 
   border-radius: 50%;
   }
   .circuloLila{
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
   background-color: purple; 
   border-radius: 50%;
   }
   .circuloNaranja{
-  width: 3em;
-  height: 3em;
+  width: 2em;
+  height: 2em;
   background-color: orange; 
   border-radius: 50%;
   }
