@@ -28,6 +28,7 @@ body{
   margin-top: 1em;
   padding: 0.25em;
   border-radius: 0.40em;
+  cursor: pointer;
 }
 
 
@@ -66,13 +67,19 @@ h4{
 .star {
   font-size: 24px;
   color: gray; 
-  cursor: pointer;
+  
 }
 
 .star-checked{
   font-size: 24px;
   color: gold; 
-  cursor: pointer;
+  
+}
+
+.block-informacion-curso:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
 
 /** css de botones de pagina **/

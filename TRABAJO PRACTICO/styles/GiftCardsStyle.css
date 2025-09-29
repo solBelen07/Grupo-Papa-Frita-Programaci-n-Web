@@ -68,7 +68,7 @@
 
 .Mensaje-Monto h2 {
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(128, 30, 128);
+  color: #9575CD;
   display: flex;
   justify-content: center;
 }
@@ -107,7 +107,8 @@
 .Box_form form {
   width: 100%;
   background-color: white;
-  color: blueviolet;
+  color: #9575CD;
+  font-weight: bold;
   font-size: 1.7em;
   display: flex;
   flex-direction: column;
