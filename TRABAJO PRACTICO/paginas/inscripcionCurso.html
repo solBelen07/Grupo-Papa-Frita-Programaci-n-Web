@@ -27,7 +27,7 @@
             <ul class="nav-list">
                 <li><a href="../index.html" class="nav-link">Inicio</a></li>
                 <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
-                <li><a href="./detalleCurso.html" class="nav-link">Cursos</a></li>
+                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
                 <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
 
             </ul>
@@ -64,8 +64,8 @@
 
 <main class="main-content">
     <section class="formulario-inscripcion">
-      <h2>Formulario de inscripción a un curso</h2>
-      <p>Indicá los datos de hasta 3 personas para inscribir en el curso.</p>
+      <h2>Formulario de inscripción a nuestros cursos</h2>
+      <!--<p>Indicá los datos de hasta 3 personas para inscribir en el curso.</p> -->
 
     <form id="inscripcionForm" action="#" method="GET">
       <label for="curso">Seleccioná un curso:</label>
@@ -81,20 +81,20 @@
         <option value="Inglés">Inglés</option>
     </select>
 
-        <h3>Datos de los participantes</h3>
+        <h3>Datos de el alumno</h3>
     
         <!--para mostrar + personas -->
     <input type="checkbox" id="mostrar-persona-2" class="toggle">
     <input type="checkbox" id="mostrar-persona-3" class="toggle">
 
         <div class="persona">
-          <label>Persona 1:</label>
+          <label>Alumno:</label>
           <input type="text" name="nombre1" placeholder="Nombre y Apellido" required>
           <input type="text" name="dni1" placeholder="DNI" required>
         </div>
 
 
-    <label for="mostrar-persona-2" class="toggle-label">Agregar Persona 2</label>
+    <!-- <label for="mostrar-persona-2" class="toggle-label">Agregar Persona 2</label>
     <div class="persona persona-2">
           <label>Persona 2:</label>
           <input type="text" name="nombre2" placeholder="Nombre y Apellido" >
@@ -108,7 +108,42 @@
           <input type="text" name="nombre3" placeholder="Nombre y Apellido" >
           <input type="text" name="dni3" placeholder="DNI" >
           <label for="mostrar-persona-3" class="toggle-label quitar">Quitar Persona 3</label>
-        </div>
+        </div> -->
+
+        <input type="checkbox" id="mostrar-curso" style="display:none;">
+<label for="mostrar-curso" class="toggle-label">Agregar Curso</label>
+
+<div class="search-bar" style="display:none;">
+    <input list="Cursos" placeholder="Buscar curso...">
+    <datalist id="Cursos">
+        <option value="Programación de videojuegos">
+        <option value="Marketing Digital">
+        <option value="Diseño Gráfico">
+        <option value="Desarrollo Web">
+        <option value="Ciberseguridad">
+        <option value="Inteligencia Artificial">
+        <option value="Finanzas Personales">
+        <option value="Inglés">
+    </datalist>
+    <button class="search-button">Buscar</button>
+</div>
+<!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Inglés">
+            </datalist>
+            <button class="search-button">
+                <img src="../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
 
         
 <a href="#popup" class="boton-enlace">INSCRIBITE</a>
@@ -117,8 +152,10 @@
   <!-- Popup de confirmación -->
   <div id="popup" class="popup-confirmacion">
     <div class="popup-contenido">
-      <h3>✅ ¡Inscripción enviada con éxito!</h3>
-      <p>Gracias por inscribirte. Tus datos fueron registrados.</p>
+      <h3>✅ ¡Usted se inscribio correctamente!</h3>
+      <p> Sus datos fueron registrados con éxito.</p>
+      
+  
       <a href="#" class="cerrar-popup">Cerrar</a>
     </div>
   </div>

@@ -139,6 +139,9 @@ img {
   .courses-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+
+
 }
 @media (max-width: 480px) {
   .courses-grid {
@@ -148,6 +151,13 @@ img {
     font-size: 0.9em;
     padding: 0.8em;
   }
+
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
 }
 
 
