@@ -74,14 +74,14 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 0.625em;
 }
 
 .menu-icon .line {
-  width: 25px;
-  height: 3px;
+  width: 1.5625em;
+  height: 0.1875em;
   background-color: #333;
-  margin: 4px 0;
+  margin: 0.25em 0;
   border-radius: 2px;
 }
 
@@ -89,14 +89,14 @@ a {
 .search-bar {
   display: flex;
   align-items: center;
-  max-width: 250px;
+  max-width: 15.625em;
   flex-grow: 1;
   margin: 0 2em;
 }
 
 .search-bar input {
   flex-grow: 1;
-  padding: 6px 10px;
+  padding: 0.375em 0.625em;
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
 }
@@ -104,7 +104,7 @@ a {
 .search-bar .search-button {
   background: #7E57C2;
   border: none;
-  padding: 6px 10px;
+ padding: 0.375em 0.625em;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
@@ -122,20 +122,20 @@ a {
 }
 
 .carrito img {
-  width: 28px;
+  width: 1.75em;
   height: auto;
 }
 
 .cart-count {
   position: absolute;
-  top: -6px;
+  top: -0.625em;
   right: -10px;
   background: #dc3545;
   color: white;
   border-radius: 50%;
   font-size: 0.7em;
   font-weight: bold;
-  padding: 2px 6px;
+  padding: 0.125em 0.375em;
 }
 
 .user-actions {
@@ -315,7 +315,7 @@ a {
 
   .carrito img {
     max-width: 13em;
-    width: 70%;
+    /* width: 70%; */
   }
 
 
@@ -352,43 +352,78 @@ a {
   .main-header {
     flex-direction: row;
     padding: 1em;
-    gap: 1em;
+   
   }
 
   .logo {
-    align-self: center;
-  }
-
-  .logo img {
-    max-height: 24em;
+    display:none;
   }
 
   .navbar {
-    width: 100%;
+  margin-left: 0;
   }
 
+
   .nav-list {
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 1em;
   }
 
+   /* MENU HAMBURGUESA  */
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu-icon .line {
+    width: 2.625em;
+    height: 0.3125em;
+    background: #333;  /* COLOR DE LAS BARRITAS DEL MENU HAMBURGUESA */
+    margin: 0.25em 0;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 4em;
+    /* left: 0; */
+    /* width: 100%; */
+    background: #7e57c2;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 1em 0; */
+    display: none;
+    z-index: 1001;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+
+  #menu-toggle:checked~.navbar {
+    display: flex;
+  }
+
+ 
   .search-bar {
     width: 100%;
   }
 
-  .search-bar input {
-    width: 100%;
-  }
 
   .user-actions {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    font-size: 0.5em;
   }
+  .carrito img{
+    width: 2em;
 
+  }
 
   /* FOOTER */
   .container-footer {
