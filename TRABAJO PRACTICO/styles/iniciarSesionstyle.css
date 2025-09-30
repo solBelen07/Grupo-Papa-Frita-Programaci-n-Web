@@ -24,12 +24,10 @@ a {
 }
 
 .container-nav{
-
     text-align: center;
 }
 .container-nav img{
     width: 9em;
- 
 }
 
 section {
@@ -39,14 +37,11 @@ section {
     width: 100%;
     max-width: 25em;
     background-color: #ffffff;
-
 }
 
 
-
 .form-iniciarSesion {
-
-    display: flex;
+       display: flex;
     flex-direction: column;
     gap: 1.5em;
 
@@ -54,11 +49,10 @@ section {
 
 .caja-input {
     border: 2px solid #9575CD;
-    border-radius: 40px;
-    position: relative;
-    width: 20em;
-    height: 4em;
-    font-size: 1em;
+    border-radius: 6px;
+    width: 100%;
+    height: 3em;
+
 }
 
 .olvide-contrasenia {
@@ -78,8 +72,6 @@ section {
 .boton-enviar:hover {
     border-bottom: 2px solid #7E57C2;
     background-color: #AB7DEB;
-    ;
-
 }
 .popup-confirmacion {
   position: fixed;
@@ -121,6 +113,74 @@ section {
   border-radius: 5px;
   text-decoration: none;
 }
+/*  CREAR CUENTA */
+
+.titulo-crearCuenta{
+    margin-bottom: 0.5em;
+}
+.section-CrearCuenta{
+       border: 4px solid #9575CD;
+    border-radius: 40px;
+    padding: 2em;
+    width: 100%;
+    max-width: 25em;
+    background-color: #ffffff;
+}
+
+.caja-input-CC{
+    border: 2px solid #9575CD;
+    border-radius: 6px;
+    width: 100%;
+    height: 2em;
+    font-size: 1em;
+}
+
+.popup-confirmacion2 {
+  position: fixed;
+  left: 30em;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+
+}
+
+.popup-confirmacion2:target {
+  display: flex;
+}
+
+.popup-contenido2 {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-contenido2 h3 {
+  color: #AB7DEB;
+  margin-bottom: 1rem;
+}
+
+.cerrar-popup {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #dc3545;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive - Media querys */

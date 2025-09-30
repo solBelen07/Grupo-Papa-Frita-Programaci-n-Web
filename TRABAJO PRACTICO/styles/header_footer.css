@@ -74,14 +74,14 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 0.625em;
 }
 
 .menu-icon .line {
-  width: 25px;
-  height: 3px;
+  width: 1.5625em;
+  height: 0.1875em;
   background-color: #333;
-  margin: 4px 0;
+  margin: 0.25em 0;
   border-radius: 2px;
 }
 
@@ -89,14 +89,14 @@ a {
 .search-bar {
   display: flex;
   align-items: center;
-  max-width: 250px;
+  max-width: 15.625em;
   flex-grow: 1;
   margin: 0 2em;
 }
 
 .search-bar input {
   flex-grow: 1;
-  padding: 6px 10px;
+  padding: 0.375em 0.625em;
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
 }
@@ -104,7 +104,7 @@ a {
 .search-bar .search-button {
   background: #7E57C2;
   border: none;
-  padding: 6px 10px;
+ padding: 0.375em 0.625em;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
@@ -122,20 +122,20 @@ a {
 }
 
 .carrito img {
-  width: 28px;
+  width: 1.75em;
   height: auto;
 }
 
 .cart-count {
   position: absolute;
-  top: -6px;
+  top: -0.625em;
   right: -10px;
   background: #dc3545;
   color: white;
   border-radius: 50%;
   font-size: 0.7em;
   font-weight: bold;
-  padding: 2px 6px;
+  padding: 0.125em 0.375em;
 }
 
 .user-actions {
@@ -171,7 +171,7 @@ a {
 
 .container-footer {
   width: 100%;
-  background-color: #312b3b;
+  background-color: #694d99;
   color: black;
   display: flex;
   justify-content: space-between;
@@ -242,101 +242,24 @@ a {
 }
 
 /* RESPONSIVE  HEADER*/
-/* @media (max-width: 768px) {
-          
-            .navbar {
-                display: none; 
-            }
 
-            .nav-list {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .nav-list a {
-                display: block;
-                padding: 0.5em 0;
-                color: white;
-            }
-
-            .main-header .search-bar input {
-                width:70%;
-            }
-            .search-bar {
-
-                width: 100%;
-            }
-
-            .user-actions button{
-                display:none;
-            }
-            
-            .user-action .carrito{
-                font-size: 0.6em;
-            }
-        .main-header .user-actions {
-            font-size: 0.9em;
-    margin-left: 0.5em;
-        }
-
-    }
-
-
-
-
-
- /* RESPONSIVE FOOTER  */
-/*@media screen and (max-width: 480px) {
-   
-   .container-footer {
- 
- padding: 1em;
-    flex-wrap: nowrap;
- font-size: 0.66em;
-}
-.menu-inferior {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-    margin-left: -6em;
-
-}
-
-
-.parrafo-socialMedia{
-    display: none;
-}
-
-.redes-sociales-nav{
-    display: flex;
-flex-direction: column;
-gap:1em;
-
-}
-.redes-sociales .social-icon {
-    width: 2em;
-    height: 2em;
-    align-items: flex-end;
-}
-.datos-equipo ul {
-    list-style: none;
-    margin: -0.3em 0;
-}
-}
-@media screen and (min-width: 481px) and (max-width: 960px) {}
-*/
 
 /*CELUS*/
 
 @media (max-width: 480px) {
   .main-header {
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 0.5em;
-    position: relative;
-    z-index: 1000;
+    padding: 0.5em;
   }
 
+  .logo img {
+    max-height: 40px;
+    width: auto;
+    display: block;
+  }
+  
   .menu-icon {
     display: flex;
     flex-direction: column;
@@ -354,12 +277,12 @@ gap:1em;
   .navbar {
     position: absolute;
     top: 4em;
-    /* left: 0; */
-    /* width: 100%; */
+    left: 0; 
+    width: 100%;
     background: #7e57c2;
     flex-direction: column;
     align-items: center;
-    /* padding: 1em 0; */
+    padding: 1em 0;
     display: none;
     z-index: 1001;
   }
@@ -369,22 +292,19 @@ gap:1em;
     gap: 1em;
   }
 
-  #menu-toggle {
-    display: none;
-  }
-
   #menu-toggle:checked~.navbar {
     display: flex;
   }
 
   .user-actions .login-button,
-  .user-actions .signup-button,
-  .logo img {
+  .user-actions .signup-button
+   {
     display: none;
   }
 
   .search-bar {
     width: 100%;
+    margin: 0.5em 0;
   }
 
   .search-bar input {
@@ -397,7 +317,7 @@ gap:1em;
 
   .carrito img {
     max-width: 13em;
-    width: 70%;
+    /* width: 70%; */
   }
 
 
@@ -432,46 +352,82 @@ gap:1em;
 
   /* HEADER */
   .main-header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 1em;
-    gap: 1em;
+   
   }
 
   .logo {
-    align-self: center;
-  }
-
-  .logo img {
-    max-height: 40px;
+    display:none;
   }
 
   .navbar {
-    width: 100%;
+  margin-left: 0;
   }
 
+
   .nav-list {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 1em;
   }
 
-  .search-bar {
-    width: 100%;
+   /* MENU HAMBURGUESA  */
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
   }
 
-  .search-bar input {
-    width: 100%;
+  .menu-icon .line {
+    width: 2.625em;
+    height: 0.3125em;
+    background: #333;  /* COLOR DE LAS BARRITAS DEL MENU HAMBURGUESA */
+    margin: 0.25em 0;
   }
+
+  .navbar {
+    position: absolute;
+    top: 4em;
+    /* left: 0; */
+    /* width: 100%; */
+    background: #7e57c2;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 1em 0; */
+    display: none;
+    z-index: 1001;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+
+  #menu-toggle:checked~.navbar {
+    display: flex;
+  }
+
+ 
+  .search-bar {
+    flex: 1;
+    max-width: 300px;
+  }
+
 
   .user-actions {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    font-size: 0.5em;
   }
+  .carrito img{
+    width: 2em;
 
+  }
 
   /* FOOTER */
   .container-footer {
