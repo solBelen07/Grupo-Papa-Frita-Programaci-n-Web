@@ -35,6 +35,10 @@ a {
   width: auto;
 }
 
+.logo .logo-mobile {
+  display: none;
+}
+
 
 /* Barra de navegación */
 .navbar {
@@ -448,4 +452,9 @@ a {
     flex-direction: row;
     gap: 1em;
   }
+}
+
+@media (max-width: 1024px) {
+  .logo .logo-desktop { display: none; }
+  .logo .logo-mobile  { display: block; }
 }
