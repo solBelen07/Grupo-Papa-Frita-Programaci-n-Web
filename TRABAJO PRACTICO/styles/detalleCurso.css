@@ -246,3 +246,65 @@ h4{
   color: #6a0dad;
   font-weight: bold;
 }
+
+/* Responsive - Media querys */
+@media screen and (max-width: 480px) {
+ h1{
+  text-align: center;
+ }
+
+.block-informacion-curso__informacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; 
+  margin: 0.25em auto; 
+}
+
+.block-informacion-contenidos{
+
+  background-color: rgb(225, 213, 238);
+  display: block;
+ 
+}
+
+.block-informacion-contenidos_temas{
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.block-informacion-contenidos__imagen{
+  display: none;
+}
+
+
+.block-informacion-docente{
+ display: flex;
+ flex-direction: column;
+}
+
+.h2-docente-a-cargo{
+  margin-top: 0.5em;
+ text-align: center;
+}
+
+.carousel{
+  overflow: hidden;        
+  width: 80%;
+  margin: 1em auto ;
+  text-align: center;
+}
+
+.carousel-titulo{
+  width: auto;
+  font-size: 1em;
+}
+
+.block-informacion-contenidos__precio {
+font-size: 1em;
+  font-weight: lighter;
+}
+
+}
