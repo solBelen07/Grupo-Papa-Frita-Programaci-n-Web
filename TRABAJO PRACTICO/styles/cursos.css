@@ -110,7 +110,27 @@ h4{
 }
 
 .page-link:hover {
-    background-color: #c300ff;
+    background-color: #7E57C2;
     color: white;
-    border-color: #c300ff;
+    border-color:  #AB7DEB;
+}
+
+@media screen and (max-width: 480px) {
+
+  main{
+    /* TAMAÑO DE LA FUENTE 12 PX, PARA Q EL EM TOME ESTE VALOR  */
+    font-size: 12px ;  
+  }
+.h2-cursos-disponibles{
+ text-align: center;
+ margin-top: 1em;
+}
+
+.block-informacion-curso{
+ width: 100%;
+}
+
+h3{
+  font-size: 1em;
+}
 }
