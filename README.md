@@ -1,5 +1,5 @@
 # Trabajo Práctico Grupal - Programación Web 1  
-###  [EduLogic](PONER ACA EL LINK DE NETLIFY )
+###  [EduLogic] https://spectacular-empanada-26840c.netlify.app/ 
 ### 👩‍💻 Colaboradores  
 
 - **COLLADO, Camila Sol**  
