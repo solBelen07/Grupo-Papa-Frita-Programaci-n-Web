@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background-color: #f4f4f9;   
+  height: 100vh; 
+  position: relative;
+  color: #333333;         
+  font-family: Arial, sans-serif;
+}
+
+.h2-cursos-disponibles{
+  width: 80%;
+  margin: auto; 
+  margin-top: 2em;
+}
+
+.block-informacion-curso{
+  width: 80%;
+  background-color: rgb(225, 213, 238);
+  align-items: center;
+  display: flex;
+  margin: auto;
+  margin-top: 1em;
+  padding: 0.25em;
+  border-radius: 0.40em;
+  cursor: pointer;
+}
+
+
+.block-informacion-curso_imagen{
+  width: 150px; 
+  height: 150px; 
+  border-radius: 0.40em;
+  object-fit: cover; 
+  margin: 1em 1em 1em 1em;
+}
+
+.block-informacion-curso_titulo-y-precio{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.block-informacion-curso_titulo-y-precio_precio{
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+h3{
+  margin: 0.25em;
+}
+
+h4{
+  color: rgb(48, 48, 48);
+  margin: 0.25em;
+}
+
+.block-informacion-curso_presentacion{
+  margin: 0.25em;
+}
+
+.star {
+  font-size: 24px;
+  color: gray; 
+  
+}
+
+.star-checked{
+  font-size: 24px;
+  color: gold; 
+  
+}
+
+.block-informacion-curso:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/** css de botones de pagina **/
+.pagination-container {
+    display :flex; 
+    justify-content: center;
+    margin: 20px 0; 
+}
+
+.pagination {
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+    gap: 5px; 
+}
+
+.page-item {
+}
+
+.page-link {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color:  #c300ff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #7E57C2;
+    color: white;
+    border-color:  #AB7DEB;
+}
+
+@media screen and (max-width: 480px) {
+
+  main{
+    /* TAMAÑO DE LA FUENTE 12 PX, PARA Q EL EM TOME ESTE VALOR  */
+    font-size: 12px ;  
+  }
+.h2-cursos-disponibles{
+ text-align: center;
+ margin-top: 1em;
+}
+
+.block-informacion-curso{
+ width: 100%;
+}
+
+h3{
+  font-size: 1em;
+}
+}
