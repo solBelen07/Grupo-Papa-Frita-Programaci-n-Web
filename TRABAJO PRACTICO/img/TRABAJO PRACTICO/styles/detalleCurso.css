@@ -1,0 +1,310 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background-color: #f4f4f9;   
+  height: 100vh; 
+  position: relative;
+  color: #333333;         
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos de los Cusos */
+.block-informacion-curso {
+  margin: 2% 10% 2% 10%;
+  width: 80%; 
+}
+
+.block-informacion-curso__descripcion{
+  margin-top: 1em; 
+}
+
+
+.block-informacion-curso__informacion{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%; 
+  margin: 0.25em auto; 
+}
+
+.span-block-informacion-curso__informacion{
+  display: flex;
+  align-items: center;  
+  gap: 0.5em; 
+}
+
+.block-informacion-contenidos{
+  border-radius: 0.40em;
+  margin: auto;
+  gap: 2em;
+  width: 80%;
+  padding: 0.25em;
+  background-color: rgb(225, 213, 238);
+  display: flex; 
+}
+
+
+.block-informacion-contenidos_temas{
+  width: 49%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.block-informacion-contenidos__imagen{
+  width: 49%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.block-informacion-contenidos__imagen-propiedades{
+  width: 300px;
+  height: 200px;
+  border-radius: 0.40em;
+}
+  
+details{
+  width: 90%;
+}
+
+summary{
+  border: 0.10em solid rgb(62, 14, 90);   
+  display: block;
+  padding: 0.50em;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.summary_top{       
+  border-radius: 0.25em 0.25em 0 0 ;  
+}
+
+.summary_bottom{       
+  border-radius: 0 0 0.25em 0.25em;  
+}
+
+.summary-contenidos_desplegable_temas{
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  border: 0.10em solid rgb(62, 14, 90);    
+  padding: 0.25em;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.block-informacion-contenidos_precio-y-boton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1em auto;
+}
+
+.block-informacion-contenidos__boton{
+  padding: 10px 20px;
+  background-color: #a446cf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1em;
+  font-weight: bold;
+}
+
+.block-informacion-contenidos__precio{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* css docente */
+.h2-docente-a-cargo{
+  width: 80%;
+  margin: auto; 
+  margin-top: 2em;
+}
+
+.block-informacion-docente{
+  width: 80%;
+  background-color: rgb(225, 213, 238);
+  align-items: center;
+  display: flex;
+  margin: auto;
+  margin-top: 1em;
+  padding: 0.25em;
+  border-radius: 0.40em;
+}
+
+.block-informacion-docente_imagen{
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin: 1em 1em 1em 1em;
+}
+
+h3{
+  margin: 0.25em;
+}
+
+h4{
+  color: rgb(48, 48, 48);
+  margin: 0.25em;
+}
+
+.block-informacion-docente_presentacion{
+  margin: 0.25em;
+}
+
+.star {
+  font-size: 24px;
+  color: gray; 
+  cursor: pointer;
+}
+
+.star-checked{
+  font-size: 24px;
+  color: gold; 
+  cursor: pointer;
+}
+
+/*carrusel de Cards*/
+.carousel{
+  overflow: hidden;        
+  width: 80%;
+  margin: 4em auto ;
+  text-align: start;
+}
+
+.courses-carousel  {
+  display: flex;
+  overflow-x: auto; 
+} 
+
+.carousel-titulo{
+  width: 80%;
+}
+
+.featured-courses {
+  text-align: center;
+  margin: 2em 0 1em;
+  color: #7E57C2;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5em;
+  margin-top: 1em;
+  padding: 0 1em;
+
+}
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 0 0 300px;
+  margin: .50em auto;
+  scroll-snap-align: start;
+  gap: 1em auto;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.course-card img {
+  max-width: 100%;           
+  height: 200px;           
+  display: block;           
+  object-fit: cover;        
+  border-radius: 12px 12px 0 0;
+}
+
+.course-card h3 {
+  color: #6a0dad;
+  margin: 0.5em 0;
+}
+.course-card .price {
+  font-weight: bold;
+  color: #333333;
+}
+.course-card a {
+  color: #6a0dad;
+  font-weight: bold;
+}
+
+/* Responsive - Media querys */
+@media screen and (max-width: 480px) {
+ h1{
+  text-align: center;
+ }
+
+.block-informacion-curso__informacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; 
+  margin: 0.25em auto; 
+}
+
+.block-informacion-contenidos{
+
+  background-color: rgb(225, 213, 238);
+  display: block;
+ 
+}
+
+.block-informacion-contenidos_temas{
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.block-informacion-contenidos__imagen{
+  display: none;
+}
+
+
+.block-informacion-docente{
+ display: flex;
+ flex-direction: column;
+}
+
+.h2-docente-a-cargo{
+  margin-top: 0.5em;
+ text-align: center;
+}
+
+.carousel{
+  overflow: hidden;        
+  width: 80%;
+  margin: 1em auto ;
+  text-align: center;
+}
+
+.carousel-titulo{
+  width: auto;
+  font-size: 1em;
+}
+
+.block-informacion-contenidos__precio {
+font-size: 1em;
+  font-weight: lighter;
+}
+
+}

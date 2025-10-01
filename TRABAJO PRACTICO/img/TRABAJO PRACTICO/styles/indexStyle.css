@@ -1,0 +1,166 @@
+
+body {
+  background-color: #f4f4f9; 
+  color: #333333;         
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/*MAIN*/
+.hero-slider {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.hero-slider img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  
+}
+
+/* Pasos */
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 2em 0;
+    flex-wrap: wrap;
+}
+
+.steps h2 {
+    text-align: center;
+    color: #6a0dad; 
+    margin-bottom: 1em;
+}
+
+.steps p {
+    color: #ffffff;
+    margin-top: 0.5em;
+}
+.steps h3 {
+    color: #ffffff;
+    margin-top: 0.5em;
+}
+.step-card {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    padding: 1.5em;
+    background-color: #f4f4f9;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #6a0dad, #9b4dff);
+}
+
+
+/* Cursos Destacados */
+
+.featured-courses h2 {
+  text-align: center;
+  margin: 2em 0 1em;
+  color: #7E57C2;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5em;
+  margin-top: 1em;
+  padding: 0 1em;
+
+}
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.course-card img {
+ width: 100%;           
+  height: 200px;           
+  display: block;           
+  object-fit: cover;        
+  border-radius: 12px 12px 0 0;
+}
+
+.course-card h3 {
+    color: #6a0dad;
+    margin: 0.5em 0;
+}
+.course-card .price {
+    font-weight: bold;
+    color: #333333;
+}
+.course-card a {
+  color: #6a0dad;
+  font-weight: bold;
+}
+
+
+
+/* Logos de medios de pago */
+.payment-methods h2 {
+    text-align: center;
+    margin: 2em 0 1em;
+    color: #7E57C2;
+}
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+.payment-icons img {
+    height: 40px;
+    object-fit: contain;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+
+}
+@media (max-width: 480px) {
+  .courses-grid {
+     grid-template-columns: 1fr;
+  }
+  .hero-slider .slider-text {
+    font-size: 0.9em;
+    padding: 0.8em;
+  }
+
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+}
+
+
+
+
+
