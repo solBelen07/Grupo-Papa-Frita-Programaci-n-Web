@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <!-- Link a CSS  -->
+    <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/calendariostyle.css">
+    <!-- Link a animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="main-header">
+        <section class="logo">
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
+            <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
+        </section>
+        <!-- Barra de Navegación  CON MENU HAMBURGUES PARA RESPONSIVE -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link inicio">Inicio</a></li>
+                <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="./inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Inglés">
+            </datalist>
+            <button class="search-button">
+                <img src="../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
+
+       <section class="user-actions">
+            <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
+            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito">
+                <img src="../img/carrito.png" alt="Carrito de compra">
+                <span class="cart-count">0</span>
+            </article>
+        </section>
+    </header>
+
+    <section class="container-tittle">
+        <h1>Enterate nuestros proximos cursos..</h1>
+    </section>
+
+
+    <main class="calendar-container">
+
+        <section class="calendar-header">
+            <button class="botones"> ← </button>
+            <h2>Octubre 2025</h2>
+            <button class="botones">→ </button>
+        </section>
+
+        <!-- DE LUNES A DOMINGOS -->
+        <section class="calendar-daysOfWeek">
+            <article class="diaSemana">Lun</article>
+            <article class="diaSemana">Mar</article>
+            <article class="diaSemana">Mié</article>
+            <article class="diaSemana">Jue</article>
+            <article class="diaSemana">Vie</article>
+            <article class="diaSemana">Sáb</article>
+            <article class="diaSemana">Dom</article>
+        </section>
+
+      <!-- NUMEROS DEL 1 AL 31 -->
+<section class="calendar-numbers">
+    <article class="dia"></article>
+    <article class="dia"></article>
+    <article class="dia diaValido dia-actual">
+        <span class="numero">1</span>
+    </article>
+    <article class="dia diaValido"><span class="numero">2</span></article>
+    <article class="dia diaValido"><span class="numero">3</span></article>
+    <article class="dia diaValido"><span class="numero">4</span></article>
+    <article class="dia diaValido"><span class="numero">5</span></article>
+
+    <article class="dia diaValido dia-curso">
+        <span class="numero">6</span>
+        <span class="course">Análisis de datos</span>
+    </article>
+
+    <article class="dia diaValido"><span class="numero">7</span></article>
+    <article class="dia diaValido"><span class="numero">8</span></article>
+    <article class="dia diaValido"><span class="numero">9</span></article>
+    <article class="dia diaValido"><span class="numero">10</span></article>
+    <article class="dia diaValido"><span class="numero">11</span></article>
+    <article class="dia diaValido"><span class="numero">12</span></article>
+
+    <article class="dia diaValido dia-curso">
+        <span class="numero">13</span>
+        <span class="course">Desarrollo de software</span>
+    </article>
+
+    <article class="dia diaValido"><span class="numero">14</span></article>
+    <article class="dia diaValido"><span class="numero">15</span></article>
+    <article class="dia diaValido"><span class="numero">16</span></article>
+
+  <article class="dia diaValido"><span class="numero">17</span></article>
+    <article class="dia diaValido"><span class="numero">18</span></article>
+    <article class="dia diaValido"><span class="numero">19</span></article>
+
+          
+    <article class="dia diaValido dia-curso">
+        <span class="numero">20</span>
+        <span class="course">Diseño UX/UI </span>
+    </article>
+
+            <article class="dia diaValido dia-curso">
+        <span class="numero">21</span>
+        <span class="course">Desarrollo de aplicaciones moviles </span>
+    </article>
+
+            </article>
+            <article class="dia diaValido"><span class="numero">22</span></article>
+    <article class="dia diaValido"><span class="numero">23</span></article>
+    <article class="dia diaValido"><span class="numero">24</span></article>
+    <article class="dia diaValido"><span class="numero">25</span></article>
+    <article class="dia diaValido"><span class="numero">26</span></article>
+    <article class="dia diaValido"><span class="numero">27</span></article>
+    <article class="dia diaValido"><span class="numero">28</span></article>
+    <article class="dia diaValido"><span class="numero">29</span></article>
+    <article class="dia diaValido"><span class="numero">30</span></article>
+        <article class="dia diaValido"><span class="numero">31</span></article>
+
+           
+            <article class="dia"></article>
+            <article class="dia"></article>
+        </section>
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="container-footer">
+        <section class="datos-equipo">
+            <ul>
+                <li>EQUIPO : Grupo PapaFrita</li>
+                <li>Collado, Camila Sol DNI: 43.098.593</li>
+                <li>Martelli, Rocio Belen DNI: 44.161.046</li>
+                <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
+                <li>Moyano Vivas, Matias Ernesto</li>
+                <li>Viana, Sol Belen</li>
+            </ul>
+        </section>
+
+
+        <section class="menu-inferior">
+            <a href="../index.html">Inicio</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="./paginas/inscripcionCursoEmpresa.html">Formulario</a>
+
+        </section>
+
+        <section class="redes-sociales">
+            <p class="parrafo-socialMedia">REDES SOCIALES</p>
+            <nav class="redes-sociales-nav">
+                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                </a>
+
+                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                </a>
+                <a href="https://wa.me/5491155844612" target="_blank">
+                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                </a>
+            </nav>
+        </section>
+    </footer>
+</body>
+
+</html>

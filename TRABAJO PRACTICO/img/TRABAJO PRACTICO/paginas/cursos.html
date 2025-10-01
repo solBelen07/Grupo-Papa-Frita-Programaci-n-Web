@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Disponibles</title>
+    <!-- Link a CSS  -->
+    <link rel="stylesheet" href="../styles/cursos.css">
+    <link rel="stylesheet" href="../styles/header_footer.css">
+
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="main-header">
+        <section class="logo">
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
+            <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
+        </section>
+        <!-- Barra de Navegación -->
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link inicio ">Inicio</a></li>
+                <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="./inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Inglés">
+            </datalist>
+            <button class="search-button">
+                <img src="../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
+
+        <section class="user-actions">
+            <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
+            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito"><!-- icono carrito -->
+                <img src="../img/carrito.png" alt="Carrito de compra">
+                <span class="cart-count">0</span>
+            </article>
+        </section>
+
+
+    </header>  
+    <!-- cursos -->
+     <main>
+    <h2 class="h2-cursos-disponibles">Cursos disponibles</h2> 
+
+        <a href="./detalleDelCurso/detalleCursoFinanzasPersonales.html">
+        <section class="block-informacion-curso">
+            <img class="block-informacion-curso_imagen" src="../img/finanzasperso.jpg" alt="">
+            <article>
+                <article class="block-informacion-curso_titulo-y-precio">
+                    <span>
+                        <h3>Finanzas Personales</h3>
+                        <h4>Duración: 25 horas</h4>
+                    </span>
+                    <span class="block-informacion-curso_titulo-y-precio_precio">
+                        <h3>$75.000</h3>
+                    </span>
+                </article>
+                
+                <!-- valoracion en esrellas -->
+                <div class="rating-container">
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="block-informacion-curso_presentacion">Este curso está diseñado para ayudarte a tomar el control de tu dinero y desarrollar hábitos financieros saludables. A lo largo de la capacitación aprenderás a organizar tus ingresos y gastos, planificar un presupuesto realista, comprender el uso responsable del crédito y sentar bases sólidas para el ahorro y la inversión. Con un enfoque práctico y ejemplos cotidianos, te brindaremos herramientas que podrás aplicar de inmediato para alcanzar mayor estabilidad y seguridad económica.</p>
+            </article>
+        </section>
+        </a>
+        <a href="./detalleDelCurso/detalleCursoCiberseguridad.html">
+        <section class="block-informacion-curso">
+            <img class="block-informacion-curso_imagen" src="../img/ciberseguridad.jpg" alt="">
+            <article>
+                <article class="block-informacion-curso_titulo-y-precio">
+                    <span>
+                        <h3>Ciberseguridad</h3>
+                        <h4>Duración: 65 horas</h4>
+                    </span>
+                    <span class="block-informacion-curso_titulo-y-precio_precio">
+                        <h3>$400.000</h3>
+                    </span> 
+                </article>
+                
+                <!-- valoracion en esrellas -->
+                <div class="rating-container">
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="block-informacion-curso_presentacion">Este curso brinda los fundamentos esenciales para proteger información y sistemas frente a amenazas digitales. Aprenderás a identificar vulnerabilidades, aplicar buenas prácticas de seguridad y comprender los principales riesgos en redes, aplicaciones y dispositivos. Con un enfoque práctico, se abordan técnicas de prevención, detección y respuesta a incidentes, preparando a los participantes para desenvolverse con mayor seguridad en el entorno tecnológico actual.</p>
+            </article>
+        </section>
+        </a>
+        <a href="./detalleDelCurso/detalleCursoInglesAvanzado.html">
+        <section class="block-informacion-curso">
+            <img class="block-informacion-curso_imagen" src="../img/ingles.jpg" alt="">
+            <article>
+                <article class="block-informacion-curso_titulo-y-precio">
+                    <span>
+                        <h3>Ingles Avanzado</h3>
+                        <h4>Duración: 25 horas</h4>
+                    </span>
+                    <span class="block-informacion-curso_titulo-y-precio_precio">
+                        <h3>$120.000</h3>
+                    </span>
+                </article>
+                
+                <!-- valoracion en esrellas  -->
+                <div class="rating-container">
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="block-informacion-curso_presentacion">Este curso está orientado a desarrollar las habilidades clave del idioma inglés: comprensión oral, lectura, escritura y expresión verbal. A través de actividades prácticas, ejercicios comunicativos y situaciones de la vida real, adquirirás confianza para desenvolverte tanto en contextos académicos como profesionales. El objetivo es que avances de manera progresiva, mejorando tu fluidez y ampliando tu vocabulario para lograr una comunicación clara y efectiva.</p>
+            </article>
+        </section> 
+        </a>
+        <a href="./detalleDelCurso/detalleCursoBackend.html">
+        <section class="block-informacion-curso">
+              <img class="block-informacion-curso_imagen" src="../img/backend.jpg" alt="">
+
+            <article>
+                 <article class="block-informacion-curso_titulo-y-precio">
+                    <span>
+                        <h3>Programacion Back-End</h3>
+                       <h4>Duracion: 50 hs</h4>
+
+                    </span>
+                    <span class="block-informacion-curso_titulo-y-precio_precio">
+                        <h3>$250.000</h3>
+                    </span>
+                </article>
+                <!-- valoracion en esrellas -->
+                <div class="rating-container">
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="block-informacion-curso_presentacion">Este curso brinda los conocimientos necesarios para desarrollar la lógica y la estructura interna de aplicaciones web. El estudiante aprenderá a trabajar con servidores, bases de datos y APIs, integrando la comunicación con el front end y garantizando la seguridad y eficiencia del sistema.</p>
+            </article>
+        </section>
+        </a>
+        <a href="./detalleDelCurso/detalleCursoFrontend.html">
+        <section class="block-informacion-curso">
+            <img class="block-informacion-curso_imagen" src="../img/frontend.jpg" alt="">
+
+            <article>
+                 <article class="block-informacion-curso_titulo-y-precio">
+                    <span>
+                        <h3>Programacion Front-End</h3>
+                       <h4>Duracion: 40 hs </span></h4>
+
+                    </span>
+                    <span class="block-informacion-curso_titulo-y-precio_precio">
+                        <h3>$120.000</h3>
+                    </span>
+                </article>
+                <!-- valoracion en esrellas -->
+                <div class="rating-container">
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="block-informacion-curso_presentacion">Este curso introduce a los estudiantes en el desarrollo de interfaces web interactivas y atractivas, enfocadas en la experiencia del usuario. Se aprenderá a estructurar páginas con HTML, darles estilo con CSS y dotarlas de dinamismo mediante JavaScript.</p>
+            </article>
+        </section>
+        </a>
+        <a href="./detalleDelCurso/detalleCursoMarketingDigital.html">
+        <section class="block-informacion-curso">
+                        <img class="block-informacion-curso_imagen" src="../img/marketing.jpg" alt="">
+
+               <article>
+                 <article class="block-informacion-curso_titulo-y-precio">
+                    <span>
+                        <h3>Marketing digital</h3>
+                       <h4>Duracion: 30 hs </h4>
+
+                    </span>
+                    <span class="block-informacion-curso_titulo-y-precio_precio">
+                        <h3>$90.000</h3>
+                    </span>
+                </article>
+                <!-- valoracion en esrellas -->
+                <div class="rating-container">
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="block-informacion-curso_presentacion">Este curso ofrece una introducción integral a las estrategias y herramientas del marketing en entornos digitales, con el objetivo de crear campañas efectivas y medibles que potencien la visibilidad de marcas, productos o servicios.</p>
+            </article>
+        </section>
+        </a>
+
+        <!--  Paginación  -->
+        <div class="pagination-container">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">« Anterior</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Siguiente »</a></li>
+            </ul>
+        </div>
+
+        </main>
+    <!-- Footer -->
+    <footer class="container-footer">
+        <section class="datos-equipo">
+            <ul>
+                <li>EQUIPO : Grupo PapaFrita</li>
+                <li>Collado, Camila Sol DNI: 43.098.593</li>
+                <li>Martelli, Rocio Belen DNI: 44.161.046</li>
+                <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
+                <li>Moyano Vivas, Matias Ernesto</li>
+                <li>Viana, Sol Belen DNI: 45.889.073</li>
+            </ul>
+        </section>
+
+
+        <section class="menu-inferior">
+            <a href="../paginas/index.html">Inicio</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="../paginas/inscripcionCursoEmpresa.html">Formulario</a>
+
+        </section>
+
+        <section class="redes-sociales">
+            <p class="parrafo-socialMedia">REDES SOCIALES</p>
+            <nav class="redes-sociales-nav">
+                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                </a>
+
+                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                </a>
+                <a href="https://wa.me/5491155844612" target="_blank">
+                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                </a>
+            </nav>
+        </section>
+
+    </footer>
+</body>
+</html>

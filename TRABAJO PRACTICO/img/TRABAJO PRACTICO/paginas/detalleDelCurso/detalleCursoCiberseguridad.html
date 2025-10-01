@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridad</title>
+    <!-- Link a CSS  -->
+    <link rel="stylesheet" href="../../styles/detalleCurso.css">
+    <link rel="stylesheet" href="../../styles/header_footer.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="main-header">
+        <section class="logo">
+            <a href="../../index.html"> <img src="../../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
+            <a href="../../index.html"> <img src="../../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
+        </section>
+        <!-- Barra de Navegación -->
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="../giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="../cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="../inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="../calendario.html" class="nav-link"> Proximos </a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Inglés">
+            </datalist>
+            <button class="search-button">
+                <img src="../../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
+
+        <section class="user-actions">
+            <a href="../../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
+            <a href="../../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito"><!-- icono carrito -->
+                <img src="../../img/carrito.png" alt="Carrito de compra">
+                <span class="cart-count">0</span>
+            </article>
+        </section>
+
+
+    </header>
+
+    <!-- Informacion del curso-->
+    <section class="block-informacion-curso">
+        <!-- Contenidos del curso-->
+         <h1>Ciberseguridad</h1>
+         <!-- valoracion en esrellas del curso -->
+                <div class="rating-container">
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+        <article class="block-informacion-curso__descripcion">
+            <p>Este curso brinda los fundamentos esenciales para proteger información y sistemas frente a amenazas digitales. Aprenderás a identificar vulnerabilidades, aplicar buenas prácticas de seguridad y comprender los principales riesgos en redes, aplicaciones y dispositivos. Con un enfoque práctico, se abordan técnicas de prevención, detección y respuesta a incidentes, preparando a los participantes para desenvolverse con mayor seguridad en el entorno tecnológico actual.</p>               
+    </section>
+    <!-- Requisitos y duracion -->
+    <section class="block-informacion-curso__informacion">
+        <span class="span-block-informacion-curso__informacion"><h4>Duración:</h4> 50 horas</span>
+        <span class="span-block-informacion-curso__informacion"><h4>Tiempo de Dedicacion:</h4> 2 horas diarias</span>
+        <span class="span-block-informacion-curso__informacion"><h4>Requisitos Previos:</h4> Conocimientos en Base de Datos y API's</span>
+    </section>
+    <!-- Contenidos del curso-->
+    <section class="block-informacion-contenidos">
+        <article class="block-informacion-contenidos_temas">
+           <h3>Contenidos Por Clase</h3>
+            <details>
+                <summary class="summary_top">MÓDULO 1 – Introduccion al ciberdelito y ciberamenazas</summary>
+                <article class="summary-contenidos_desplegable">
+                    <ul>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 1: Arquitecturas y patrones de diseño</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 2: Dependencias y principios SOLID</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 3: Testing en backend</span> <span class="time">120 min</span></li>
+                    </ul>
+                </article>
+            </details>
+
+            <details>
+                <summary>MÓDULO 2 – Vulnerabilidades y amenazas</summary>
+                <article class="summary-contenidos_desplegable">
+                    <ul>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 4: SQL avanzado</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 5: Optimización de consultas</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 6: NoSQL (MongoDB, Redis)</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 7: ORM avanzado y migraciones</span> <span class="time">120 min</span></li>
+                    </ul>
+                </article>
+            </details>
+
+            <details>
+                <summary>MÓDULO 3 – Hacking etico</summary>
+                <article class="summary-contenidos_desplegable">
+                    <ul>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 8: REST avanzado y documentación</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 9: Autenticación y autorización</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 10: GraphQL</span> <span class="time">120 min</span></li>
+                    </ul>
+                </article>
+            </details>
+
+            <details>
+                <summary>MÓDULO 4 – Ciberseguridad , criptografia y cifrado</summary>
+                <article class="summary-contenidos_desplegable">
+                    <ul>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 11: Caching y rate limiting</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 12: Balanceadores y microservicios</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 13: Colas y mensajería</span> <span class="time">120 min</span></li>
+                    </ul>
+                </article>
+            </details>
+
+            <details>
+                <summary>MÓDULO 5 – Tecnologia de proteccion a usuarios</summary>
+                <article class="summary-contenidos_desplegable">
+                    <ul>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 14: OWASP Top 10 y protección de apps</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 15: Cifrado y manejo de secretos</span> <span class="time">120 min</span></li>
+                    </ul>
+                </article>
+            </details>
+
+            <details>
+                <summary>MÓDULO 6 – Tecnologias de proteccion de perimetro</summary>
+                <article class="summary-contenidos_desplegable">
+                    <ul>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 16: CI/CD pipelines</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 17: Docker y Kubernetes</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 18: Deploy en la nube y monitoreo</span> <span class="time">120 min</span></li>
+                    </ul>
+                </article>
+            </details>
+
+            <details>
+                <summary class="summary_bottom">MÓDULO 7 – Proyecto Final</summary>
+                <article class="summary-contenidos_desplegable">
+                    <ul>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 19-20: Diseño del proyecto</span> <span class="time">240 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 21-22: Implementación y deploy</span> <span class="time">240 min</span></li>
+                    </ul>
+                </article>
+            </details>
+            
+            <article class="block-informacion-contenidos_precio-y-boton">
+                <span class="block-informacion-contenidos__precio">Precio final: $400.000,00 ARS</span>
+                <button class="block-informacion-contenidos__boton">Inscribirse</button>
+            </article>       
+        </article>        
+        <article class="block-informacion-contenidos__imagen">
+            <img class="block-informacion-contenidos__imagen-propiedades" src="../../img/backend.jpg">
+        </article>
+    </section>
+        
+     <!-- Informacion del docente -->
+    <div>
+        <h2 class="h2-docente-a-cargo">Docente a Cargo</h2>
+        <section class="block-informacion-docente">
+            <img class="block-informacion-docente_imagen" src="../../Imagenes/istockphoto-2160473960-612x612.jpg" alt="">
+            <article>
+                <h3>Javier Rodrigo Dominguez</h3>
+                <h4>Ingeniero en Sistemas y Analista de Datos</h4>
+                <!-- valoracion en esrellas al docente -->
+                <div class="rating-container">
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star-checked">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="block-informacion-docente_presentacion">Soy Ingeniero en Sistemas y Analista de Datos, y en este curso de Back-End te voy a enseñar a construir la lógica que da vida a las aplicaciones web. Vamos a trabajar con bases de datos, servidores y APIs, para que aprendas a gestionar la información de forma segura y eficiente. Mi objetivo es que desarrolles una base sólida en programación del lado del servidor y adquieras las competencias necesarias para integrarte en proyectos profesionales de desarrollo de software.</p>
+            </article>
+        </section>
+    </div>
+    
+     <!-- Links a otros cursos -->
+        <aside class="carousel">
+            <h2 class="carousel-titulo">Tambien te puede interesar</h2>
+                <div class="courses-carousel">
+                    <a href="./detalleCursoFrontend.html" class="course-card">
+                    <article>
+                        <img src="../../img/frontend.jpg" alt="Curso de Programación Front-end">
+                        <h3>Programación Front-end</h3>
+                        <p>Duración: 40 horas</p>
+                        <p class="price">$120.000</p>
+                        <h4>Ver Detalle</h4>
+                    </article>
+                    </a>
+
+                    <a href="./detalleCursoMarketingDigital.html"  class="course-card">
+                    <article>
+                        <img src="../../img/marketing.jpg" alt="Curso de Marketing Digital">
+                        <h3>Marketing Digital</h3>
+                        <p>Duración: 30 horas</p>
+                        <p class="price">$90.000</p>
+                        <h4>Ver Detalle</h4>
+                    </article>
+                    </a>
+
+                    <a href="./detalleCursoFinanzasPersonales.html" class="course-card">
+                    <article>
+                        <img src="../../img/finanzasperso.jpg" alt="Curso de Finanzas Personales">
+                        <h3>Finanzas Personales</h3>
+                        <p>Duración: 25 horas</p>
+                        <p class="price">$75.000</p>
+                        <h4>Ver Detalle</h4>
+                    </article>
+                    </a>
+
+                    <a href="./detalleCursoCiberseguridad.html" class="course-card">
+                    <article>
+                        <img src="../../img/ciberseguridad.jpg" alt="Curso de Ciberseguridad">
+                        <h3>Ciberseguridad</h3>
+                        <p>Duración: 65 horas</p>
+                        <p class="price">$400.000</p>
+                        <h4>Ver Detalle</h4>
+                    </article>
+                    </a>
+
+                    <a href="../paginas/detalleCurso" class="course-card">
+                    <article>
+                        <img src="../../img/ingles.jpg" alt="Curso de Inglés">
+                        <h3>Ingles avanzado</h3>
+                        <p>Duración: 25 horas</p>
+                        <p class="price">$120.000</p>
+                        <h4>Ver Detalle</h4>
+                    </article>
+                    </a>
+
+                </div>
+
+        </aside>
+
+    <!-- Footer -->
+    <footer class="container-footer">
+        <section class="datos-equipo">
+            <ul>
+                <li>EQUIPO : Grupo PapaFrita</li>
+                <li>Collado, Camila Sol DNI: 43.098.593</li>
+                <li>Martelli, Rocio Belen DNI: 44.161.046</li>
+                <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
+                <li>Moyano Vivas, Matias Ernesto</li>
+                <li>Viana, Sol Belen DNI: 45.889.073</li>
+            </ul>
+        </section>
+
+
+        <section class="menu-inferior">
+            <a href="../../paginas/index.html">Inicio</a>
+            <a href="../../paginas/contacto.html">Contacto</a>
+            <a href="../../paginas/inscripcionCursoEmpresa.html">Formulario</a>
+
+        </section>
+
+        <section class="redes-sociales">
+            <p class="parrafo-socialMedia">REDES SOCIALES</p>
+            <nav class="redes-sociales-nav">
+                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <img src="../../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                </a>
+
+                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                    <img src="../../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                </a>
+                <a href="https://wa.me/5491155844612" target="_blank">
+                    <img src="../../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                </a>
+            </nav>
+        </section>
+
+    </footer>
+</body>
+</html>

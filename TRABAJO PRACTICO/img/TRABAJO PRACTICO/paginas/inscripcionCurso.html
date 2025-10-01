@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Inscripción</title>
+    <!-- Link a CSS  -->
+    <link rel="stylesheet" href="../styles/formularioInscripcion.css">
+     <link rel="stylesheet" href="../styles/header_footer.css">
+</head>
+<body>
+    <!-- Header -->
+     <header class="main-header">
+    <section class="logo">
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
+            <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
+        </section>
+
+        <!-- Barra de Navegación -->
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link inicio">Inicio</a></li>
+                <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Inglés">
+            </datalist>
+            <button class="search-button">
+                <img src="../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
+
+        <section class="user-actions">
+            <a href="./inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
+            <a href="./registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito">
+                <img src="../img/carrito.png" alt="Carrito de compra">
+                <span class="cart-count">0</span>
+            </article>
+        </section>
+
+    </header>
+
+<main class="main-content">
+    <section class="formulario-inscripcion">
+      <h2>Formulario de inscripción a nuestros cursos</h2>
+      
+        <h3>Datos de el alumno</h3>
+    
+        <!--para mostrar + personas 
+    <input type="checkbox" id="mostrar-persona-2" class="toggle">
+    <input type="checkbox" id="mostrar-persona-3" class="toggle"> -->
+
+        <div class="persona">
+          <label>Alumno:</label>
+          <input type="text" name="nombre1" placeholder="Nombre y Apellido" required>
+          <input type="text" name="dni1" placeholder="DNI" required>
+        </div>
+
+
+    <!-- <label for="mostrar-persona-2" class="toggle-label">Agregar Persona 2</label>
+    <div class="persona persona-2">
+          <label>Persona 2:</label>
+          <input type="text" name="nombre2" placeholder="Nombre y Apellido" >
+          <input type="text" name="dni2" placeholder="DNI" >
+           <label for="mostrar-persona-2" class="toggle-label quitar">Quitar Persona 2</label>
+        </div>
+
+    <label for="mostrar-persona-3" class="toggle-label">Agregar Persona 3</label>
+        <div class="persona persona-3">
+          <label>Persona 3:</label>
+          <input type="text" name="nombre3" placeholder="Nombre y Apellido" >
+          <input type="text" name="dni3" placeholder="DNI" >
+          <label for="mostrar-persona-3" class="toggle-label quitar">Quitar Persona 3</label>
+        </div> -->
+
+     <!-- Curso siempre visible -->
+        <div class="curso curso-1">
+        <label for="curso1">Curso 1:</label>
+        <select id="curso1" name="curso1">
+            <option value="">-- Elegí un curso --</option>
+            <option value="programacion-videojuegos">Programación de Videojuegos</option>
+            <option value="marketing">Marketing Digital</option>
+            <option value="diseno">Diseño Gráfico</option>
+            <option value="web">Desarrollo Web</option>
+            <option value="ciberseguridad">Ciberseguridad</option>
+            <option value="ia">Inteligencia Artificial</option>
+            <option value="finanzas">Finanzas Personales</option>
+            <option value="ingles">Inglés</option>
+        </select>
+        </div>
+        
+        <input type="checkbox" id="mostrar-curso-2" class="toggle">
+        <label for="mostrar-curso-2" class="toggle-label">Agregar Curso 2</label>
+
+        <div class="curso curso-2">
+        <label for="curso2">Curso 2:</label>
+        <select id="curso2" name="curso2">
+            <option value="">-- Elegí un curso --</option>
+            <option value="programacion-videojuegos">Programación de Videojuegos</option>
+            <option value="marketing">Marketing Digital</option>
+            <option value="diseno">Diseño Gráfico</option>
+            <option value="web">Desarrollo Web</option>
+            <option value="ciberseguridad">Ciberseguridad</option>
+            <option value="ia">Inteligencia Artificial</option>
+            <option value="finanzas">Finanzas Personales</option>
+            <option value="ingles">Inglés</option>
+        </select>
+
+        <label for="mostrar-curso-2" class="toggle-label quitar">Quitar Curso 2</label>
+        </div>
+
+        <!-- Checkbox oculto para Curso 3 -->
+        <input type="checkbox" id="mostrar-curso-3" class="toggle">
+        <label for="mostrar-curso-3" class="toggle-label">Agregar Curso 3</label>
+
+        <div class="curso curso-3">
+        <label for="curso3">Curso 3:</label>
+        <select id="curso3" name="curso3">
+            <option value="">-- Elegí un curso --</option>
+            <option value="programacion-videojuegos">Programación de Videojuegos</option>
+            <option value="marketing">Marketing Digital</option>
+            <option value="diseno">Diseño Gráfico</option>
+            <option value="web">Desarrollo Web</option>
+            <option value="ciberseguridad">Ciberseguridad</option>
+            <option value="ia">Inteligencia Artificial</option>
+            <option value="finanzas">Finanzas Personales</option>
+            <option value="ingles">Inglés</option>
+        </select>
+
+        <label for="mostrar-curso-3" class="toggle-label quitar">Quitar Curso 3</label>
+        </div>
+
+
+
+
+    
+        
+  <a href="#popup" class="boton-enlace">INSCRIBITE</a>
+
+
+  <!-- Popup de confirmación -->
+  <div id="popup" class="popup-confirmacion">
+    <div class="popup-contenido">
+      <h3>✅ ¡Usted se inscribio correctamente!</h3>
+      <p> Sus datos fueron registrados con éxito.</p>
+      
+  
+      <a href="#" class="cerrar-popup">Cerrar</a>
+    </div>
+  </div>
+
+    </section>
+    </main>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="container-footer">
+        <section class="datos-equipo">
+            <ul>
+                <li>EQUIPO : Grupo PapaFrita</li>
+                <li>Collado, Camila Sol DNI: 43.098.593</li>
+                <li>Martelli, Rocio Belen DNI: 44.161.046</li>
+                <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
+                <li>Moyano Vivas, Matias Ernesto</li>
+                <li>Viana, Sol Belen</li>
+            </ul>
+        </section>
+
+
+        <section class="menu-inferior">
+            <a href="../index.html">Inicio</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./inscripcionCurso.html">Formulario</a>
+
+        </section>
+
+        
+         <section class="redes-sociales">
+            <p class="parrafo-socialMedia">REDES SOCIALES</p>
+           <nav class="redes-sociales-nav">
+            <a href="https://www.instagram.com/unlamoficial/" target="_blank"> 
+              <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">  
+            </a>
+
+            <a href="https://www.facebook.com/UnlamOficial/" target="_blank"> 
+                <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+            </a>
+            <a href="https://wa.me/5491155844612" target="_blank">
+                <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+            </a>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>
