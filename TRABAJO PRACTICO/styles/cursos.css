@@ -40,6 +40,7 @@ body{
   margin: 1em 1em 1em 1em;
 }
 
+
 .block-informacion-curso_titulo-y-precio{
   justify-content: space-between;
   display: flex;
@@ -49,9 +50,11 @@ body{
 .block-informacion-curso_titulo-y-precio_precio{
     font-size: 1.5em;
     margin-right: 1em;
+    color: #7E57C2;
 }
 
 h3{
+  color:#7E57C2;
   margin: 0.25em;
 }
 
@@ -62,6 +65,7 @@ h4{
 
 .block-informacion-curso_presentacion{
   margin: 0.25em;
+  color: black
 }
 
 .star {
@@ -96,14 +100,13 @@ h4{
     gap: 5px; 
 }
 
-.page-item {
-}
 
-.page-link {
+
+ .page-link {
     display: block;
     padding: 8px 12px;
     text-decoration: none;
-    color:  #c300ff;
+    color:  #6B38AB;
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
