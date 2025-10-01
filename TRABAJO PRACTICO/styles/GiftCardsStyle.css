@@ -118,9 +118,9 @@
 }
 
 .Box_form form .confirmacion .confirmar_carrito button {
-  background-color: greenyellow;
-  border-radius: 0.5em;
-  color: darkviolet;
+ background-color: #9575CD;
+    border-radius: 5px;
+    color: black;
 }
 
 .Box_form form .confirmacion .reset_form {
@@ -128,9 +128,9 @@
 }
 
 .Box_form form .confirmacion .reset_form button {
-  background-color: red;
+  background-color: #F59090;
   border-radius: 0.5em;
-  color: white;
+  color: black;
 }
 
 .Box_form .form_style {
