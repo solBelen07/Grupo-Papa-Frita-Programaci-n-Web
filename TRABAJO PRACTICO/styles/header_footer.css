@@ -165,6 +165,121 @@ display: none;
 .login-button:hover,.signup-button:hover {
   background: #5e35b1;
 }
+/* Carrito Desplegado */
+.caja_carrito{
+  display:grid;
+  grid-template-rows:repeat(3, 1fr) 0.5fr;
+  position: absolute;
+  top: 4em;
+  width: 18em;
+  height: 34em;
+  right: 0em;
+  border-radius: 0.5em;
+  border-color: white;
+  z-index: 9999;
+  border: solid black;
+  background: white;
+  max-height: 40em;
+}
+#Carro{
+  display: none;
+}
+.carrito_icono:hover{
+  cursor:pointer;
+}
+.Imagen_agregar_carrito{
+  width: 10em;
+  height: 5em;
+}
+.expandir_borrar{
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+input[type="checkbox"]:checked~.caja_carrito{
+  display: none;
+}
+/* Carrito producto numero 1 */
+.producto1_carrito{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  border-bottom: 0.2em solid black;
+}
+.producto1_carrito h3{
+  color: black;
+  align-self: center;
+  margin-left: 1em;
+}
+.producto1_carrito h4{
+  color: black;
+  align-self: flex-start;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+/* Carrito producto numero 2  */
+
+.producto2_carrito{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  border-bottom: 0.2em solid black;
+}
+.producto2_carrito h3{
+  color: black;
+  align-self: center;
+  font-size: 1em;
+}
+.producto2_carrito h4{
+  color: black;
+  align-self: flex-start;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+/* Carrito producto numero 3  */
+
+.producto3_carrito{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  border-bottom: 0.2em solid black;
+}
+
+.producto3_carrito h3{
+  color: black;
+  align-self: center;
+  margin-left: 1em;
+}
+.producto3_carrito h4{
+  color: black;
+  align-self: flex-start;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+/* Carrito resumen */
+
+.confirmar_carrito{
+display: grid;
+grid-template-rows: 1fr 1fr;
+}
+.confirmar_carrito h4{
+  color:black;
+  align-self: center;
+  justify-self: center;
+}
+.confirmar_carrito a{
+  align-self: center;
+  justify-self: center;
+}
+.confirmar_carrito a button{
+  margin-bottom: 1em;
+  width: 16em;
+  height: 3em;
+  background-color: greenyellow;
+  border-radius: 1.3em;
+}
 
 /* FOOTER*/
 .container-footer a {
