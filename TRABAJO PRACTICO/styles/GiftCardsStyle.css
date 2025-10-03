@@ -3,50 +3,14 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-/*
- input[type="checkbox"] {
-            display: none;
-        }
-        
-        /* Estilo base para los botones */
-/*  .boton1,.boton2 {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #ccc;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-/* # el numeral sirve para seleccionar la id,como el punto para la class, :checked permite reconocer cuando un checkbox
-    esta siendo apretado,y ~ "activara" a todos los Box_preview class QUE ESTEN POR DEBAJO*/
-/*  #trigger-boton1:checked ~ .Box_Preview,
-      #trigger-boton1:checked ~ .Box_Preview h3{
-            background-color: blue;
-            color: white;
-            font-family: "Times New Roman", serif;
-            box-shadow: 0 0 5px 3px rgba(0, 123, 255, 0.5);
-        }
-      */
+
 .Box_main {
   width: 100%;
   padding: 2.5em;
   display: grid;
   gap: 4.5em;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr ;
-
-@media screen and (max-width:1620px){
-  &{
-    padding: 6.5em;
-  }
-}
- @media screen and (max-width:1301px) {
-    & {
-      gap: 0.5em;
-    }
-  }
+  grid-template-rows: 1fr;
 }
 
 .Cuadro_Preview {
@@ -54,518 +18,625 @@
   width: 60em;
   align-self: center;
   border: 0.5em solid black;
-  /*Te pone un borde*/
   border-radius: 0.3em;
-  /* te lo redondea un poco pa que quede mas bonito*/
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: repeat(3,1fr);
-
-  .Destinatario {
-    grid-column: 1;
-    grid-row: 1;
-   
-  }
-  .Monto {
-    grid-column: 3;
-    grid-row: 3;
-    align-self: end;
-    justify-self: end;
-   
-
-  }
-  .Mensaje {
-    grid-column: 2;
-    grid-row: 2;
-    align-self: center;
-    justify-self: center;
-    
-  }
+  grid-template-rows: repeat(3, 1fr);
 }
-.Box_Preview{
+
+.Cuadro_Preview .Destinatario {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.Cuadro_Preview .Monto {
+  grid-column: 3;
+  grid-row: 3;
+  align-self: end;
+  justify-self: end;
+}
+
+.Cuadro_Preview .Mensaje {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+}
+
+.Box_Preview {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+
 .Mensaje-Monto {
-  display:grid;
-  grid-template-rows: 0.5fr 0.5fr 2fr 1fr ;
-  h2{
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(128, 30, 128);
-  display: flex;
-  justify-content: center;
-  }
-  h3{
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
-  }
-.ubicacion_monto {
-display:flex;
-justify-content: center;
-gap:3em;
-input[type=radio]{
- display:none; 
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 2fr 1fr;
 }
-.imagen_monto{
-  width:10em;
+
+.Mensaje-Monto h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9575CD;
+  display: flex;
+  justify-content: center;
+}
+
+.Mensaje-Monto h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.Mensaje-Monto .ubicacion_monto {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
+.Mensaje-Monto .ubicacion_monto input[type=radio] {
+  display: none;
+}
+
+.Mensaje-Monto .ubicacion_monto .imagen_monto {
+  width: 10em;
   height: 10em;
 }
-input[type=radio]:checked ~ .imagen_monto{
+
+.Mensaje-Monto .ubicacion_monto input[type=radio]:checked ~ .imagen_monto {
   box-shadow: 0 0 0.7em rgba(12, 200, 68, 0.8);
- }
-}
 }
 
 .Box_form {
-  
-    display: flex;
-    flex-basis: 80em;
-     min-height: 50em;
+  display: flex;
+  flex-basis: 80em;
+  min-height: 50em;
 }
 
 .Box_form form {
-  width:100%;
+  width: 100%;
   background-color: white;
-  color: blueviolet;
+  color: #9575CD;
+  font-weight: bold;
   font-size: 1.7em;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 1em;
-.confirmacion{
+}
+
+.Box_form form .confirmacion {
   display: flex;
   width: 100%;
   height: 2.5em;
   margin-top: -3em;
   justify-content: center;
   gap: 2em;
-  .confirmar_carrito button{
-  background-color: greenyellow;
-  border-radius: 0.5em;
-  width: 9em;
-  height: 4em;
-  color: darkviolet;
-  }
-  .reset_form{
-  
-  margin-top: 0.1em;
-  button{
-  background-color: red;
-  height: 3em;
-  width: 9em;
-  border-radius: 0.5em;
-  color: white;
+}
 
-  }}
+.Box_form form .confirmacion button {
+  width: 12em;
+  height: 3em;
 }
+
+.Box_form form .confirmacion .confirmar_carrito button {
+ background-color: #9575CD;
+    border-radius: 5px;
+    color: black;
 }
+
+.Box_form form .confirmacion .reset_form {
+  margin-top: 0.1em;
+}
+
+.Box_form form .confirmacion .reset_form button {
+  background-color: #F59090;
+  border-radius: 0.5em;
+  color: black;
+}
+
 .Box_form .form_style {
   display: flex;
   gap: 1em;
-  .Formulario_estilo select{
+}
+
+.Box_form .form_style .Formulario_estilo select {
   width: 15em;
   height: 2em;
-  }
-  .Formulario_estilo_tamaño select{
+}
+
+.Box_form .form_style .Formulario_estilo_tamaño select {
   width: 3em;
   height: 2em;
-  }
 }
-.Box_form .data{
+
+.Box_form .data {
   display: flex;
-  gap:0.5em;
+  gap: 0.5em;
   flex-direction: column;
   width: 100%;
 }
+
 .Box_form .data label {
   display: flex;
-  align-self: flex-start; /* separa texto a la izq, input a la der */
+  align-self: flex-start;
   gap: 0.5rem;
-  
 }
+
 .Box_form .data input {
   width: 90%;
   height: 2em;
-  border-radius: 0.5em ;
-
+  border-radius: 0.5em;
 }
-#monto{
+
+#monto {
   width: 30%;
 }
 
-
 .Box_form .colores {
   display: flex;
-  justify-content: space-between;
   justify-content: center;
 }
-.Formulario_fondo{
+
+.Formulario_fondo {
   width: 100%;
   height: 23em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
-    @media screen and (max-width:1290px){
-  &{
-  height: 21em;
-  }
 }
-  .fondo{
+
+.Formulario_fondo .fondo {
   width: 8em;
   height: 8em;
-
-    @media screen and (max-width:1290px){
-  &{
-  width: 6em;
-  height: 6em;
-  }
-  }
-  
-  }
-  input[type="radio"]:checked ~ .fondo{
-
-     box-shadow: 0 0 0.5em rgba(212, 8, 168, 0.8);
-    
-    
-  }
-}
-.Formulario_fondo input[type="radio"]{
-  display:none;
 }
 
-.colores  {
+.Formulario_fondo input[type="radio"]:checked ~ .fondo {
+  box-shadow: 0 0 0.5em rgba(212, 8, 168, 0.8);
+}
+
+.Formulario_fondo input[type="radio"] {
+  display: none;
+}
+
+.colores {
   gap: 1.2em;
   align-self: center;
-  .circuloRojo{
-  width: 3em;
-  height: 3em;
-  background-color: red; 
-  border-radius: 50%;
-  }
-  .circuloAmarillo{
-  width: 3em;
-  height: 3em;
-  background-color: yellow; 
-  border-radius: 50%;
-  }
-  .circuloAzul{
-  width: 3em;
-  height: 3em;
-  background-color: blue; 
-  border-radius: 50%;
-  }
-  .circuloVerde{
-  width: 3em;
-  height: 3em;
-  background-color: green; 
-  border-radius: 50%;
-  }
-  .circuloLila{
-  width: 3em;
-  height: 3em;
-  background-color: purple; 
-  border-radius: 50%;
-  }
-  .circuloNaranja{
-  width: 3em;
-  height: 3em;
-  background-color: orange; 
-  border-radius: 50%;
-  }
-  input[type=radio]{
-    display: none;
-  }
-input[type=radio]:checked ~ .color{
-
-    box-shadow: 0 0 0.5em rgba(212, 8, 168, 0.8);
-    border:solid 0.2em white;
-  }
-
 }
 
-@media screen and (max-width:1780px){
-  &{
+.colores .circuloRojo {
+  width: 3em;
+  height: 3em;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.colores .circuloAmarillo {
+  width: 3em;
+  height: 3em;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.colores .circuloAzul {
+  width: 3em;
+  height: 3em;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.colores .circuloVerde {
+  width: 3em;
+  height: 3em;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.colores .circuloLila {
+  width: 3em;
+  height: 3em;
+  background-color: purple;
+  border-radius: 50%;
+}
+
+.colores .circuloNaranja {
+  width: 3em;
+  height: 3em;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.colores input[type=radio] {
+  display: none;
+}
+
+.colores input[type=radio]:checked ~ .color {
+  box-shadow: 0 0 0.5em rgba(212, 8, 168, 0.8);
+  border: solid 0.2em white;
+}
+
+
+/* RESPONSIVE  */
+
+@media screen and (max-width: 1780px) {
+  .Box_main {
     font-size: 15px;
   }
 }
-@media screen and (max-width:1620px){
-  &{
+
+@media screen and (max-width: 1620px) {
+  .Box_main {
+    padding: 6.5em;
     font-size: 12px;
   }
 }
- @media screen and (max-width:1080px){
-  &{
-    font-size: 8px;
+
+@media screen and (max-width: 1301px) {
+  .Box_main {
+    gap: 0.5em;
   }
 }
 
-/* Tablets : */
+@media screen and (max-width: 1290px) {
+  .Formulario_fondo {
+    height: 21em;
+  }
+
+  .Formulario_fondo .fondo {
+    width: 6em;
+    height: 6em;
+  }
+}
+
+
 @media (min-width: 481px) and (max-width: 960px) {
-&{
-  font-size: 6px;
+ .Box_main {
+    font-size: 6px;
+ }
+@media (min-width: 481px) and (max-width: 960px) {
+  .Box_main {
+    grid-template-columns: 1fr; 
+    gap: 2em;
+
+  }
+
+  .Cuadro_Preview {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3; 
+  }
+
+  .Mensaje-Monto .imagen_monto {
+    width: 12em;
+    height: 12em;
+  }
+
+  .Box_form {
+    margin-top: 1em;
+  }
+
+  .Box_form form {
+    font-size: 1rem;
+  }
 }
-.Box_main{
- grid-template-columns: 1fr; 
- grid-template-rows: 1fr 1fr;
-height: 100%; 
-}
-.Box_form{
-  grid-row:2
- 
-}
-.Box_form{
-  margin-top: -8em;
-  form{
-  gap: 0em;
-.confirmacion{
-  margin-top: 0em;
-  .confirmar_carrito button{
+
+  .Box_form form .confirmacion {
+    margin-top: 0em;
+  }
+
+  .Box_form form .confirmacion .confirmar_carrito button {
     width: 12em;
     height: 3em;
   }
-  .reset_form button{
+
+  .Box_form form .confirmacion .reset_form button {
     width: 12em;
   }
-}
-}
-}
-.Box_Preview{
-  grid-row:1
-}
-.Box_Preview {
-  .Cuadro_Preview{
+
+  .Box_Preview {
+    grid-row: 1;
+  }
+
+  .Box_Preview .Cuadro_Preview {
     width: 100%;
     height: 35em;
-    h3{
-      font-size: 2em;
-    }
   }
-}
-.Mensaje-Monto {
-  
-  h2{
-  font-size: 2em;
+
+  .Box_Preview .Cuadro_Preview h3 {
+    font-size: 2em;
   }
-  h3{
-   font-size: 2em;
+
+  .Mensaje-Monto h2 {
+    font-size: 2em;
   }
-  .ubicacion_monto{
+
+  .Mensaje-Monto h3 {
+    font-size: 2em;
+  }
+
+  .Mensaje-Monto .ubicacion_monto {
     gap: 9em;
-    .imagen_monto{
-      width: 16em;
-      height: 16em;
-    }
   }
-}
-.Formulario_fondo .fondo{
- width: 10em;
- height: 10em;
-margin-top: 2em;
-}
-.colores{
-gap: 3.2em;
-.color{
-width: 4em;
-height: 4em;
-}
-}
-.Box_form .form_style {
-  .Formulario_estilo select{
-  width: 18em;
-  height: 2em;
-  font-size: 1em;
-  }
-  .Formulario_estilo_tamaño select{
-  height: 1.5em;
-  font-size: 1em;
-  }
-  }
-}
 
-/* Celular : */
-
-@media (max-width: 500px) {
-  &{
-  font-size: 5px;
-}
-.Box_main{
- grid-template-columns: 1fr; 
- grid-template-rows: 1fr 1fr;
-height: 100%; 
-}
-.Box_form{
-  grid-row:2
- 
-}
-.Box_form{
-  margin-top: -8em;
-  form{
-  gap: 0em;
-.confirmacion{
-  margin-top: 6em;
-  .confirmar_carrito button{
-   width: 11em;
-   height: 2em
+  .Mensaje-Monto .ubicacion_monto .imagen_monto {
+    width: 16em;
+    height: 16em;
   }
-  .reset_form button{
-    width: 11em;
+
+  .Formulario_fondo .fondo {
+    width: 10em;
+    height: 10em;
+    margin-top: 2em;
+  }
+
+  .colores {
+    gap: 3.2em;
+  }
+
+  .colores .color {
+    width: 4em;
+    height: 4em;
+  }
+
+  .Box_form .form_style .Formulario_estilo select {
+    width: 18em;
     height: 2em;
+    font-size: 1em;
+  }
+
+  .Box_form .form_style .Formulario_estilo_tamaño select {
+    height: 1.5em;
+    font-size: 1em;
   }
 }
-}
-}
-.Box_Preview{
-  grid-row:1
-}
-.Box_Preview {
-  .Cuadro_Preview{
-    width: 100%;
-    height: 33em;
-    h3{
-      font-size: 2em;
-    }
-  }
-}
-.Mensaje-Monto {
-  
-  h2{
-  font-size: 2em;
-  }
-  h3{
-   font-size: 2em;
-  }
-  .ubicacion_monto{
-    gap: 9em;
-    .imagen_monto{
-      width: 16em;
-      height: 16em;
-    }
-  }
-}
-.Formulario_fondo .fondo{
- width: 10em;
- height: 10em;
-margin-top: 2em;
-}
-.colores{
-gap: 3.2em;
-.color{
-width: 5em;
-height: 5em;
-}
-}
-.Box_form .form_style {
-  .Formulario_estilo select{
-  width: 18em;
-  height: 2em;
-  font-size: 1em;
-  }
-  .Formulario_estilo_tamaño select{
-  height: 1.5em;
-  font-size: 1em;
-  }
-  }
-}
+
 
 @media (max-width: 500px) {
-&{
- font-size:4px; 
-}
+  .Box_main{
+    font-size: 5px;
+  }
 }
 
-/*Celulares mas chicos */
-@media (max-width: 342px) {
-&{
- font-size:3px; 
+@media (max-width: 480px) {
+  .Box_main {
+   display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+    margin-top: 0;
+
+  }
+.Cuadro_Preview .Destinatario {
+  font-size: 3em;
 }
-.Box_main{
- grid-template-columns: 1fr; 
- grid-template-rows: 1fr 1fr;
-height: 100%; 
-padding: 0.5em;
+.Cuadro_Preview .Mensaje{
+  font-size: 3em;
+}
+.Cuadro_Preview .Monto{
+  font-size: 3em;
+}
+.Cuadro_Preview .m
+  .Box_form {
+    width: 100%;
+    margin: 0;
+  }
+  .Box_form input,
+  .Box_form select
+   {
+     width: 100%;
+     padding: 0.6rem;
+     font-size: 1rem;
+  }
+
+   .Box_form form .confirmacion{
+    flex-direction: row;
+    gap: 0.8rem;
+    /* margin-top: 1rem; */
+  }
+
+  .Box_form form .confirmacion button{
+      width: 9em;
+    height: 3em;
+  }
+ 
+  .Box_form form .confirmacion .reset_form {
+         width: 9em;
+    height: 3em;
+  }
+
+  .Mensaje-Monto h3 {
+    font-size: 3em;
+  }
+
+  .Mensaje-Monto .ubicacion_monto {
+    gap: 9em;
+  }
+
+  .Mensaje-Monto .ubicacion_monto .imagen_monto {
+    width: 16em;
+    height: 16em;
+  }
+
+  .Formulario_fondo .fondo {
+    width: 10em;
+    height: 10em;
+    margin-top: 2em;
+  }
+
+  .colores {
+    gap: 3.2em;
+  }
+
+  .colores .color {
+    width: 5em;
+    height: 5em;
+  }
+
+  .Box_form .form_style .Formulario_estilo select {
+    width: 18em;
+    height: 2em;
+    font-size: 1em;
+  }
+
+  .Box_form .form_style .Formulario_estilo_tamaño select {
+    height: 1.5em;
+    font-size: 1em;
+  }
+
+.Cuadro_Preview{
+  height: 30em;
+  width: auto;
+
+}
+.Box_form form .confirmacion button{
+  width: 12em;
+  height: 2em;
+  }
+.Mensaje-Monto h2{
+  font-size: 4em;
+}
+.Mensaje-Monto{
+gap: 3em;
 }
 #monto{
-  width: 54%;
+  width: 48%;
 }
-.Box_form{
-  grid-row:2
- 
-}
-.Box_form{
-  margin-top: -8em;
-  font-size: 1.7em;
-  form{
-  gap: 0em;
-.confirmacion{
-  height: 3.5em;
-  margin-top: 6em;
-  .confirmar_carrito button{
-   width: 10em;
-   height: 2em
+ .Box_form form .confirmacion{
+  gap: 1.8rem;
+    margin-left: -6em;
+    margin-bottom: -5em;
+ }
+ .Box_form .data label{
+  font-size: 2em;
+ }
+ .Box_form .form_style .Formulario_estilo_tamaño select{
+  width:7em;
+ }
+  .Box_form .form_style .Formulario_estilo select {
+    width: 18em;
+    height: 2em;
+    font-size: 1em;
   }
-  .reset_form button{
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+.Box_main {
+    font-size: 4px;
+  }
+}
+
+
+@media (max-width: 342px) {
+
+  .Box_main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    padding: 0.5em;
+  }
+
+  #monto {
+    width: 54%;
+  }
+
+  .Box_form {
+    grid-row: 2;
+    margin-top: -8em;
+    font-size: 1.7em;
+  }
+
+  .Box_form form {
+    gap: 0em;
+  }
+
+  .Box_form form .confirmacion {
+    height: 3.5em;
+    margin-top: 6em;
+  }
+
+  .Box_form form .confirmacion .confirmar_carrito button {
     width: 10em;
     height: 2em;
   }
-}
-}
-}
-.Box_Preview{
-  grid-row:1
-}
-.Box_Preview {
-  .Cuadro_Preview{
-    width: 99%;
-   height: 54em;
-    h3{
-      font-size: 2.5em;
-    }
-  }
-}
-.Mensaje-Monto {
-  
-  h2{
-  font-size: 3em;
-  }
-  h3{
-   font-size: 3em;
-  }
-  .ubicacion_monto{
-    gap: 11em;
-    .imagen_monto{
-      width: 25.5em;
-      height: 25.5em;
-    }
-  }
-}
-.Formulario_fondo .fondo{
- width: 10em;
- height: 10em;
-margin-top: 2em;
-}
-.colores{
-gap: 3em;
-.color{
-width: 3.5em;
-height: 3.5em;
-}
-}
-.Box_form .form_style {
-  .Formulario_estilo select{
 
- width: 14em;
- height: 2em;
- font-size: 1em;
+  .Box_form form .confirmacion .reset_form button {
+    width: 10em;
+    height: 2em;
+
+  .Box_form form .confirmacion button {
+    width: 100%;
+    height: auto;
+    padding: 0.8rem;
+    font-size: 1rem;
+
   }
 
-  .Formulario_estilo_tamaño select{
-height: 1.5em;
-      font-size: 1em;
-      width: 4em;
+  .Box_Preview {
+    width: 100%;
+    order: -1; /* preview arriba, formulario abajo */
   }
+
+  .Cuadro_Preview {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding: 1em;
+    box-sizing: border-box;
   }
+
+  .Cuadro_Preview h3 {
+    font-size: 1rem;
+    text-align: center ;
+  }
+
+  .Cuadro_Preview .Destinatario,
+  .Cuadro_Preview .Monto,
+  .Cuadro_Preview .Mensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+.Mensaje-Monto .imagen_monto {
+  width: 6rem;
+  height: 6rem;
+}
+  .colores {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+  }
 
+  .colores .color {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+
+  .Formulario_fondo {
+    gap: 0.8rem;
+    justify-content: center;
+  }
+
+  .Formulario_fondo .fondo {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .Formulario_fondo .imagen_monto {
+    width: 6rem;
+    height: 6rem;
+  }
+
+}
+}
