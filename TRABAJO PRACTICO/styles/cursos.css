@@ -28,6 +28,7 @@ body{
   margin-top: 1em;
   padding: 0.25em;
   border-radius: 0.40em;
+  cursor: pointer;
 }
 
 
@@ -39,6 +40,7 @@ body{
   margin: 1em 1em 1em 1em;
 }
 
+
 .block-informacion-curso_titulo-y-precio{
   justify-content: space-between;
   display: flex;
@@ -48,9 +50,11 @@ body{
 .block-informacion-curso_titulo-y-precio_precio{
     font-size: 1.5em;
     margin-right: 1em;
+    color: #7E57C2;
 }
 
 h3{
+  color:#7E57C2;
   margin: 0.25em;
 }
 
@@ -61,18 +65,25 @@ h4{
 
 .block-informacion-curso_presentacion{
   margin: 0.25em;
+  color: black
 }
 
 .star {
   font-size: 24px;
   color: gray; 
-  cursor: pointer;
+  
 }
 
 .star-checked{
   font-size: 24px;
   color: gold; 
-  cursor: pointer;
+  
+}
+
+.block-informacion-curso:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
 
 /** css de botones de pagina **/
@@ -89,21 +100,40 @@ h4{
     gap: 5px; 
 }
 
-.page-item {
-}
 
-.page-link {
+
+ .page-link {
     display: block;
     padding: 8px 12px;
     text-decoration: none;
-    color:  #c300ff;
+    color:  #6B38AB;
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .page-link:hover {
-    background-color: #c300ff;
+    background-color: #7E57C2;
     color: white;
-    border-color: #c300ff;
+    border-color:  #AB7DEB;
+}
+
+@media screen and (max-width: 480px) {
+
+  main{
+    /* TAMAÑO DE LA FUENTE 12 PX, PARA Q EL EM TOME ESTE VALOR  */
+    font-size: 12px ;  
+  }
+.h2-cursos-disponibles{
+ text-align: center;
+ margin-top: 1em;
+}
+
+.block-informacion-curso{
+ width: 100%;
+}
+
+h3{
+  font-size: 1em;
+}
 }

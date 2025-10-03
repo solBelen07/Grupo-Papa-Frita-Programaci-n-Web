@@ -502,22 +502,8 @@ gap: 3em;
  .Box_form form .confirmacion{
   gap: 1.8rem;
     margin-left: -6em;
-    margin-bottom: -5em;
  }
- .Box_form .data label{
-  font-size: 2em;
- }
- .Box_form .form_style .Formulario_estilo_tamaño select{
-  width:7em;
- }
-  .Box_form .form_style .Formulario_estilo select {
-    width: 18em;
-    height: 2em;
-    font-size: 1em;
-  }
 }
-
-
 
 
 

@@ -42,17 +42,26 @@ body{
 .block-informacion-contenidos{
   border-radius: 0.40em;
   margin: auto;
-  text-align: start;
   gap: 2em;
   width: 80%;
   padding: 0.25em;
   background-color: rgb(225, 213, 238);
   display: flex; 
-  flex-wrap: wrap;
+}
+
+
+.block-informacion-contenidos_temas{
+  width: 49%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
 
 .block-informacion-contenidos__imagen{
-  width: 50%;
+  width: 49%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .block-informacion-contenidos__imagen-propiedades{
@@ -61,11 +70,6 @@ body{
   border-radius: 0.40em;
 }
   
-.block-informacion-contenidos_temas{
-  width: 50%;
-
-}
-
 details{
   width: 90%;
 }
@@ -77,6 +81,7 @@ summary{
   background-color: #f7f7f7;
   cursor: pointer;
   box-sizing: border-box;
+  font-weight: bold;
 }
 
 .summary_top{       
@@ -97,23 +102,31 @@ summary{
   background-color: #f7f7f7;
 }
 
+.block-informacion-contenidos_precio-y-boton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1em auto;
+}
 
-  
 .block-informacion-contenidos__boton{
   padding: 10px 20px;
-  background-color: #a446cf;
+  background-color: #694d99;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin: 1em;
+  font-weight: bold;
 }
 
-.block-informacion-contenidos_precio-y-boton{
-  flex-direction: row;
-  width: 80%;
+.block-informacion-contenidos__precio{
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
+/* css docente */
 .h2-docente-a-cargo{
   width: 80%;
   margin: auto; 
@@ -232,4 +245,66 @@ h4{
 .course-card a {
   color: #6a0dad;
   font-weight: bold;
+}
+
+/* Responsive - Media querys */
+@media screen and (max-width: 480px) {
+ h1{
+  text-align: center;
+ }
+
+.block-informacion-curso__informacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; 
+  margin: 0.25em auto; 
+}
+
+.block-informacion-contenidos{
+
+  background-color: rgb(225, 213, 238);
+  display: block;
+ 
+}
+
+.block-informacion-contenidos_temas{
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.block-informacion-contenidos__imagen{
+  display: none;
+}
+
+
+.block-informacion-docente{
+ display: flex;
+ flex-direction: column;
+}
+
+.h2-docente-a-cargo{
+  margin-top: 0.5em;
+ text-align: center;
+}
+
+.carousel{
+  overflow: hidden;        
+  width: 80%;
+  margin: 1em auto ;
+  text-align: center;
+}
+
+.carousel-titulo{
+  width: auto;
+  font-size: 1em;
+}
+
+.block-informacion-contenidos__precio {
+font-size: 1em;
+  font-weight: lighter;
+}
+
 }

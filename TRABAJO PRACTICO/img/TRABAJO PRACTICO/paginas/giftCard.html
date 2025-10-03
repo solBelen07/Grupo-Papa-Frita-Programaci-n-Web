@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="descripcion"
+      content="Esta es la pagina para personalizar y regalar Gift Cards"
+    />
+
+    <title>Personalizar Regalo</title>
+ <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/GiftCardsStyle.css" />
+   
+    <!-- <link rel="icon" href="" /> -->
+  </head>
+
+  <body>
+    <!-- Encabezado -->
+    <header class="main-header">
+        <section class="logo">
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
+            <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
+          </section>
+        <!-- Barra de Navegación -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link inicio">Inicio</a></li>
+                <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="./inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Inglés">
+            </datalist>
+            <button class="search-button">
+                <img src="../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
+
+       <section class="user-actions">
+            <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
+            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito"><!-- icono carrito -->
+                <img src="../img/carrito.png" alt="Carrito de compra">
+                <span class="cart-count">0</span>
+            </article>
+        </section>
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="Box_main">
+
+  <section class="Box_form">
+     <form class="formulario_giftCards">
+        <section class="data">
+            
+              <label for="destinatario"
+                >Nombre del Destinatario :</label>
+                <input type="text" id="destinatario" name="destinatario" placeholder="Ingrese su nombre..." />
+
+              <label for="email"
+                >Email del Destinatario : </label>
+
+                <input type="email" id="email" name="email"  placeholder="Ingrese su email...." />
+              <label for="monto">Ingrese cuanto desea regalar :  </label>
+                <input type="number" id="monto" name="monto"  pattern="[0-9]+" placeholder="Ingrese el monto...">
+             
+
+          </section>
+
+          <section class="form_style">
+
+            <div class="Formulario_estilo">
+              <label for="style">Fuente : </label>
+
+              <select name="style" id="style" class="style_type">
+                <option disabled selected>Seleccione su fuente</option>
+
+                <option value="Arial">Arial</option>
+
+                <option value="Calibri">Calibri</option>
+
+                <option value="Times New Roman">Times New Roman</option>
+              </select>
+            </div>
+            
+
+            <div class="Formulario_estilo_tamaño">
+              <label for="tamaño_estilo">Tamaño:</label>
+
+              <select name="style_color" id="syle_color">
+                <option value="5">5</option>
+
+                <option selected value="11">11</option>
+
+                <option value="17">17</option>
+
+                <option value="20">20</option>
+
+                <option value="25">25</option>
+
+                <option value="30">30</option>
+              </select>
+            </div>
+            </section>
+
+<section class="colores">
+              
+              <label for="Rojo" > 
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Rojo"
+                value="Rojo"
+                checked
+              />
+              <div class="color circuloRojo"></div>
+              
+              </label>
+            
+              <label for="Amarillo">
+              
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Amarillo"
+                value="Amarillo"
+              />
+                <div class="color circuloAmarillo"></div>
+              </label>
+             
+
+              <label for="Azul">
+              
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Azul"
+                value="Azul"
+              />
+              <div class="color circuloAzul"></div>
+              </label>
+
+              <label for="Verde">
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Verde"
+                value="Verde"
+              />
+              <div class="color circuloVerde"></div>
+              </label>
+              <label for="Lila">
+              
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Lila"
+                value="Lila"
+              />
+              <div class="color circuloLila"></div>
+              </label>
+              <label for="Naranja">
+              
+              <input
+                type="radio"
+                name="color_estilo"
+                id="Naranja"
+                value="Naranja"
+              />
+              <div class="color circuloNaranja"></div>
+              </label>
+            
+        </section>
+            <div class="Formulario_fondo">
+              <label for="Fondo1" >
+
+              <input type="radio" name="Fondo" id="Fondo1" value="Fondo1" checked />
+
+              <img src="../Imagenes/gc_fondo1.jpeg" class="fondo"></label>
+
+              <label for="Fondo2">
+
+              <input type="radio" name="Fondo" id="Fondo2" value="Fondo2" />
+
+               <img src="../Imagenes/gc_fondo2.jpg"  class="fondo" ></label>
+
+              <label for="Fondo3">
+
+              <input type="radio" name="Fondo" id="Fondo3" value="Fondo3" />
+
+              <img src="../Imagenes/gc_fondo3.jpg" class="fondo"></label>
+
+              <label for="Fondo4">
+
+              <input type="radio" name="Fondo" id="Fondo4" value="Fondo4" />
+
+               <img src="../Imagenes/gc_fondo4.jpg"class="fondo"></label>
+
+              <label for="Fondo5">
+
+              <input type="radio" name="Fondo" id="Fondo5" value="Fondo5" />
+
+              <img src="../Imagenes/gc_fondo5.jpg"class="fondo"></label>
+              
+
+
+            </div>
+
+        <section class="confirmacion">
+        <div class="confirmar_carrito">
+        <button>Agregar al carrito</button> </div>
+        <div class="reset_form">
+        <button type="reset">Cancelar</button></div>
+       
+        </section>
+          </form>
+        
+
+      </section>
+<section class="Box_Preview">
+      <section class="Cuadro_Preview">
+       
+          <div class="Destinatario">  
+            <h3>¡Felicidades! :</h3>
+          </div>
+
+          <div class="Monto">
+            <h3>Monto</h3>
+          </div>
+
+          <div class="Mensaje">
+            <h3>Contenido del mensaje</h2>
+          </div>
+       
+      </section>
+      
+    <section class="Mensaje-Monto">
+      <h2>Vista previa de la gift card</h2>
+      <h3>Elija la ubicacion del monto :  </h3>
+      <section class="ubicacion_monto">
+      
+        <label>
+        <input type="radio" name="Ubicacion" id= "ubi_monto"value="ubi_monto">
+        <img class="imagen_monto" src="../Imagenes/monto_abajo_izquierda.JPG">
+        </label>
+        <label>
+          <input type="radio" name="Ubicacion" id= "ubi_monto2"value="ubi_monto2" checked>
+        <img class="imagen_monto" src="../Imagenes/monto_abajo_derecha.JPG">
+        </label>
+        <label>
+          <input type="radio" name="Ubicacion" id= "ubi_monto3"value="ubi_monto3">
+        <img class="imagen_monto" src="../Imagenes/monto_arriba_izquierda.JPG">
+        </label>
+  
+      </section>
+     
+      </section>
+</section>
+    </main>
+    <!-- Footer -->
+    <footer class="container-footer">
+        <section class="datos-equipo">
+            <ul>
+                <li>EQUIPO : Grupo PapaFrita</li>
+                <li>Collado, Camila</li>
+                <li>Martelli, Rocio Belen DNI: 44.161.046</li>
+                <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
+                <li>Moyano Vivas, Matias Ernesto</li>
+                <li>Viana, Sol Belen DNI: 45.889.073</li>
+            </ul>
+        </section>
+
+
+        <section class="menu-inferior">
+            <a href="../index.html">Inicio</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="./paginas/inscripcionCurso.html">Formulario</a>
+
+        </section>
+
+
+        <section class="redes-sociales">
+            <p class="parrafo-socialMedia">REDES SOCIALES</p>
+            <nav class="redes-sociales-nav">
+                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                </a>
+
+                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                </a>
+                <a href="https://wa.me/5491155844612" target="_blank">
+                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                </a>
+            </nav>
+        </section>
+
+
+        </section>
+    </footer>
+  </body>
+</html>

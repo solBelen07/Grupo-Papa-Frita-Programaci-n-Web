@@ -12,7 +12,8 @@
     <!-- Header -->
      <header class="main-header">
     <section class="logo">
-            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma"></a>
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
+            <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
         </section>
 
         <!-- Barra de Navegación -->
@@ -25,9 +26,9 @@
         </label>
         <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="../index.html" class="nav-link inicio">Inicio</a></li>
                 <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
-                <li><a href="./detalleCurso.html" class="nav-link">Cursos</a></li>
+                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
                 <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
 
             </ul>
@@ -52,7 +53,10 @@
         </section>
 
         <section class="user-actions">
-            <a href="./inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
+             <a href="../paginas/inicioSesion.html"> 
+         <button class="login-button"> 
+            <img src="../img/logo-fondo-transparente.png" alt="Imagen de logo iniciar sesion" class="logo-iniciarSesion-Responsive"> 
+                Iniciar Sesión </button></a>
             <a href="./registrarse.html"><button class="signup-button">Registrarse</button></a>
             <article class="carrito">
                 <img src="../img/carrito.png" alt="Carrito de compra">
@@ -65,27 +69,12 @@
 <main class="main-content">
     <section class="formulario-inscripcion">
       <h2>Formulario de inscripción a nuestros cursos</h2>
-      <!--<p>Indicá los datos de hasta 3 personas para inscribir en el curso.</p> -->
-
-    <form id="inscripcionForm" action="#" method="GET">
-      <label for="curso">Seleccioná un curso:</label>
-      <select id="curso" name="curso" required>
-        <option value="">Elegí un curso </option>
-        <option value="Programación de videojuegos">Programación de videojuegos</option>
-        <option value="Marketing Digital">Marketing Digital</option>
-        <option value="Diseño Gráfico">Diseño Gráfico</option>
-        <option value="Desarrollo Web">Desarrollo Web</option>
-        <option value="Ciberseguridad">Ciberseguridad</option>
-        <option value="Inteligencia Artificial">Inteligencia Artificial</option>
-        <option value="Finanzas Personales">Finanzas Personales</option>
-        <option value="Inglés">Inglés</option>
-    </select>
-
+      
         <h3>Datos de el alumno</h3>
     
-        <!--para mostrar + personas -->
+        <!--para mostrar + personas 
     <input type="checkbox" id="mostrar-persona-2" class="toggle">
-    <input type="checkbox" id="mostrar-persona-3" class="toggle">
+    <input type="checkbox" id="mostrar-persona-3" class="toggle"> -->
 
         <div class="persona">
           <label>Alumno:</label>
@@ -110,44 +99,70 @@
           <label for="mostrar-persona-3" class="toggle-label quitar">Quitar Persona 3</label>
         </div> -->
 
-        <input type="checkbox" id="mostrar-curso" style="display:none;">
-<label for="mostrar-curso" class="toggle-label">Agregar Curso</label>
-
-<div class="search-bar" style="display:none;">
-    <input list="Cursos" placeholder="Buscar curso...">
-    <datalist id="Cursos">
-        <option value="Programación de videojuegos">
-        <option value="Marketing Digital">
-        <option value="Diseño Gráfico">
-        <option value="Desarrollo Web">
-        <option value="Ciberseguridad">
-        <option value="Inteligencia Artificial">
-        <option value="Finanzas Personales">
-        <option value="Inglés">
-    </datalist>
-    <button class="search-button">Buscar</button>
-</div>
-<!-- Barra de búsqueda -->
-        <section class="search-bar">
-            <input list="Cursos" placeholder="Buscar curso...">
-            <datalist id="Cursos">
-                <option value="Programación de videojuegos">
-                <option value="Marketing Digital">
-                <option value="Diseño Gráfico">
-                <option value="Desarrollo Web">
-                <option value="Ciberseguridad">
-                <option value="Inteligencia Artificial">
-                <option value="Finanzas Personales">
-                <option value="Inglés">
-            </datalist>
-            <button class="search-button">
-                <img src="../img/lupa.png" alt="Buscar">
-            </button>
-        </section>
-
+     <!-- Curso siempre visible -->
+        <div class="curso curso-1">
+        <label for="curso1">Curso 1:</label>
+        <select id="curso1" name="curso1">
+            <option value="">-- Elegí un curso --</option>
+            <option value="programacion-videojuegos">Programación de Videojuegos</option>
+            <option value="marketing">Marketing Digital</option>
+            <option value="diseno">Diseño Gráfico</option>
+            <option value="web">Desarrollo Web</option>
+            <option value="ciberseguridad">Ciberseguridad</option>
+            <option value="ia">Inteligencia Artificial</option>
+            <option value="finanzas">Finanzas Personales</option>
+            <option value="ingles">Inglés</option>
+        </select>
+        </div>
         
-<a href="#popup" class="boton-enlace">INSCRIBITE</a>
-  </form>
+        <input type="checkbox" id="mostrar-curso-2" class="toggle">
+        <label for="mostrar-curso-2" class="toggle-label">Agregar Curso 2</label>
+
+        <div class="curso curso-2">
+        <label for="curso2">Curso 2:</label>
+        <select id="curso2" name="curso2">
+            <option value="">-- Elegí un curso --</option>
+            <option value="programacion-videojuegos">Programación de Videojuegos</option>
+            <option value="marketing">Marketing Digital</option>
+            <option value="diseno">Diseño Gráfico</option>
+            <option value="web">Desarrollo Web</option>
+            <option value="ciberseguridad">Ciberseguridad</option>
+            <option value="ia">Inteligencia Artificial</option>
+            <option value="finanzas">Finanzas Personales</option>
+            <option value="ingles">Inglés</option>
+        </select>
+
+        <label for="mostrar-curso-2" class="toggle-label quitar">Quitar Curso 2</label>
+        </div>
+
+        <!-- Checkbox oculto para Curso 3 -->
+        <input type="checkbox" id="mostrar-curso-3" class="toggle">
+        <label for="mostrar-curso-3" class="toggle-label">Agregar Curso 3</label>
+
+        <div class="curso curso-3">
+        <label for="curso3">Curso 3:</label>
+        <select id="curso3" name="curso3">
+            <option value="">-- Elegí un curso --</option>
+            <option value="programacion-videojuegos">Programación de Videojuegos</option>
+            <option value="marketing">Marketing Digital</option>
+            <option value="diseno">Diseño Gráfico</option>
+            <option value="web">Desarrollo Web</option>
+            <option value="ciberseguridad">Ciberseguridad</option>
+            <option value="ia">Inteligencia Artificial</option>
+            <option value="finanzas">Finanzas Personales</option>
+            <option value="ingles">Inglés</option>
+        </select>
+
+        <label for="mostrar-curso-3" class="toggle-label quitar">Quitar Curso 3</label>
+        </div>
+
+
+
+
+    
+        
+  <a href="#popup" class="boton-enlace">INSCRIBITE</a>
+
 
   <!-- Popup de confirmación -->
   <div id="popup" class="popup-confirmacion">
@@ -176,8 +191,8 @@
                 <li>Collado, Camila Sol DNI: 43.098.593</li>
                 <li>Martelli, Rocio Belen DNI: 44.161.046</li>
                 <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
-                <li>Moyano Vivas, Matias Ernesto</li>
-                <li>Viana, Sol Belen</li>
+                <li>Moyano Vivas, Matias Ernesto DNI: 40.240.664</li>
+                <li>Viana, Sol Belen DNI: 45.889.073</li>
             </ul>
         </section>
 

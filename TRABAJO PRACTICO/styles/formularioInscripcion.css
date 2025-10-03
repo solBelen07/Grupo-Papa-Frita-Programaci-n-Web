@@ -1,113 +1,83 @@
 .formulario-inscripcion {
- max-width: 700px;
-  margin: 2rem auto;
-  padding: 2rem;
+  text-align: center;
+ max-width: 43.75em;
+  margin: 2em auto;
+  padding: 4em;
   background-color: #fdfdfd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.625em;
+  box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1);
 }
 
 .formulario-inscripcion h2,
 .formulario-inscripcion h3 {
   color: #5e35b1;
-  margin-bottom: 0.5rem
+  margin-bottom: 0.5em
 }
-.formulario-empresa p {
-  margin-bottom: 1.5rem;
+.formulario-inscripcion p {
+  margin-bottom: 1.5em;
   color: #333;
 }
 
 .formulario-inscripcion label {
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 1em;
   display: block;
   color: #444;
 }
 
 .formulario-inscripcion input {
   
-  margin: 0.3rem 0 1rem 0;
-  padding: 0.6rem;
+  margin: 0.3em 0 1em 0;
+  padding: 0.6em;
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 0.0625em solid #ccc;
+  border-radius: 0.3125em;
 }
 
-.persona {
-  margin-bottom: 1rem;
-}
 .toggle {
   display: none;
 }
 
-.persona-2,
-.persona-3 {
+/* Ocultar bloques de cursos por defecto */
+.curso-2,
+.curso-3 {
   display: none;
 }
 
-#mostrar-persona-2:checked ~ .persona-2,
-#mostrar-persona-3:checked ~ .persona-3 {
+#mostrar-curso-2:checked ~ .curso-2,
+#mostrar-curso-3:checked ~ .curso-3 {
   display: block;
 }
 
+/* Botones */
 .toggle-label {
   display: inline-block;
-  margin: 0.5rem 0;
+  margin: 0.5em 0;
   background-color: #7E57C2;
   color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.toggle-label.quitar {
-  background-color: #dc3545;
-  margin-top: 0.5rem;
-}
-
-button[type="submit"] {
-  background-color: #7E57C2;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 5px;
+  padding: 0.4em 0.8em;
+  border-radius: 0.3125em;
   cursor: pointer;
   font-weight: bold;
 }
 
-button[type="submit"]:hover {
-  background-color: #5e35b1;
+.toggle-label.quitar {
+  background-color: #dc3545;
+  margin-top: 0.5em;
 }
 
-.botones-extra {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
 
-.botones-extra button {
-
-  background-color: #9575CD;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.botones-extra button:hover {
-  background-color: #7E57C2;
-}
 
 /*MENSAJE CONFIRM*/
 .boton-enlace {
   display: inline-block;
-  margin-top: 1rem;
+  margin: 2em auto; 
   background-color: #7E57C2;
   color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
+  padding: 0.8em 2em;
+  border-radius: 0.3125em;
   text-decoration: none;
+  text-align: center;
   font-weight: bold;
 }
 
@@ -134,24 +104,80 @@ button[type="submit"]:hover {
 
 .popup-contenido {
   background-color: #fff;
-  padding: 2rem;
-  border-radius: 10px;
+  padding: 2em;
+  border-radius: 0.625em;
   text-align: center;
-  max-width: 400px;
+  max-width: 25em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .popup-contenido h3 {
   color: #388e3c;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 .cerrar-popup {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 1em;
   background-color: #dc3545;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  padding: 0.5em 1em;
+  border-radius: 0.3125em;
   text-decoration: none;
+}
+
+
+/*  CELULARES  */
+@media (max-width: 480px) {
+  .formulario-inscripcion {
+    width: 90%;
+    padding: 1em;
+    font-size: 0.9em;   
+  }
+
+  .formulario-inscripcion input,
+  .formulario-inscripcion select {
+    font-size: 0.9em;
+    padding: 0.5em;
+  }
+
+  .toggle-label {
+    width: 100%;       
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .boton-enlace {
+    display: block;
+    width: 100%;          
+    margin: 1em auto 0 auto;
+    font-size: 1em;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 481px) and (max-width: 960px) {
+  .formulario-inscripcion {
+    width: 80%;
+    padding: 1.5em;
+    font-size: 1em;
+  }
+
+  .formulario-inscripcion input,
+  .formulario-inscripcion select {
+    font-size: 1em;
+    padding: 0.6em;
+  }
+
+  .toggle-label {
+    width: auto;          
+    padding: 0.6em 1.2em;
+  }
+
+  .boton-enlace {
+    display: inline-block;
+    width: auto;
+    padding: 0.8em 2em;
+    font-size: 1em;
+  }
 }

@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilos del HEADER  */
+.main-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  background-color: #9575CD;
+  color: #fff;
+  gap: 1em;
+  /* Este color es del LOGO*/
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Logo */
+.logo img {
+  max-height: 5.3125em;
+  width: auto;
+}
+
+.logo .logo-mobile {
+  display: none;
+}
+
+
+/* Barra de navegación */
+.navbar {
+  flex-grow: 1;
+  margin-left: 2em;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 0.5em 0;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d1c4e9;
+  text-decoration: underline;
+}
+
+/* Líneas del ícono hamburguesa */
+.menu-icon {
+  display: none;
+  /* oculto en escritorio */
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625em;
+}
+
+.menu-icon .line {
+  width: 1.5625em;
+  height: 0.1875em;
+  background-color: #333;
+  margin: 0.25em 0;
+  border-radius: 2px;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 15.625em;
+  flex-grow: 1;
+  margin: 0 2em;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 0.375em 0.625em;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar .search-button {
+  background: #7E57C2;
+  border: none;
+ padding: 0.375em 0.625em;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-bar .search-button img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+
+/* Carrito del header */
+.carrito {
+  position: relative;
+}
+
+.carrito img {
+  width: 1.75em;
+  height: auto;
+}
+
+.cart-count {
+  position: absolute;
+  top: -0.625em;
+  right: -10px;
+  background: #dc3545;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 0.125em 0.375em;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.login-button,
+.signup-button {
+  background: #7E57C2;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background: #5e35b1;
+}
+
+/* FOOTER*/
+.container-footer a {
+  text-decoration: none;
+}
+
+.container-footer a:hover {
+  color: #7E57C2;
+}
+
+.container-footer {
+  width: 100%;
+  background-color: #694d99;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 2em;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+
+/* Lista de datos del equipo */
+.datos-equipo ul {
+  list-style: none;
+
+}
+
+.datos-equipo li {
+  margin-top: 0.3em;
+}
+
+/* Menú inferior */
+.menu-inferior {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-right: 6em;
+}
+
+.menu-inferior a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.menu-inferior a:hover {
+  color: #7E57C2;
+}
+
+/* Redes sociales */
+
+.parrafo-socialMedia {
+  margin-bottom: 1em;
+  color: black;
+  text-align: center;
+}
+
+
+.redes-sociales-nav {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.redes-sociales .social-icon {
+
+  gap: 1em;
+  width: 2.1875em;
+  height: 2.1875em;
+  margin-left: 0.8em;
+  align-items: flex-end;
+  /* Para suavizar la transformacion cuando se haga el hover 
+    transition : propiedad a utilizar - duracion*/
+  transition: transform 0.3s
+}
+
+.redes-sociales .social-icon:hover {
+  transform: scale(1.3);
+
+}
+
+/* RESPONSIVE  HEADER*/
+
+
+/*CELUS*/
+
+@media (max-width: 480px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+  }
+
+  .logo img {
+    max-height: 40px;
+    width: auto;
+    display: block;
+  }
+  
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu-icon .line {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 4em;
+    left: 0; 
+    width: 100%;
+    background: #7e57c2;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+    display: none;
+    z-index: 1001;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #menu-toggle:checked~.navbar {
+    display: flex;
+  }
+
+  .user-actions .login-button,
+  .user-actions .signup-button
+   {
+    display: none;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .carrito {
+    font-size: 0.9em;
+  }
+
+  .carrito img {
+    max-width: 13em;
+    /* width: 70%; */
+  }
+
+
+  /* FOOTER */
+  .container-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+    font-size: 0.8em;
+  }
+
+  .menu-inferior {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 0.5em;
+  }
+
+  .redes-sociales-nav {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+  }
+
+  .parrafo-socialMedia {
+    display: none;
+  }
+}
+
+
+/*TABLETS*/
+@media (min-width: 481px) and (max-width: 960px) {
+
+  /* HEADER */
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+   
+  }
+
+  .logo {
+    display:none;
+  }
+
+  .navbar {
+  margin-left: 0;
+  }
+
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+  }
+
+   /* MENU HAMBURGUESA  */
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu-icon .line {
+    width: 2.625em;
+    height: 0.3125em;
+    background: #333;  /* COLOR DE LAS BARRITAS DEL MENU HAMBURGUESA */
+    margin: 0.25em 0;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 4em;
+    /* left: 0; */
+    /* width: 100%; */
+    background: #7e57c2;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 1em 0; */
+    display: none;
+    z-index: 1001;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+
+  #menu-toggle:checked~.navbar {
+    display: flex;
+  }
+
+ 
+  .search-bar {
+    flex: 1;
+    max-width: 300px;
+  }
+
+
+  .user-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .carrito img{
+    width: 2em;
+
+  }
+
+  /* FOOTER */
+  .container-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 0.9em;
+  }
+
+  .menu-inferior {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 0.5em;
+  }
+
+  .redes-sociales-nav {
+    flex-direction: row;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo .logo-desktop { display: none; }
+  .logo .logo-mobile  { display: block; }
+}
