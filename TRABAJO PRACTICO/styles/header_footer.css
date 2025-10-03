@@ -165,6 +165,7 @@ display: none;
 .login-button:hover,.signup-button:hover {
   background: #5e35b1;
 }
+
 /* Carrito Desplegado */
 .caja_carrito{
   display:grid;
@@ -196,7 +197,11 @@ width: 100%;
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
-input[type="checkbox"]:checked~.caja_carrito{
+.expandir_borrar img{
+  max-width: 100%;
+  height: auto;
+}
+#Carro:checked~.caja_carrito{
   display: none;
 }
 /* Carrito producto numero 1 */
