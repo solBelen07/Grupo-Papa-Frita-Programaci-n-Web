@@ -14,7 +14,7 @@ body{
   font-family: Arial, sans-serif;
 }
 
-/* Estilos de los Cusos */
+/* Estilos de los Cursos */
 .block-informacion-curso {
   margin: 2% 10% 2% 10%;
   width: 80%; 
@@ -112,7 +112,7 @@ summary{
 
 .block-informacion-contenidos__boton{
   padding: 10px 20px;
-  background-color: #a446cf;
+  background-color: #694d99;
   color: white;
   border: none;
   border-radius: 5px;

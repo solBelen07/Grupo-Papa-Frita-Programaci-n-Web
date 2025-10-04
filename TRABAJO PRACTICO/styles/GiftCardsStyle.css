@@ -401,17 +401,23 @@
     flex-direction: column;
     padding: 1rem;
     gap: 1.5rem;
+    margin-top: 0;
 
   }
-
-
+.Cuadro_Preview .Destinatario {
+  font-size: 3em;
+}
+.Cuadro_Preview .Mensaje{
+  font-size: 3em;
+}
+.Cuadro_Preview .Monto{
+  font-size: 3em;
+}
+.Cuadro_Preview .m
   .Box_form {
     width: 100%;
     margin: 0;
   }
-
- 
-
   .Box_form input,
   .Box_form select
    {
@@ -420,17 +426,24 @@
      font-size: 1rem;
   }
 
-
-
-  
    .Box_form form .confirmacion{
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.8rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+  }
+
+  .Box_form form .confirmacion button{
+      width: 9em;
+    height: 3em;
+  }
+ 
+  .Box_form form .confirmacion .reset_form {
+         width: 9em;
+    height: 3em;
   }
 
   .Mensaje-Monto h3 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   .Mensaje-Monto .ubicacion_monto {
@@ -467,7 +480,37 @@
     height: 1.5em;
     font-size: 1em;
   }
+
+.Cuadro_Preview{
+  height: 30em;
+  width: auto;
+
 }
+.Box_form form .confirmacion button{
+  width: 12em;
+  height: 2em;
+  }
+.Mensaje-Monto h2{
+  font-size: 4em;
+}
+.Mensaje-Monto{
+gap: 3em;
+}
+#monto{
+  width: 48%;
+}
+ .Box_form form .confirmacion{
+  gap: 1.8rem;
+    margin-left: -6em;
+ }
+}
+
+
+
+
+
+
+
 
 @media (max-width: 500px) {
 .Box_main {
@@ -477,9 +520,6 @@
 
 
 @media (max-width: 342px) {
- .Box_main {
-    font-size: 3px;
-  }
 
   .Box_main {
     grid-template-columns: 1fr;
@@ -533,7 +573,6 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3;  
     border: 2px solid black;
     border-radius: 0.5em;
     padding: 1em;

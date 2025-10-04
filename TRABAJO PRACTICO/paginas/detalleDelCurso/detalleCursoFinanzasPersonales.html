@@ -55,10 +55,84 @@
         <section class="user-actions">
             <a href="../../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
             <a href="../../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
-            <article class="carrito"><!-- icono carrito -->
-                <img src="../../img/carrito.png" alt="Carrito de compra">
-                <span class="cart-count">0</span>
+            
+           <!-- icono carrito -->
+
+        <input type="checkbox" name="Carro" id="Carro" value="Carro" checked />
+       <article class="carrito">    
+
+            <label for="Carro" >
+            <img src="../../img/carrito.png" alt="Carrito de compra" class="carrito_icono">
+            </label>
+             <span class="cart-count">3</span>
+
             </article>
+               
+        <!-- Despliegue del carrito --> 
+
+          <section class="caja_carrito"> 
+
+            <article class="producto1_carrito">
+                <img src="../TRABAJO PRACTICO/img/ingles.jpg" class="Imagen_agregar_carrito">
+                <h3>Curso: Ingles avanzado</h3>
+                <h4>Precio : 120$</h4>
+
+                <section class="expandir_borrar">
+                <a href="./paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_flechas_expandiendo.webp">
+                </a>
+
+               
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_basura.png">
+
+                </section>
+
+            </article>   
+
+            <article class="producto2_carrito">
+
+                <img src="../TRABAJO PRACTICO/img/backend.jpg" class="Imagen_agregar_carrito">
+                <h3>Curso: Programación Back-end</h3>
+                <h4>Precio : 250$</h4>
+                
+                <section class="expandir_borrar">
+
+                <a href="./paginas/detalleDelCurso/detalleCursoBackend.html">
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_flechas_expandiendo.webp">
+                </a>
+
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_basura.png">
+
+                </section>
+
+            </article>
+
+            <article class="producto3_carrito">
+
+                <img src="../TRABAJO PRACTICO/Imagenes/gift_card.png " class="Imagen_agregar_carrito">
+                <h3>Regalo. Gift Card</h3>
+                <h4>Precio : 400$</h4>
+                
+                <section class="expandir_borrar">
+                <a href="../TRABAJO PRACTICO/Imagenes/gift_card.png " target="_blank">
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_flechas_expandiendo.webp">
+                </a>
+
+               
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_basura.png">
+
+                </section>
+
+            </article>
+
+            <article class="confirmar_carrito">
+            <h4>Total a pagar : 770$ </h4>
+            <a href="./paginas/inicioSesion.html"> 
+                <button>Continuar con la compra</button>
+            </a>
+            </article>
+
+           </section>
         </section>
 
 
@@ -83,9 +157,9 @@
     </section>
     <!-- Requisitos y duracion -->
     <section class="block-informacion-curso__informacion">
-        <span class="span-block-informacion-curso__informacion"><h4>Duración:</h4> 25 horas</span>
-        <span class="span-block-informacion-curso__informacion"><h4>Tiempo de Dedicacion:</h4> 2 horas diarias</span>
-        <span class="span-block-informacion-curso__informacion"><h4>Requisitos Previos:</h4> Interés en organizar mejor sus ingresos, gastos y hábitos financieros.</span>
+        <span class="span-block-informacion-curso__informacion"><h4>Duración:</h4> 30 hs.</span>
+        <span class="span-block-informacion-curso__informacion"><h4>Tiempo de dedicación:</h4> 2 hs diarias.</span>
+        <span class="span-block-informacion-curso__informacion"><h4>Requisitos previos:</h4> Interés en organizar mejor sus ingresos, gastos y hábitos financieros.</span>
     </section>
     <!-- Contenidos del curso-->
     <section class="block-informacion-contenidos">
@@ -95,9 +169,9 @@
                 <summary class="summary_top">MÓDULO 1 – Introduccion de finanzas personales </summary>
                 <article class="summary-contenidos_desplegable">
                     <ul>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 1: Introducción a las Finanzas Personales</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 2: La importancia de la educación financiera en la vida cotidiana</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 3: Cómo analizar tus ingresos y gastos</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 1: Introducción a las Finanzas Personales</span> <span class="time">90 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 2: La importancia de la educación financiera en la vida cotidiana</span> <span class="time">90 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 3: Cómo analizar tus ingresos y gastos</span> <span class="time">90 min</span></li>
                     </ul>
                 </article>
             </details>
@@ -106,10 +180,10 @@
                 <summary>MÓDULO 2 – Creacion y gestacion de presupuesto</summary>
                 <article class="summary-contenidos_desplegable">
                     <ul>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 4: Presupuesto personal: cómo armarlo y mantenerlo</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 5: Deudas: tipos, costos y cómo salir de ellas</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 6: Uso inteligente de tarjetas de crédito y préstamos</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 7: Fondo de emergencia: por qué y cómo crearlo</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 4: Presupuesto personal: cómo armarlo y mantenerlo</span> <span class="time">90 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 5: Deudas: tipos, costos y cómo salir de ellas</span> <span class="time">90 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 6: Uso inteligente de tarjetas de crédito y préstamos</span> <span class="time">90 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 7: Fondo de emergencia: por qué y cómo crearlo</span> <span class="time">90 min</span></li>
                     </ul>
                 </article>
             </details>
@@ -118,9 +192,9 @@
                 <summary>MÓDULO 3 – Fundamentos del ahorro</summary>
                 <article class="summary-contenidos_desplegable">
                     <ul>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 8: El ahorro: estrategias y hábitos efectivos</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 9: Objetivos financieros a corto, mediano y largo plazo</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 10:Inversiones básicas: dónde y cómo empeza</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 8: El ahorro: estrategias y hábitos efectivos</span> <span class="time">80 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 9: Objetivos financieros a corto, mediano y largo plazo</span> <span class="time">80 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 10:Inversiones básicas: dónde y cómo empeza</span> <span class="time">80 min</span></li>
                     </ul>
                 </article>
             </details>
@@ -129,9 +203,9 @@
                 <summary>MÓDULO 4 – Introduccion a la inversion</summary>
                 <article class="summary-contenidos_desplegable">
                     <ul>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 11: Inflación y su impacto en tus finanzas</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 12: Seguros: protección financiera ante imprevistos</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 13: Jubilación y planificación a futuro</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 11: Inflación y su impacto en tus finanzas</span> <span class="time">90 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 12: Seguros: protección financiera ante imprevistos</span> <span class="time">90 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 13: Jubilación y planificación a futuro</span> <span class="time">90 min</span></li>
                     </ul>
                 </article>
             </details>
@@ -140,8 +214,8 @@
                 <summary>MÓDULO 5 – El credito</summary>
                 <article class="summary-contenidos_desplegable">
                     <ul>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 14: Psicología del dinero: emociones y hábitos financieros</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 15: Educación financiera en la familia y con los hijos</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 14: Psicología del dinero: emociones y hábitos financieros</span> <span class="time">80 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 15: Educación financiera en la familia y con los hijos</span> <span class="time">80 min</span></li>
                     </ul>
                 </article>
             </details>
@@ -150,9 +224,9 @@
                 <summary>MÓDULO 6 – Gestion de deudas</summary>
                 <article class="summary-contenidos_desplegable">
                     <ul>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 16: Introduccion</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 17: Herramientas digitales para organizar tus finanzas</span> <span class="time">120 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 18: Plan financiero personal: integración de todo lo aprendidoo</span> <span class="time">120 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 16: Introduccion</span> <span class="time">90 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 17: Herramientas digitales para organizar tus finanzas</span> <span class="time">90 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 18: Plan financiero personal: integración de todo lo aprendidoo</span> <span class="time">90 min</span></li>
                     </ul>
                 </article>
             </details>
@@ -161,15 +235,15 @@
                 <summary class="summary_bottom">MÓDULO 7 – Proyecto Final</summary>
                 <article class="summary-contenidos_desplegable">
                     <ul>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 19-20: Diseño del proyecto</span> <span class="time">240 min</span></li>
-                        <li class="summary-contenidos_desplegable_temas"><span>Clase 21-22: Implementación y deploy</span> <span class="time">240 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 19-20: Diseño del proyecto</span> <span class="time">90 min</span></li>
+                        <li class="summary-contenidos_desplegable_temas"><span>Clase 21-22: Implementación y deploy</span> <span class="time">90 min</span></li>
                     </ul>
                 </article>
             </details>
             
             <article class="block-informacion-contenidos_precio-y-boton">
                 <span class="block-informacion-contenidos__precio">Precio final: $75.000,00 ARS</span>
-                <button class="block-informacion-contenidos__boton">Inscribirse</button>
+                <a href="../inscripcionCursoParticular.html"><button class="block-informacion-contenidos__boton">Inscribirse</button></a>
             </article>       
         </article>        
         <article class="block-informacion-contenidos__imagen">

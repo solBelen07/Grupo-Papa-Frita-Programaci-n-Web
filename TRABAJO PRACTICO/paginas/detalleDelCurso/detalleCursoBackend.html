@@ -55,12 +55,88 @@
         <section class="user-actions">
             <a href="../../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
             <a href="../../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
-            <article class="carrito"><!-- icono carrito -->
-                <img src="../../img/carrito.png" alt="Carrito de compra">
-                <span class="cart-count">0</span>
+
+         <!-- icono carrito -->
+
+        <input type="checkbox" name="Carro" id="Carro" value="Carro" checked />
+       <article class="carrito">    
+
+            <label for="Carro" >
+            <img src="../../img/carrito.png" alt="Carrito de compra" class="carrito_icono">
+            </label>
+             <span class="cart-count">3</span>
+
             </article>
+               
+        <!-- Despliegue del carrito --> 
+
+           <section class="caja_carrito"> 
+
+            <article class="producto1_carrito">
+                <img src="../TRABAJO PRACTICO/img/ingles.jpg" class="Imagen_agregar_carrito">
+                <h3>Curso: Ingles avanzado</h3>
+                <h4>Precio : 120$</h4>
+
+                <section class="expandir_borrar">
+                <a href="./paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_flechas_expandiendo.webp">
+                </a>
+
+               
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_basura.png">
+
+                </section>
+
+            </article>   
+
+            <article class="producto2_carrito">
+
+                <img src="../TRABAJO PRACTICO/img/backend.jpg" class="Imagen_agregar_carrito">
+                <h3>Curso: Programación Back-end</h3>
+                <h4>Precio : 250$</h4>
+                
+                <section class="expandir_borrar">
+
+                <a href="./paginas/detalleDelCurso/detalleCursoBackend.html">
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_flechas_expandiendo.webp">
+                </a>
+
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_basura.png">
+
+                </section>
+
+            </article>
+
+            <article class="producto3_carrito">
+
+                <img src="../TRABAJO PRACTICO/Imagenes/gift_card.png " class="Imagen_agregar_carrito">
+                <h3>Regalo. Gift Card</h3>
+                <h4>Precio : 400$</h4>
+                
+                <section class="expandir_borrar">
+                <a href="../TRABAJO PRACTICO/Imagenes/gift_card.png " target="_blank">
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_flechas_expandiendo.webp">
+                </a>
+
+               
+                <img src="../TRABAJO PRACTICO/Imagenes/icono_basura.png">
+
+                </section>
+
+            </article>
+
+            <article class="confirmar_carrito">
+            <h4>Total a pagar : 770$ </h4>
+            <a href="./paginas/inicioSesion.html"> 
+                <button>Continuar con la compra</button>
+            </a>
+            </article>
+
+           </section>
         </section>
 
+
+    </header>
 
     </header>
 
@@ -83,9 +159,9 @@
     </section>
     <!-- Requisitos y duracion -->
     <section class="block-informacion-curso__informacion">
-        <span class="span-block-informacion-curso__informacion"><h4>Duración:</h4> 50 horas</span>
-        <span class="span-block-informacion-curso__informacion"><h4>Tiempo de Dedicacion:</h4> 2 horas diarias</span>
-        <span class="span-block-informacion-curso__informacion"><h4>Requisitos Previos:</h4> Conocimientos en Base de Datos y API's</span>
+        <span class="span-block-informacion-curso__informacion"><h4>Duración:</h4> 52 hs.</span>
+      <span class="span-block-informacion-curso__informacion"><h4>Tiempo de dedicación:</h4> 2 hs diarias.</span>
+        <span class="span-block-informacion-curso__informacion"><h4>Requisitos previos:</h4> Conocimientos en Base de Datos y API's</span>
     </section>
     <!-- Contenidos del curso-->
     <section class="block-informacion-contenidos">
@@ -169,7 +245,7 @@
             
             <article class="block-informacion-contenidos_precio-y-boton">
                 <span class="block-informacion-contenidos__precio">Precio final: $250.000,00 ARS</span>
-                <button class="block-informacion-contenidos__boton">Inscribirse</button>
+                <a href="../inscripcionCursoParticular.html"><button class="block-informacion-contenidos__boton">Inscribirse</button></a>
             </article>       
         </article>        
         <article class="block-informacion-contenidos__imagen">

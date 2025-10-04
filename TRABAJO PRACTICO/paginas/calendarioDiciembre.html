@@ -18,8 +18,7 @@
     <!-- Encabezado -->
     <header class="main-header">
         <section class="logo">
-            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma"
-                    class="logo-desktop"></a>
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
             <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
         </section>
         <!-- Barra de Navegación  CON MENU HAMBURGUES PARA RESPONSIVE -->
@@ -58,13 +57,9 @@
             </button>
         </section>
 
-        <section class="user-actions">
-             <a href="../paginas/inicioSesion.html"> 
-         <button class="login-button"> 
-            <img src="../img/logo-fondo-transparente.png" alt="Imagen de logo iniciar sesion" class="logo-iniciarSesion-Responsive"> 
-                Iniciar Sesión </button></a>
+       <section class="user-actions">
+            <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
             <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
-
              <!-- icono carrito -->
 
         <input type="checkbox" name="Carro" id="Carro" value="Carro" checked />
@@ -139,6 +134,8 @@
             </a>
             </article>
            </section>
+
+           </section>
         </section>
 
 
@@ -151,12 +148,11 @@
 
     <main class="calendar-container">
 
-           <section class="calendar-header">
-            <a href="./calendario.html" class="boton-link">←</a>
-            <h2 class="titulo-mes-anio">Octubre 2025</h2>
-            <a href="./calendarioNoviembre.html" class="boton-link">→</a>
+        <section class="calendar-header">
+            <a href="./calendarioNoviembre.html" class="boton-link">←</a>
+            <h2 class="titulo-mes-anio-right ">Diciembre 2025</h2>
+            <!-- <button class="botones">→ </button> -->
         </section>
-
 
         <!-- DE LUNES A DOMINGOS -->
         <section class="calendar-daysOfWeek">
@@ -169,74 +165,66 @@
             <article class="diaSemana">Dom</article>
         </section>
 
-        <!-- NUMEROS DEL 1 AL 31 -->
+      <!-- NUMEROS DEL 1 AL 31 -->
+<section class="calendar-numbers">
 
-        <section class="calendar-numbers">
-            <article class="dia"></article>
-            <article class="dia"></article>
-            <article class="dia diaValido">1</article>
-            <article class="dia diaValido">2</article>
-            <article class="dia diaValido">3</article>
-            <article class="dia diaValido">4</article>
-            <article class="dia diaValido">5</article>
-            <article class="dia diaValido">6</article>
-            <article class="dia diaValido">7</article>
-            <!-- DIA ACTUAL -REENTREGA MARCA EL "HOY" -->
-            <article class="dia diaValido"><span class="dia-actual">8</span></article>
-            <article class="dia diaValido">9</article>
-            <article class="dia diaValido">10</article>
-            <article class="dia diaValido">11</article>
-            <article class="dia diaValido">12</article>
+    <article class="dia diaValido">1</article>
+    <article class="dia diaValido dia-curso numero">2
+        <a href="./detalleDelCurso/detalleCursoBackend.html" class="link-ACurso">
+            <span class="dia-curso-ocultar">Programacion Back-End</span>
+        </a>
+    </article>
+    <article class="dia diaValido">3</article>
+    <article class="dia diaValido">4</article>
+    <article class="dia diaValido dia-curso numero">5
+        <a href="./detalleDelCurso/detalleCursoMarketingDigital.html" class="link-ACurso">
+            <span class="dia-curso-ocultar">Marketing Digital</span>
+        </a>
+    </article>
+    <article class="dia diaValido">6</article>
+    <article class="dia diaValido">7</article>
 
-            <article class="dia diaValido dia-curso">13
-                <a href="./detalleDelCurso/detalleCursoFinanzasPersonales.html" class="link-ACurso"
-                    title="Finanzas Personales">
-                    <span class="dia-curso-ocultar">Finanzas Personales</span>
-                </a>
-            </article>
-            <article class="dia diaValido">14</article>
+    <article class="dia diaValido">8</article>
+    <article class="dia diaValido">9</article>
+    <article class="dia diaValido dia-curso numero">10
+        <a href="./detalleDelCurso/detalleCursoInglesAvanzado.html" class="link-ACurso">
+            <span class="dia-curso-ocultar">Inglés Avanzado</span>
+        </a>
+    </article>
 
-            <article class="dia diaValido dia-curso">15
-                <a href="./detalleDelCurso/detalleCursoFrontend.html" class="link-ACurso">
-                    <span class="dia-curso-ocultar">Programacion Front-End</span>
-                </a>
-            </article>
-            <article class="dia diaValido">16</article>
-            <article class="dia diaValido">17</article>
-            <article class="dia diaValido">18</article>
-            <article class="dia diaValido">19</article>
+    <article class="dia diaValido">11</article>
+    <article class="dia diaValido">12</article>
+    <article class="dia diaValido">13</article>
+    <article class="dia diaValido">14</article>
 
-            <article class="dia diaValido dia-curso">21
-                <a href="./detalleDelCurso/detalleCursoInglesAvanzado.html" class="link-ACurso">
-                    <span class="dia-curso-ocultar">Curso de Inglés Avanzado</span>
-                </a>
-            </article>
-            <article class="dia diaValido">22</article>
+    <article class="dia diaValido">15</article>
+    <article class="dia diaValido">16</article>
+    <article class="dia diaValido dia-curso numero">15
+        <a href="./detalleDelCurso/detalleCursoFrontend.html" class="link-ACurso">
+            <span class="dia-curso-ocultar">Programacion Front-End</span>
+        </a>
+    </article>
+    <article class="dia diaValido">18</article>
+    <article class="dia diaValido">19</article>
+    <article class="dia diaValido">20</article>
+    <article class="dia diaValido">21</article>
 
-            <article class="dia diaValido dia-curso">23
-                <a href="./detalleDelCurso/detalleCursoCiberseguridad.html" class="link-ACurso">
-                    <span class="dia-curso-ocultar">Ciberseguridad</span>
-                </a>
-            </article>
-            <article class="dia diaValido">24</article>
-            <article class="dia diaValido">25</article>
-            <article class="dia diaValido">26</article>
+    <article class="dia diaValido">22</article>
+    <article class="dia diaValido">23</article>
+    <article class="dia diaValido">24</article>
+    <article class="dia diaValido">25</article>
+    <article class="dia diaValido">26</article>
+    <article class="dia diaValido">27</article>
+    <article class="dia diaValido">28</article>
 
-            <article class="dia diaValido dia-curso">27
-                <a href="./detalleDelCurso/detalleCursoBackend.html" class="link-ACurso">
-                    <span class="dia-curso-ocultar">Programacion Back-End</span>
-                </a>
-            </article>
-            <article class="dia diaValido">28</article>
-
-            <article class="dia diaValido dia-curso">29
-                <a href="./detalleDelCurso/detalleCursoMarketingDigital.html" class="link-ACurso">
-                    <span class="dia-curso-ocultar">Marketing Digital</span>
-                </a>
-            </article>
-            <article class="dia diaValido">30</article>
-            <article class="dia diaValido">31</article>
-        </section>
+    <article class="dia diaValido">29</article>
+    <article class="dia diaValido">30</article>
+    <article class="dia diaValido">31</article>
+    <article class="dia"></article>
+    <article class="dia"></article>
+    <article class="dia"></article>
+    <article class="dia"></article>
+</section>
 
     </main>
 
@@ -280,5 +268,4 @@
         </section>
     </footer>
 </body>
-
 </html>
