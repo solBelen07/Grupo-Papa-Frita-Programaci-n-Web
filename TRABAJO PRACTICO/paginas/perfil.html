@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil - Edulogic</title>
+    <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/perfilStyle.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="main-header">
+        <section class="logo">
+            <a href="../index.html">
+                <img src="../img/logoPagBlanco.png" alt="Logo" class="logo-desktop">
+            </a>
+            <a href="../index.html">
+                <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile">
+            </a>
+        </section>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="./inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="./calendario.html" class="nav-link"> Próximos </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--perfil-->
+ <main class="container-perfil">
+  <section class="section-perfil">
+     <div class="perfil-encabezado">
+      <img src="../img/fotoPerfil.jpg" alt="Foto de perfil" class="foto-perfil">
+      <h1>Mi Perfil</h1>
+    </div>
+
+      <form class="form-perfil">
+
+         <label>
+        <span>Nombre completo</span>
+        <input type="text" value="Ana Sofía Flores" class="caja-input bloqueado" >
+      </label>
+
+      <label>
+        <span>DNI</span>
+        <input type="text" value="38.759.021" class="caja-input bloqueado" >
+      </label>
+
+      <label>
+        <span>Correo personal</span>
+        <input type="email" value="anasofia.fp@gmail.com" class="caja-input">
+      </label>
+
+      <label>
+        <span>Teléfono</span>
+        <input type="text" value="22 3456 7890" class="caja-input">
+      </label>
+
+      <label>
+        <span>Dirección</span>
+        <input type="text" value="Avenida Ficticia 1234" class="caja-input">
+      </label>
+
+      <label>
+        <span>Localidad</span>
+        <input type="text" value="San Fernando" class="caja-input">
+      </label>
+
+      <label>
+        <span>Provincia</span>
+        <input type="text" value="Buenos Aires" class="caja-input">
+      </label>
+
+      <label>
+        <span>Código postal</span>
+        <input type="text" value="1646" class="caja-input">
+      </label>
+
+      <label>
+        <span>País</span>
+        <input type="text" value="Argentina" class="caja-input">
+      </label>
+
+         <a href="#popup-cerrar" class="boton-enviar">Cerrar sesión</a>
+
+<!-- Pop-up de confirmación -->
+<div id="popup-cerrar" class="popup-confirmacion">
+  <div class="popup-contenido">
+    <h3>✅ ¡Sesión cerrada correctamente!</h3>
+    <p>Serás redirigido al inicio.</p>
+
+    <a href="../index.html" class="boton-enviar">Ir al inicio</a>
+    
+  </div>
+</div>
+    </form>
+  </section>
+</main>
+
+    <!--footer-->
+    <footer class="container-footer">
+        <section class="datos-equipo">
+            <ul>
+                <li>EQUIPO : Grupo PapaFrita</li>
+                <li>Collado, Camila DNI: 43.098.593</li>
+                <li>Martelli, Rocio Belen DNI: 44.161.046</li>
+                <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
+                <li>Moyano Vivas, Matias Ernesto DNI:40.240.664 </li>
+                <li>Viana, Sol Belen DNI: 45.889.073</li>
+            </ul>
+        </section>
+
+
+        <section class="menu-inferior">
+            <a href="../index.html">Inicio</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="../paginas/inscripcionCurso.html">Formulario</a>
+
+        </section>
+
+
+        <section class="redes-sociales">
+            <p class="parrafo-socialMedia">REDES SOCIALES</p>
+            <nav class="redes-sociales-nav">
+                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                </a>
+
+                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                </a>
+                <a href="https://wa.me/5491155844612" target="_blank">
+                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                </a>
+            </nav>
+        </section>
+
+
+        
+    </footer>
+
+</body>
+</html>
