@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="../styles/iniciarSesionstyle.css">
+</head>
+
+<body>
+
+    <main class="container-iniciarSesion">
+        <section>
+             <nav class="container-nav">
+                <a href="../index.html"> <img src="../img/logoPagVioleta.png" alt="Logo de la plataforma" class="logo-desktop"></a> 
+                <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
+            </nav>
+            <h1>Recuperar Contraseña</h1>
+
+            <form action="#popup2" method="post" class="form-iniciarSesion">
+
+                <label>
+                    <input type="email" name="email" placeholder="Correo electrónico" class="caja-input" required>
+                </label>
+
+                <p>Te enviaremos un enlace a tu e-mail para restablecer tu contraseña.</p>
+
+                <button type="submit" class="boton-enviar">Enviar enlace</button>
+
+                <article class="olvide-contrasenia">
+                    <a href="./inicioSesion.html">Volver al inicio de sesión</a>
+                </article>
+
+                <!-- Popup de confirmación -->
+                <section id="popup2" class="popup-confirmacion2">
+                    <article class="popup-contenido2">
+                        <h3>✅ ! Se ha enviado un mail para recuperar la contraseña!</h3>
+                        <a href="#" class="cerrar-popup">Cerrar</a>
+                    </article>
+                </section>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>

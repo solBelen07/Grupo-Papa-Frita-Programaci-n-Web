@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Link a CSS  -->
+    <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/contactostyle.css">
+
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="main-header">
+        <section class="logo">
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
+            <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
+        </section>
+        <!-- Barra de Navegación -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link inicio">Inicio</a></li>
+                <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="./inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
+            <input list="Cursos" placeholder="Buscar curso...">
+            <datalist id="Cursos">
+                <option value="Programación de videojuegos">
+                <option value="Marketing Digital">
+                <option value="Diseño Gráfico">
+                <option value="Desarrollo Web">
+                <option value="Ciberseguridad">
+                <option value="Inteligencia Artificial">
+                <option value="Finanzas Personales">
+                <option value="Inglés">
+            </datalist>
+            <button class="search-button">
+                <img src="../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
+
+      <section class="user-actions">
+            <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
+            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito"><!-- icono carrito -->
+                <img src="../img/carrito.png" alt="Carrito de compra">
+                <span class="cart-count">0</span>
+            </article>
+        </section>
+    </header>
+
+    <!-- PRINCIPAL  -->
+    <main class="container-main">
+        <section class="container-contacto">
+            <!--  VER ESTO DEL ACTION Y ENVIAR MSJ -->
+            <form action="#popup" method="get">
+                <h2>CONTÁCTANOS </h2>
+                <label for="name" class="label-form"> Nombre:
+                    <input type="text" name="name" id="name" class="caja-form">
+                </label>
+
+                <label for="mail" class="label-form label-email"> Email:
+                    <input type="email" name="mail" id="mail" required class="caja-form">
+                </label>
+
+                <label for="telefono" class="label-form"> Teléfono:
+                    <input type="tel" name="telefono" id="telefono" class="caja-form">
+                </label>
+
+                <label for="mensaje" class="label-form"> Mensaje:
+                    <textarea name="mensaje" id="mensaje" class="caja-textarea" maxlength="250" required></textarea>
+                </label>
+                <button type="submit" class="boton-enviar">Enviar</button>
+
+                <!-- Popup de confirmación -->
+  <section id="popup" class="popup-confirmacion">
+    <article class="popup-contenido">
+      <h3>✅ ¡Su mensaje ha sido enviado correctamente!</h3> 
+      <p> Nos estaremos comunicando brevemente.</p>
+      <a href="#" class="cerrar-popup">Cerrar</a>
+    </article>
+  </section>
+            </form>
+
+          
+ 
+
+  
+
+
+            <section class="container-dondeEstamos">
+                <h2> ENCONTRANOS EN..</h2>
+                <article class="datos-dondeEstamos">
+                    <p><strong>Direccion:</strong> Viamonte 600 , CABA. </p>
+                    <p><strong>Teléfono:</strong> 1129380425</p>
+                    <p><strong>Email:</strong> atencionalcliente@cursosarg.com</p>
+                    <p><strong>Horario de Atención:</strong> Lunes a Viernes, de 9:00 a 18:00hs.</p>
+                </article>
+            </section>
+
+        </section>
+
+
+        <section class="section-ubicacion">
+            <h2>Ubicación</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1722542319603!2d-58.3747252!3d-34.599805499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9cd73c85%3A0x787117dc783ca80f!2sViamonte%20600-502%2C%20C1053ABL%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1758410839183!5m2!1ses!2sar"
+                width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="container-footer">
+        <section class="datos-equipo">
+            <ul>
+                <li>EQUIPO : Grupo PapaFrita</li>
+                <li>Collado, Camila</li>
+                <li>Martelli, Rocio Belen DNI: 44.161.046</li>
+                <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
+                <li>Moyano Vivas, Matias Ernesto</li>
+                <li>Viana, Sol Belen DNI: 45.889.073</li>
+            </ul>
+        </section>
+
+
+        <section class="menu-inferior">
+            <a href="../index.html">Inicio</a>
+            <a href="../paginas/contacto.html">Contacto</a>
+            <a href="./paginas/inscripcionCursoEmpresa.html">Formulario</a>
+
+        </section>
+
+
+        <section class="redes-sociales">
+            <p class="parrafo-socialMedia">REDES SOCIALES</p>
+            <nav class="redes-sociales-nav">
+                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                </a>
+
+                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                </a>
+                <a href="https://wa.me/5491155844612" target="_blank">
+                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                </a>
+            </nav>
+        </section>
+
+
+        </section>
+    </footer>
+
+</body>
+
+</html>

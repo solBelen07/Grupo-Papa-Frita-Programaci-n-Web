@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles/header_footer.css">
     <link rel="stylesheet" href="../styles/calendariostyle.css">
     <!-- Link a animate.css -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
 </head>
@@ -17,21 +17,31 @@
 <body>
     <!-- Encabezado -->
     <header class="main-header">
-         <div class="logo">LOGO</div>
-
-        <!-- Barra de Navegación -->
+        <section class="logo">
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma"
+                    class="logo-desktop"></a>
+            <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
+        </section>
+        <!-- Barra de Navegación  CON MENU HAMBURGUES PARA RESPONSIVE -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <section class="line"></section>
+            <section class="line"></section>
+            <section class="line"></section>
+        </label>
         <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="../paginas/Index.html" class="nav-link">Inicio</a></li>
-                <li><a href="../paginas/giftCard.html" class="nav-link">GiftCard</a></li>
-                <li><a href="../paginas/detalleCurso.html" class="nav-link">Cursos</a></li>
-                <li><a href="../paginas/inscripcionCursoEmpresa.html" class="nav-link">Inscripción</a></li>
-                <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li>
+                <li><a href="../index.html" class="nav-link inicio">Inicio</a></li>
+                <li><a href="./giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="./inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <!-- <li><a href="./calendario.html" class="nav-link"> Proximos </a></li> -->
 
             </ul>
         </nav>
 
-        <div class="search-bar">
+        <!-- Barra de búsqueda -->
+        <section class="search-bar">
             <input list="Cursos" placeholder="Buscar curso...">
             <datalist id="Cursos">
                 <option value="Programación de videojuegos">
@@ -41,22 +51,26 @@
                 <option value="Ciberseguridad">
                 <option value="Inteligencia Artificial">
                 <option value="Finanzas Personales">
-                <option value="Ingles">
+                <option value="Inglés">
             </datalist>
-            <button class="search-button">Buscar</button>
-        </div>
+            <button class="search-button">
+                <img src="../img/lupa.png" alt="Buscar">
+            </button>
+        </section>
 
-        <div class="user-actions">
-            <a href="../paginas/inicioSesion.html"><button class="login-button">Iniciar Sesión</button></a>
-            <button class="signup-button">Registrarse</button>
-
-            <div class="carrito">
-                Carrito <span class="cart-count">0</span>
-            </div>
-        </div>
-
-
+        <section class="user-actions">
+             <a href="../paginas/inicioSesion.html"> 
+         <button class="login-button"> 
+            <img src="../img/logo-fondo-transparente.png" alt="Imagen de logo iniciar sesion" class="logo-iniciarSesion-Responsive"> 
+                Iniciar Sesión </button></a>
+            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <article class="carrito">
+                <img src="../img/carrito.png" alt="Carrito de compra">
+                <span class="cart-count">0</span>
+            </article>
+        </section>
     </header>
+
     <section class="container-tittle">
         <h1>Enterate nuestros proximos cursos..</h1>
     </section>
@@ -64,11 +78,12 @@
 
     <main class="calendar-container">
 
-        <section class="calendar-header">
-            <button class="botones"> ← </button>
-            <h2>Octubre 2025</h2>
-            <button class="botones">→ </button>
+           <section class="calendar-header">
+            <a href="./calendario.html" class="boton-link">←</a>
+            <h2 class="titulo-mes-anio">Octubre 2025</h2>
+            <a href="./calendarioNoviembre.html" class="boton-link">→</a>
         </section>
+
 
         <!-- DE LUNES A DOMINGOS -->
         <section class="calendar-daysOfWeek">
@@ -82,60 +97,72 @@
         </section>
 
         <!-- NUMEROS DEL 1 AL 31 -->
+
         <section class="calendar-numbers">
             <article class="dia"></article>
             <article class="dia"></article>
-            <article class="dia diaValido dia-actual">1</article>
+            <article class="dia diaValido">1</article>
             <article class="dia diaValido">2</article>
             <article class="dia diaValido">3</article>
             <article class="dia diaValido">4</article>
             <article class="dia diaValido">5</article>
-
-            <article class="dia diaValido dia-curso">6 <br>
-                <article id="cursoJava" idCurso="5" class="course">Poner curso</article>
-            </article>
+            <article class="dia diaValido">6</article>
             <article class="dia diaValido">7</article>
-            <article class="dia diaValido">8</article>
+            <!-- DIA ACTUAL -REENTREGA MARCA EL "HOY" -->
+            <article class="dia diaValido"><span class="dia-actual">8</span></article>
             <article class="dia diaValido">9</article>
             <article class="dia diaValido">10</article>
             <article class="dia diaValido">11</article>
             <article class="dia diaValido">12</article>
 
             <article class="dia diaValido dia-curso">13
-                <article id="cursoJava" idCurso="5" class="course">Poner curso</article>
-
+                <a href="./detalleDelCurso/detalleCursoFinanzasPersonales.html" class="link-ACurso"
+                    title="Finanzas Personales">
+                    <span class="dia-curso-ocultar">Finanzas Personales</span>
+                </a>
             </article>
-
             <article class="dia diaValido">14</article>
-            <article class="dia diaValido">15</article>
+
+            <article class="dia diaValido dia-curso">15
+                <a href="./detalleDelCurso/detalleCursoFrontend.html" class="link-ACurso">
+                    <span class="dia-curso-ocultar">Programacion Front-End</span>
+                </a>
+            </article>
             <article class="dia diaValido">16</article>
             <article class="dia diaValido">17</article>
             <article class="dia diaValido">18</article>
-            <article class="dia diaValido">19
-            </article>
+            <article class="dia diaValido">19</article>
 
-            <article class="dia diaValido dia-curso">20
-                <article id="cursoJava" idCurso="5" class="course">Poner curso</article>
-
-            </article>
             <article class="dia diaValido dia-curso">21
-                <article id="cursoJava" idCurso="5" class="course">Poner curso</article>
-
+                <a href="./detalleDelCurso/detalleCursoInglesAvanzado.html" class="link-ACurso">
+                    <span class="dia-curso-ocultar">Curso de Inglés Avanzado</span>
+                </a>
             </article>
             <article class="dia diaValido">22</article>
-            <article class="dia diaValido">23</article>
+
+            <article class="dia diaValido dia-curso">23
+                <a href="./detalleDelCurso/detalleCursoCiberseguridad.html" class="link-ACurso">
+                    <span class="dia-curso-ocultar">Ciberseguridad</span>
+                </a>
+            </article>
             <article class="dia diaValido">24</article>
             <article class="dia diaValido">25</article>
-            <article class="dia diaValido">26 </article>
+            <article class="dia diaValido">26</article>
 
-            <article class="dia diaValido">27</article>
+            <article class="dia diaValido dia-curso">27
+                <a href="./detalleDelCurso/detalleCursoBackend.html" class="link-ACurso">
+                    <span class="dia-curso-ocultar">Programacion Back-End</span>
+                </a>
+            </article>
             <article class="dia diaValido">28</article>
-            <article class="dia diaValido">29</article>
+
+            <article class="dia diaValido dia-curso">29
+                <a href="./detalleDelCurso/detalleCursoMarketingDigital.html" class="link-ACurso">
+                    <span class="dia-curso-ocultar">Marketing Digital</span>
+                </a>
+            </article>
             <article class="dia diaValido">30</article>
             <article class="dia diaValido">31</article>
-            <article class="dia"></article>
-            <article class="dia"></article>
-        </section>
         </section>
 
     </main>
@@ -147,19 +174,19 @@
         <section class="datos-equipo">
             <ul>
                 <li>EQUIPO : Grupo PapaFrita</li>
-                <li>Collado, Camila</li>
+                <li>Collado, Camila Sol DNI: 43.098.593</li>
                 <li>Martelli, Rocio Belen DNI: 44.161.046</li>
                 <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
-                <li>Moyano Vivas, Matias Ernesto</li>
-                <li>Viana, Sol Belen</li>
+                <li>Moyano Vivas, Matias Ernesto DNI:40.240.664</li>
+                <li>Viana, Sol Belen DNI: 45.889.073</li>
             </ul>
         </section>
 
 
         <section class="menu-inferior">
-            <a href="../paginas/index.html">Inicio</a>
+            <a href="../index.html">Inicio</a>
             <a href="../paginas/contacto.html">Contacto</a>
-            <a href="./paginas/inscripcionCursoEmpresa.html">Formulario</a>
+            <a href="../paginas/inscripcionCurso.html">Formulario</a>
 
         </section>
 
