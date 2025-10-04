@@ -28,7 +28,7 @@ a {
 .logo-iniciarSesion-Responsive {
 display: none;
 }
-/* par q es */
+  /* Este id hace referencia a las rayiyas que aparecen en responsive en menu hamburguesa */
 #menu-toggle {
   display: none;
 }
@@ -411,7 +411,7 @@ display: none;
   .menu-icon .line {
     width: 2.625em;
     height: 0.3125em;
-    background: #333;  /* COLOR DE LAS BARRITAS DEL MENU HAMBURGUESA */
+    background: #333333;  /* COLOR DE LAS BARRITAS DEL MENU HAMBURGUESA */
     margin: 0.25em 0;
   }
 
@@ -481,11 +481,7 @@ display: none;
   .logo .logo-mobile  { display: block; }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: Arial, sans-serif;
