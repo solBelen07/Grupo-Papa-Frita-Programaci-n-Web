@@ -18,13 +18,15 @@
   </head>
 
   <body>
-    <!-- Encabezado -->
+           <!-- Encabezado -->
     <header class="main-header">
         <section class="logo">
             <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
+        
             <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
-          </section>
+        </section>
         <!-- Barra de Navegación -->
+
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">
             <section class="line"></section>
@@ -33,11 +35,13 @@
         </label>
         <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="../index.html" class="nav-link inicio">Inicio</a></li>
-                <li><a href="./cursos.html" class="nav-link">Cursos</a></li>
-                <li><a href="./inscripcionCurso.html" class="nav-link">Inscripción</a></li>
-                <li><a href="./calendario.html" class="nav-link"> Próximos </a></li>
-                <li><a href="./perfil.html" class="nav-link">Mi Perfil</a></li>
+                <li><a href="./index.html" class="nav-link">Inicio</a></li>
+                <li><a href="./paginas/giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="./paginas/cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="./paginas/inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="./paginas/calendario.html" class="nav-link"> Proximos </a></li>
+                <li><a href="./paginas/perfil.html" class="nav-link">Mi Perfil</a></li>
+
             </ul>
         </nav>
 
@@ -59,27 +63,28 @@
             </button>
         </section>
 
-       <section class="user-actions">
+        <section class="user-actions">
              <a href="../paginas/inicioSesion.html"> 
          <button class="login-button"> 
             <img src="../img/logo-fondo-transparente.png" alt="Imagen de logo iniciar sesion" class="logo-iniciarSesion-Responsive"> 
                 Iniciar Sesión </button></a>
+                
             <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
-    <!-- icono carrito -->
+
 
         <input type="checkbox" name="Carro" id="Carro" value="Carro" checked />
-       <article class="carrito">    
+           <!-- icono carrito -->
 
+        <article class="carrito">   
             <label for="Carro" >
             <img src="../img/carrito.png" alt="Carrito de compra" class="carrito_icono">
             </label>
              <span class="cart-count">3</span>
 
             </article>
-               
-        <!-- Despliegue del carrito --> 
 
-          <section class="caja_carrito"> 
+         <!-- Menu Desplegable Carrito -->       
+           <section class="caja_carrito"> 
 
             <article class="producto1_carrito">
                 <img src="../img/ingles.jpg" class="Imagen_agregar_carrito">
@@ -87,13 +92,11 @@
                 <h4>Precio : 120.000$</h4>
 
                 <section class="expandir_borrar">
-                <a href="./paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">
+                <a href="../paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">
                 <img src="../Imagenes/icono_flechas_expandiendo.webp">
                 </a>
 
-               
                 <img src="../Imagenes/icono_basura.png">
-
                 </section>
 
             </article>   
@@ -106,24 +109,22 @@
                 
                 <section class="expandir_borrar">
 
-                <a href="./paginas/detalleDelCurso/detalleCursoBackend.html">
+                <a href="../paginas/detalleDelCurso/detalleCursoBackend.html">
                 <img src="../Imagenes/icono_flechas_expandiendo.webp">
                 </a>
-
                 <img src="../Imagenes/icono_basura.png">
-
                 </section>
 
             </article>
 
             <article class="producto3_carrito">
 
-                <img src="../Imagenes/gift_card.png" class="Imagen_agregar_carrito">
+                <img src="../Imagenes/gift_card.png " class="Imagen_agregar_carrito">
                 <h3>Regalo. Gift Card</h3>
                 <h4>Precio : 400.000$</h4>
                 
                 <section class="expandir_borrar">
-                <a href="../Imagenes/gift_card.png" target="_blank">
+                <a href="../Imagenes/gift_card.png " target="_blank">
                 <img src="../Imagenes/icono_flechas_expandiendo.webp">
                 </a>
 
@@ -136,7 +137,7 @@
 
             <article class="confirmar_carrito">
             <h4>Total a pagar : 770.000$ </h4>
-            <a href="./paginas/inicioSesion.html"> 
+            <a href="../paginas/inicioSesionPago.html"> 
                 <button>Continuar con la compra</button>
             </a>
             </article>
