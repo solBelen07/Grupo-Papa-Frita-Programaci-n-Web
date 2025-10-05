@@ -68,6 +68,7 @@ section {
     background-color: #9575CD;
     border: none;
     border-radius: 5px;
+    justify-content: center;
 }
 
 .boton-enviar:hover {
