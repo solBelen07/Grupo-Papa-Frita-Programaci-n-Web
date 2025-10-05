@@ -92,8 +92,10 @@ body {
   opacity: 0.3;
 }
 
-.dia-curso:hover {
+.dia-curso-ocultar:hover {
   background-color: #7E57C2;
+  border:#7E57C2;
+  border-radius: 0.5em;
   color: white;
   cursor: pointer;
 }
