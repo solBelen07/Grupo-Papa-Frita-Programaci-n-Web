@@ -72,7 +72,8 @@
   gap: 3em;
 }
 
-.Mensaje-Monto .ubicacion_monto input[type=radio] {
+/* Para que los circulitos del type=radio se oculten */
+.Mensaje-Monto .ubicacion_monto input {
   display: none;
 }
 
@@ -81,7 +82,10 @@
   height: 10em;
 }
 
-.Mensaje-Monto .ubicacion_monto input[type=radio]:checked ~ .imagen_monto {
+/* Selecciona un elemento de ubicacion monto y solo afecta a los inputs de tipo
+radio que esten marcados.
+el  ~  permite aplicar los estilos  a .imagen_monto que sean hermanos del input marcado*/
+.Mensaje-Monto .ubicacion_monto input:checked~.imagen_monto {
   box-shadow: 0 0 0.7em rgba(12, 200, 68, 0.8);
 }
 
@@ -118,9 +122,9 @@
 }
 
 .Box_form form .confirmacion .confirmar_carrito button {
- background-color: #9575CD;
-    border-radius: 5px;
-    color: black;
+  background-color: #9575CD;
+  border-radius: 5px;
+  color: black;
 }
 
 .Box_form form .confirmacion .reset_form {
@@ -189,12 +193,26 @@
   height: 8em;
 }
 
-.Formulario_fondo input[type="radio"]:checked ~ .fondo {
+/* Selecciona un elemento de formulario fondo y solo afecta a los inputs de tipo
+radio que esten marcados.
+el  ~  permite aplicar los estilos  a fondo que sean hermanos del input marcado*/
+.Formulario_fondo input[type="radio"]:checked~.fondo {
   box-shadow: 0 0 0.5em rgba(212, 8, 168, 0.8);
 }
 
 .Formulario_fondo input[type="radio"] {
   display: none;
+}
+
+/* Radio de los colores oculto */
+.colores input[type=radio] {
+  display: none;
+}
+/* Tamaño general de los colores */
+.colores .color {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
 }
 
 .colores {
@@ -203,52 +221,31 @@
 }
 
 .colores .circuloRojo {
-  width: 3em;
-  height: 3em;
   background-color: red;
-  border-radius: 50%;
 }
 
 .colores .circuloAmarillo {
-  width: 3em;
-  height: 3em;
   background-color: yellow;
-  border-radius: 50%;
 }
 
 .colores .circuloAzul {
-  width: 3em;
-  height: 3em;
   background-color: blue;
-  border-radius: 50%;
 }
 
 .colores .circuloVerde {
-  width: 3em;
-  height: 3em;
   background-color: green;
-  border-radius: 50%;
 }
 
 .colores .circuloLila {
-  width: 3em;
-  height: 3em;
   background-color: purple;
-  border-radius: 50%;
 }
 
 .colores .circuloNaranja {
-  width: 3em;
-  height: 3em;
   background-color: orange;
-  border-radius: 50%;
 }
 
-.colores input[type=radio] {
-  display: none;
-}
 
-.colores input[type=radio]:checked ~ .color {
+.colores input[type=radio]:checked~.color {
   box-shadow: 0 0 0.5em rgba(212, 8, 168, 0.8);
   border: solid 0.2em white;
 }
@@ -289,8 +286,8 @@
 
 @media (min-width: 481px) and (max-width: 960px) {
   .Box_main {
-       font-size: 6px;
-    grid-template-columns: 1fr; 
+    font-size: 6px;
+    grid-template-columns: 1fr;
     gap: 2em;
 
   }
@@ -298,7 +295,7 @@
   .Cuadro_Preview {
     width: 100%;
     height: auto;
-    aspect-ratio: 4/3; 
+    aspect-ratio: 4/3;
   }
 
   .Mensaje-Monto .imagen_monto {
@@ -385,8 +382,9 @@
 
 
 }
+
 @media (max-width: 500px) {
-  .Box_main{
+  .Box_main {
     font-size: 5px;
   }
 }
@@ -394,48 +392,51 @@
 /* CELULARES */
 @media (max-width: 480px) {
   .Box_main {
-   display: flex;
+    display: flex;
     flex-direction: column;
     padding: 1rem;
     gap: 1.5rem;
     margin-top: 0;
 
   }
-.Cuadro_Preview .Destinatario {
-  font-size: 4em;
-}
-.Cuadro_Preview .Mensaje{
-  font-size: 4em;
-}
-.Cuadro_Preview .Monto{
-  font-size: 4em;
-}
-.Cuadro_Preview .m
-  .Box_form {
+
+  .Cuadro_Preview .Destinatario {
+    font-size: 4em;
+  }
+
+  .Cuadro_Preview .Mensaje {
+    font-size: 4em;
+  }
+
+  .Cuadro_Preview .Monto {
+    font-size: 4em;
+  }
+
+  .Cuadro_Preview .m .Box_form {
     width: 100%;
     margin: 0;
   }
+
   .Box_form input,
-  .Box_form select
-   {
-     width: 100%;
-     padding: 0.6rem;
-     font-size: 1rem;
+  .Box_form select {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
   }
 
-   .Box_form form .confirmacion{
+  .Box_form form .confirmacion {
     flex-direction: row;
     gap: 0.8rem;
     /* margin-top: 1rem; */
   }
 
-  .Box_form form .confirmacion button{
-      width: 9em;
+  .Box_form form .confirmacion button {
+    width: 9em;
     height: 3em;
   }
- 
+
   .Box_form form .confirmacion .reset_form {
-         width: 9em;
+    width: 9em;
     height: 3em;
   }
 
@@ -478,33 +479,38 @@
     font-size: 1em;
   }
 
-.Cuadro_Preview{
-  height: 30em;
-  width: auto;
+  .Cuadro_Preview {
+    height: 30em;
+    width: auto;
 
-}
-.Box_form form .confirmacion button{
-  width: 12em;
-  height: 2em;
   }
-.Mensaje-Monto h2{
-  font-size: 4em;
-}
-.Mensaje-Monto{
-gap: 3em;
-}
-#monto{
-  width: 48%;
-}
- .Box_form form .confirmacion{
-  gap: 1.8rem;
+
+  .Box_form form .confirmacion button {
+    width: 12em;
+    height: 2em;
+  }
+
+  .Mensaje-Monto h2 {
+    font-size: 4em;
+  }
+
+  .Mensaje-Monto {
+    gap: 3em;
+  }
+
+  #monto {
+    width: 48%;
+  }
+
+  .Box_form form .confirmacion {
+    gap: 1.8rem;
     margin-left: -6em;
- }
+  }
 }
 
 
 @media (max-width: 500px) {
-.Box_main {
+  .Box_main {
     font-size: 4px;
   }
 }
@@ -547,73 +553,75 @@ gap: 3em;
     width: 10em;
     height: 2em;
 
-  .Box_form form .confirmacion button {
-    width: 100%;
-    height: auto;
-    padding: 0.8rem;
-    font-size: 1rem;
+    .Box_form form .confirmacion button {
+      width: 100%;
+      height: auto;
+      padding: 0.8rem;
+      font-size: 1rem;
+
+    }
+
+    .Box_Preview {
+      width: 100%;
+      order: -1;
+      /* preview arriba, formulario abajo */
+    }
+
+    .Cuadro_Preview {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border: 2px solid black;
+      border-radius: 0.5em;
+      padding: 1em;
+      box-sizing: border-box;
+    }
+
+    .Cuadro_Preview h3 {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .Cuadro_Preview .Destinatario,
+    .Cuadro_Preview .Monto,
+    .Cuadro_Preview .Mensaje {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .Mensaje-Monto .imagen_monto {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    .colores {
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+    }
+
+    .colores .color {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+
+    .Formulario_fondo {
+      gap: 0.8rem;
+      justify-content: center;
+    }
+
+    .Formulario_fondo .fondo {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .Formulario_fondo .imagen_monto {
+      width: 6rem;
+      height: 6rem;
+    }
 
   }
-
-  .Box_Preview {
-    width: 100%;
-    order: -1; /* preview arriba, formulario abajo */
-  }
-
-  .Cuadro_Preview {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border: 2px solid black;
-    border-radius: 0.5em;
-    padding: 1em;
-    box-sizing: border-box;
-  }
-
-  .Cuadro_Preview h3 {
-    font-size: 1rem;
-    text-align: center ;
-  }
-
-  .Cuadro_Preview .Destinatario,
-  .Cuadro_Preview .Monto,
-  .Cuadro_Preview .Mensaje {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.Mensaje-Monto .imagen_monto {
-  width: 6rem;
-  height: 6rem;
-}
-  .colores {
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: center;
-  }
-
-  .colores .color {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-
-  .Formulario_fondo {
-    gap: 0.8rem;
-    justify-content: center;
-  }
-
-  .Formulario_fondo .fondo {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  .Formulario_fondo .imagen_monto {
-    width: 6rem;
-    height: 6rem;
-  }
-
-}
 }
