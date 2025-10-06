@@ -1,403 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
 
-    <meta
-      name="descripcion"
-      content="Esta es la pagina para personalizar y regalar Gift Cards"
-    />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Personalizar Regalo</title>
- <link rel="stylesheet" href="../styles/header_footer.css">
-    <link rel="stylesheet" href="../styles/GiftCardsStyle.css" />
-   
-    <!-- <link rel="icon" href="" /> -->
-  </head>
+  <meta name="descripcion" content="Esta es la pagina para personalizar y regalar Gift Cards" />
 
-  <body>
-           <!-- Encabezado -->
-    <header class="main-header">
-        <section class="logo">
-            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
-        
-            <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
-        </section>
-        <!-- Barra de Navegación -->
+  <title>Personalizar Regalo</title>
+  <link rel="stylesheet" href="../styles/header_footer.css">
+  <link rel="stylesheet" href="../styles/GiftCardsStyle.css" />
 
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <section class="line"></section>
-            <section class="line"></section>
-            <section class="line"></section>
+  <!-- <link rel="icon" href="" /> -->
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header class="main-header">
+    <section class="logo">
+      <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
+
+      <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
+    </section>
+    <!-- Barra de Navegación -->
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <section class="line"></section>
+      <section class="line"></section>
+      <section class="line"></section>
+    </label>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Inicio</a></li>
+        <!-- <li><a href="../paginas/giftCard.html" class="nav-link">GiftCard</a></li> -->
+        <li><a href="../paginas/cursos.html" class="nav-link">Cursos</a></li>
+        <li><a href="../paginas/inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+        <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li>
+        <li><a href="../paginas/perfil.html" class="nav-link">Mi Perfil</a></li>
+
+      </ul>
+    </nav>
+
+    <!-- Barra de búsqueda -->
+    <section class="search-bar">
+      <input list="Cursos" placeholder="Buscar curso...">
+      <datalist id="Cursos">
+        <option value="Marketing Digital">
+        <option value="Diseño Gráfico">
+        <option value="Desarrollo Web">
+        <option value="Ciberseguridad">
+        <option value="Inteligencia Artificial">
+        <option value="Finanzas Personales">
+        <option value="Inglés">
+      </datalist>
+      <button class="search-button">
+        <img src="../img/lupa.png" alt="Buscar">
+      </button>
+    </section>
+
+    <section class="user-actions">
+      <a href="../paginas/inicioSesion.html">
+        <button class="login-button">
+          <img src="../img/logo-fondo-transparente.png" alt="Imagen de logo iniciar sesion"
+            class="logo-iniciarSesion-Responsive">
+          Iniciar Sesión </button></a>
+
+      <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+
+
+      <input type="checkbox" name="Carro" id="Carro" value="Carro" checked />
+      <!-- icono carrito -->
+
+      <article class="carrito">
+        <label for="Carro">
+          <img src="../img/carrito.png" alt="Carrito de compra" class="carrito_icono">
         </label>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="../index.html" class="nav-link">Inicio</a></li>
-                <!-- <li><a href="../paginas/giftCard.html" class="nav-link">GiftCard</a></li> -->
-                <li><a href="../paginas/cursos.html" class="nav-link">Cursos</a></li>
-                <li><a href="../paginas/inscripcionCurso.html" class="nav-link">Inscripción</a></li>
-                <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li>
-                <li><a href="../paginas/perfil.html" class="nav-link">Mi Perfil</a></li>
+        <span class="cart-count">3</span>
 
-            </ul>
-        </nav>
+      </article>
 
-        <!-- Barra de búsqueda -->
-        <section class="search-bar">
-            <input list="Cursos" placeholder="Buscar curso...">
-            <datalist id="Cursos">
-                <option value="Marketing Digital">
-                <option value="Diseño Gráfico">
-                <option value="Desarrollo Web">
-                <option value="Ciberseguridad">
-                <option value="Inteligencia Artificial">
-                <option value="Finanzas Personales">
-                <option value="Inglés">
-            </datalist>
-            <button class="search-button">
-                <img src="../img/lupa.png" alt="Buscar">
-            </button>
-        </section>
+      <!-- Menu Desplegable Carrito -->
+      <section class="caja_carrito">
 
-        <section class="user-actions">
-             <a href="../paginas/inicioSesion.html"> 
-         <button class="login-button"> 
-            <img src="../img/logo-fondo-transparente.png" alt="Imagen de logo iniciar sesion" class="logo-iniciarSesion-Responsive"> 
-                Iniciar Sesión </button></a>
-                
-            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+        <article class="producto1_carrito">
+          <img src="../img/ingles.jpg" class="Imagen_agregar_carrito">
+          <h3>Curso: Ingles avanzado</h3>
+          <h4>Precio : 120.000$</h4>
 
-
-        <input type="checkbox" name="Carro" id="Carro" value="Carro" checked />
-           <!-- icono carrito -->
-
-        <article class="carrito">   
-            <label for="Carro" >
-            <img src="../img/carrito.png" alt="Carrito de compra" class="carrito_icono">
-            </label>
-             <span class="cart-count">3</span>
-
-            </article>
-
-         <!-- Menu Desplegable Carrito -->       
-           <section class="caja_carrito"> 
-
-            <article class="producto1_carrito">
-                <img src="../img/ingles.jpg" class="Imagen_agregar_carrito">
-                <h3>Curso: Ingles avanzado</h3>
-                <h4>Precio : 120.000$</h4>
-
-                <section class="expandir_borrar">
-                <a href="../paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">
-                <img src="../Imagenes/icono_flechas_expandiendo.webp">
-                </a>
-
-                <img src="../Imagenes/icono_basura.png">
-                </section>
-
-            </article>   
-
-            <article class="producto2_carrito">
-
-                <img src="../img/backend.jpg" class="Imagen_agregar_carrito">
-                <h3>Curso: Programación Back-end</h3>
-                <h4>Precio : 250.000$</h4>
-                
-                <section class="expandir_borrar">
-
-                <a href="../paginas/detalleDelCurso/detalleCursoBackend.html">
-                <img src="../Imagenes/icono_flechas_expandiendo.webp">
-                </a>
-                <img src="../Imagenes/icono_basura.png">
-                </section>
-
-            </article>
-
-            <article class="producto3_carrito">
-
-                <img src="../Imagenes/gift_card.png " class="Imagen_agregar_carrito">
-                <h3>Regalo. Gift Card</h3>
-                <h4>Precio : 400.000$</h4>
-                
-                <section class="expandir_borrar">
-                <a href="../Imagenes/gift_card.png " target="_blank">
-                <img src="../Imagenes/icono_flechas_expandiendo.webp">
-                </a>
-
-               
-                <img src="../Imagenes/icono_basura.png">
-
-                </section>
-
-            </article>
-
-            <article class="confirmar_carrito">
-            <h4>Total a pagar : 770.000$ </h4>
-            <a href="../paginas/inicioSesionPago.html"> 
-                <button>Continuar con la compra</button>
+          <section class="expandir_borrar">
+            <a href="../paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">
+              <img src="../Imagenes/icono_flechas_expandiendo.webp">
             </a>
-            </article>
 
-           </section>
-        </section>
+            <img src="../Imagenes/icono_basura.png">
+          </section>
+
+        </article>
+
+        <article class="producto2_carrito">
+
+          <img src="../img/backend.jpg" class="Imagen_agregar_carrito">
+          <h3>Curso: Programación Back-end</h3>
+          <h4>Precio : 250.000$</h4>
+
+          <section class="expandir_borrar">
+
+            <a href="../paginas/detalleDelCurso/detalleCursoBackend.html">
+              <img src="../Imagenes/icono_flechas_expandiendo.webp">
+            </a>
+            <img src="../Imagenes/icono_basura.png">
+          </section>
+
+        </article>
+
+        <article class="producto3_carrito">
+
+          <img src="../Imagenes/gift_card.png " class="Imagen_agregar_carrito">
+          <h3>Regalo. Gift Card</h3>
+          <h4>Precio : 400.000$</h4>
+
+          <section class="expandir_borrar">
+            <a href="../Imagenes/gift_card.png " target="_blank">
+              <img src="../Imagenes/icono_flechas_expandiendo.webp">
+            </a>
 
 
-    </header>
-
-    <!-- MAIN -->
-    <main class="Box_main">
-
-  <section class="Box_form">
-     <form class="formulario_giftCards">
-        <section class="data">
-            
-              <label for="destinatario"
-                >Nombre del Destinatario :</label>
-                <input type="text" id="destinatario" name="destinatario" placeholder="Ingrese su nombre..." />
-
-              <label for="email"
-                >Email del Destinatario : </label>
-
-                <input type="email" id="email" name="email"  placeholder="Ingrese su email...." />
-              <label for="monto">Ingrese cuanto desea regalar :  </label>
-                <input type="number" id="monto" name="monto"  pattern="[0-9]+" placeholder="Ingrese el monto...">
-             
+            <img src="../Imagenes/icono_basura.png">
 
           </section>
 
-          <section class="form_style">
+        </article>
 
-            <div class="Formulario_estilo">
-              <label for="style">Fuente : </label>
+        <article class="confirmar_carrito">
+          <h4>Total a pagar : 770.000$ </h4>
+          <a href="../paginas/inicioSesionPago.html">
+            <button>Continuar con la compra</button>
+          </a>
+        </article>
 
-              <select name="style" id="style" class="style_type">
-                <option disabled selected>Seleccione su fuente</option>
+      </section>
+    </section>
 
-                <option value="Arial">Arial</option>
 
-                <option value="Calibri">Calibri</option>
+  </header>
 
-                <option value="Times New Roman">Times New Roman</option>
-              </select>
-            </div>
-            
+  <!-- MAIN -->
+  <main class="Box_main">
 
-            <div class="Formulario_estilo_tamaño">
-              <label for="tamaño_estilo">Tamaño:</label>
+    <section class="Box_form">
+      <form class="formulario_giftCards">
+        <section class="data">
 
-              <select name="style_color" id="syle_color">
-                <option value="5">5</option>
+          <label for="destinatario">Nombre del Destinatario :</label>
+          <input type="text" id="destinatario" name="destinatario" placeholder="Ingrese su nombre..." />
 
-                <option selected value="11">11</option>
+          <label for="email">Email del Destinatario : </label>
 
-                <option value="17">17</option>
+          <input type="email" id="email" name="email" placeholder="Ingrese su email...." />
+          <label for="monto">Ingrese cuanto desea regalar : </label>
+          <input type="number" id="monto" name="monto" pattern="[0-9]+" placeholder="Ingrese el monto...">
 
-                <option value="20">20</option>
 
-                <option value="25">25</option>
-
-                <option value="30">30</option>
-              </select>
-            </div>
-            </section>
-
-<section class="colores">
-              
-              <label for="Rojo" > 
-              <input
-                type="radio"
-                name="color_estilo"
-                id="Rojo"
-                value="Rojo"
-                checked
-              />
-              <div class="color circuloRojo"></div>
-              
-              </label>
-            
-              <label for="Amarillo">
-              
-              <input
-                type="radio"
-                name="color_estilo"
-                id="Amarillo"
-                value="Amarillo"
-              />
-                <div class="color circuloAmarillo"></div>
-              </label>
-             
-
-              <label for="Azul">
-              
-              <input
-                type="radio"
-                name="color_estilo"
-                id="Azul"
-                value="Azul"
-              />
-              <div class="color circuloAzul"></div>
-              </label>
-
-              <label for="Verde">
-              <input
-                type="radio"
-                name="color_estilo"
-                id="Verde"
-                value="Verde"
-              />
-              <div class="color circuloVerde"></div>
-              </label>
-              <label for="Lila">
-              
-              <input
-                type="radio"
-                name="color_estilo"
-                id="Lila"
-                value="Lila"
-              />
-              <div class="color circuloLila"></div>
-              </label>
-              <label for="Naranja">
-              
-              <input
-                type="radio"
-                name="color_estilo"
-                id="Naranja"
-                value="Naranja"
-              />
-              <div class="color circuloNaranja"></div>
-              </label>
-            
         </section>
-            <div class="Formulario_fondo">
-              <label for="Fondo1" >
 
-              <input type="radio" name="Fondo" id="Fondo1" value="Fondo1" checked />
+        <section class="form_style">
 
-              <img src="../Imagenes/gc_fondo1.jpeg" class="fondo"></label>
+          <div class="Formulario_estilo">
+            <label for="style">Fuente : </label>
 
-              <label for="Fondo2">
+            <select name="style" id="style" class="style_type">
+              <option disabled selected>Seleccione su fuente</option>
 
-              <input type="radio" name="Fondo" id="Fondo2" value="Fondo2" />
+              <option value="Arial">Arial</option>
 
-               <img src="../Imagenes/gc_fondo2.jpg"  class="fondo" ></label>
+              <option value="Calibri">Calibri</option>
 
-              <label for="Fondo3">
-
-              <input type="radio" name="Fondo" id="Fondo3" value="Fondo3" />
-
-              <img src="../Imagenes/gc_fondo3.jpg" class="fondo"></label>
-
-              <label for="Fondo4">
-
-              <input type="radio" name="Fondo" id="Fondo4" value="Fondo4" />
-
-               <img src="../Imagenes/gc_fondo4.jpg"class="fondo"></label>
-
-              <label for="Fondo5">
-
-              <input type="radio" name="Fondo" id="Fondo5" value="Fondo5" />
-
-              <img src="../Imagenes/gc_fondo5.jpg"class="fondo"></label>
-              
+              <option value="Times New Roman">Times New Roman</option>
+            </select>
+          </div>
 
 
-            </div>
+          <div class="Formulario_estilo_tamaño">
+            <label for="tamaño_estilo">Tamaño:</label>
+
+            <select name="style_color" id="syle_color">
+              <option value="5">5</option>
+
+              <option selected value="11">11</option>
+
+              <option value="17">17</option>
+
+              <option value="20">20</option>
+
+              <option value="25">25</option>
+
+              <option value="30">30</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="colores">
+
+          <label for="Rojo">
+            <input type="radio" name="color_estilo" id="Rojo" value="Rojo" checked />
+            <div class="color circuloRojo"></div>
+
+          </label>
+
+          <label for="Amarillo">
+
+            <input type="radio" name="color_estilo" id="Amarillo" value="Amarillo" />
+            <div class="color circuloAmarillo"></div>
+          </label>
+
+
+          <label for="Azul">
+
+            <input type="radio" name="color_estilo" id="Azul" value="Azul" />
+            <div class="color circuloAzul"></div>
+          </label>
+
+          <label for="Verde">
+            <input type="radio" name="color_estilo" id="Verde" value="Verde" />
+            <div class="color circuloVerde"></div>
+          </label>
+          <label for="Lila">
+
+            <input type="radio" name="color_estilo" id="Lila" value="Lila" />
+            <div class="color circuloLila"></div>
+          </label>
+          <label for="Naranja">
+
+            <input type="radio" name="color_estilo" id="Naranja" value="Naranja" />
+            <div class="color circuloNaranja"></div>
+          </label>
+
+        </section>
+        <div class="Formulario_fondo">
+          <label for="Fondo1">
+
+            <input type="radio" name="Fondo" id="Fondo1" value="Fondo1" checked />
+
+            <img src="../Imagenes/gc_fondo1.jpeg" class="fondo"></label>
+
+          <label for="Fondo2">
+
+            <input type="radio" name="Fondo" id="Fondo2" value="Fondo2" />
+
+            <img src="../Imagenes/gc_fondo2.jpg" class="fondo"></label>
+
+          <label for="Fondo3">
+
+            <input type="radio" name="Fondo" id="Fondo3" value="Fondo3" />
+
+            <img src="../Imagenes/gc_fondo3.jpg" class="fondo"></label>
+
+          <label for="Fondo4">
+
+            <input type="radio" name="Fondo" id="Fondo4" value="Fondo4" />
+
+            <img src="../Imagenes/gc_fondo4.jpg" class="fondo"></label>
+
+          <label for="Fondo5">
+
+            <input type="radio" name="Fondo" id="Fondo5" value="Fondo5" />
+
+            <img src="../Imagenes/gc_fondo5.jpg" class="fondo"></label>
+
+
+
+        </div>
 
         <section class="confirmacion">
-        <div class="confirmar_carrito">
-        <button>Agregar al carrito</button> </div>
-        <div class="reset_form">
-        <button type="reset">Cancelar</button></div>
-       
-        </section>
-          </form>
-        
+          <div class="confirmar_carrito">
+            <button>Agregar al carrito</button>
+          </div>
+          <div class="reset_form">
+            <button type="reset">Cancelar</button>
+          </div>
 
-      </section>
-<section class="Box_Preview">
+        </section>
+      </form>
+
+
+    </section>
+    <section class="Box_Preview">
       <section class="Cuadro_Preview">
-       
-          <div class="Destinatario">  
-            <h3>¡Felicidades! :</h3>
-          </div>
 
-          <div class="Monto">
-            <h3>Monto</h3>
-          </div>
+        <div class="Destinatario">
+          <h3>¡Felicidades! :</h3>
+        </div>
 
-          <div class="Mensaje">
-            <h3>Contenido del mensaje</h2>
-          </div>
-       
+        <div class="Monto">
+          <h3>Monto</h3>
+        </div>
+
+        <div class="Mensaje">
+          <h3>Contenido del mensaje</h2>
+        </div>
+
       </section>
-      
-    <section class="Mensaje-Monto">
-      <h2>Vista previa de la gift card</h2>
-      <h3>Elija la ubicacion del monto :  </h3>
-      <section class="ubicacion_monto">
-      
-        <label>
-        <input type="radio" name="Ubicacion" id= "ubi_monto"value="ubi_monto">
-        <img class="imagen_monto" src="../Imagenes/monto_abajo_izquierda.JPG">
-        </label>
-        <label>
-          <input type="radio" name="Ubicacion" id= "ubi_monto2"value="ubi_monto2" checked>
-        <img class="imagen_monto" src="../Imagenes/monto_abajo_derecha.JPG">
-        </label>
-        <label>
-          <input type="radio" name="Ubicacion" id= "ubi_monto3"value="ubi_monto3">
-        <img class="imagen_monto" src="../Imagenes/monto_arriba_izquierda.JPG">
-        </label>
-  
+
+      <section class="Mensaje-Monto">
+        <h2>Vista previa de la gift card</h2>
+        <h3>Elija la ubicacion del monto : </h3>
+        <section class="ubicacion_monto">
+
+          <label>
+            <input type="radio" name="Ubicacion" id="ubi_monto" value="ubi_monto">
+            <img class="imagen_monto" src="../Imagenes/monto_abajo_izquierda.JPG">
+          </label>
+          <label>
+            <input type="radio" name="Ubicacion" id="ubi_monto2" value="ubi_monto2" checked>
+            <img class="imagen_monto" src="../Imagenes/monto_abajo_derecha.JPG">
+          </label>
+          <label>
+            <input type="radio" name="Ubicacion" id="ubi_monto3" value="ubi_monto3">
+            <img class="imagen_monto" src="../Imagenes/monto_arriba_izquierda.JPG">
+          </label>
+
+        </section>
+
       </section>
-     
-      </section>
-</section>
-    </main>
-    <!-- Footer -->
-    <footer class="container-footer">
-        <section class="datos-equipo">
-            <ul>
-                <li>EQUIPO : Grupo PapaFrita</li>
-                <li>Collado, Camila DNI: 43.098.593</li>
-                <li>Martelli, Rocio Belen DNI: 44.161.046</li>
-                <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
-                <li>Moyano Vivas, Matias Ernesto DNI:40.240.664</li>
-                <li>Viana, Sol Belen DNI: 45.889.073</li>
-            </ul>
-        </section>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="container-footer">
+    <section class="datos-equipo">
+      <ul>
+        <li class="nombre-equipo"> EQUIPO: UNDEFINED </li>
+        <li>Collado, Camila DNI: 43.098.593</li>
+        <li>Martelli, Rocio Belen DNI: 44.161.046</li>
+        <li>Mazza, Micaela Montserrat DNI: 38.662.441</li>
+        <li>Moyano Vivas, Matias Ernesto DNI:40.240.664</li>
+        <li>Viana, Sol Belen DNI: 45.889.073</li>
+      </ul>
+    </section>
 
 
-        <section class="menu-inferior">
-            <a href="../index.html">Inicio</a>
-            <a href="../paginas/contacto.html">Contacto</a>
-            <a href="../paginas/inscripcionCurso.html">Formulario</a>
+    <section class="menu-inferior">
+      <a href="../index.html">Inicio</a>
+      <a href="../paginas/contacto.html">Contacto</a>
+      <a href="../paginas/inscripcionCurso.html">Formulario</a>
 
-        </section>
-
-
-        <section class="redes-sociales">
-            <p class="parrafo-socialMedia">REDES SOCIALES</p>
-            <nav class="redes-sociales-nav">
-                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
-                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
-                </a>
-
-                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
-                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
-                </a>
-                <a href="https://wa.me/5491155844612" target="_blank">
-                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
-                </a>
-            </nav>
-        </section>
+    </section>
 
 
-        </section>
-    </footer>
-  </body>
+    <section class="redes-sociales">
+      <p class="parrafo-socialMedia">REDES SOCIALES</p>
+      <nav class="redes-sociales-nav">
+        <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+          <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+        </a>
+
+        <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+          <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+        </a>
+        <a href="https://wa.me/5491155844612" target="_blank">
+          <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+        </a>
+      </nav>
+    </section>
+
+
+    </section>
+  </footer>
+</body>
+
 </html>

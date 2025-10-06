@@ -316,7 +316,13 @@ grid-template-rows: 1fr 1fr;
 
 .datos-equipo li {
   margin-top: 0.3em;
+   list-style: none;
 }
+
+/* Para que el nombre este en negrita */
+/* .nombre-equipo{
+font-weight: 600;
+} */
 
 /* Menú inferior */
 .menu-inferior {

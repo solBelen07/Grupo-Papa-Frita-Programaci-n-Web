@@ -288,11 +288,8 @@
 
 
 @media (min-width: 481px) and (max-width: 960px) {
- .Box_main {
-    font-size: 6px;
- }
-@media (min-width: 481px) and (max-width: 960px) {
   .Box_main {
+       font-size: 6px;
     grid-template-columns: 1fr; 
     gap: 2em;
 
@@ -316,7 +313,6 @@
   .Box_form form {
     font-size: 1rem;
   }
-}
 
   .Box_form form .confirmacion {
     margin-top: 0em;
@@ -386,15 +382,16 @@
     height: 1.5em;
     font-size: 1em;
   }
+
+
 }
-
-
 @media (max-width: 500px) {
   .Box_main{
     font-size: 5px;
   }
 }
 
+/* CELULARES */
 @media (max-width: 480px) {
   .Box_main {
    display: flex;
@@ -405,13 +402,13 @@
 
   }
 .Cuadro_Preview .Destinatario {
-  font-size: 3em;
+  font-size: 4em;
 }
 .Cuadro_Preview .Mensaje{
-  font-size: 3em;
+  font-size: 4em;
 }
 .Cuadro_Preview .Monto{
-  font-size: 3em;
+  font-size: 4em;
 }
 .Cuadro_Preview .m
   .Box_form {
@@ -466,8 +463,8 @@
   }
 
   .colores .color {
-    width: 5em;
-    height: 5em;
+    width: 2em;
+    height: 2em;
   }
 
   .Box_form .form_style .Formulario_estilo select {
@@ -504,12 +501,6 @@ gap: 3em;
     margin-left: -6em;
  }
 }
-
-
-
-
-
-
 
 
 @media (max-width: 500px) {
