@@ -32,7 +32,7 @@ body {
 }
 
 .boton-link.ocultar {
-  display: none;
+  font-size: 0;
 }
 
 .boton-link:hover {

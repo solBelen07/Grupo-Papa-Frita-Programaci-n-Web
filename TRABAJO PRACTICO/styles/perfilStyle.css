@@ -96,7 +96,7 @@ h1 {
   cursor: not-allowed;
 }
 
-/* popup */
+
 .popup-confirmacion {
   position: fixed;
   top: 0;
@@ -134,8 +134,6 @@ h1 {
   color: #333;
   margin-bottom: 1.5em;
 }
-
-
 
 /* Mostrar el popup  */
 :target {
