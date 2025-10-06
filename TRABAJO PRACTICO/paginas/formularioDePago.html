@@ -27,11 +27,11 @@
         <nav class="navbar">
             <ul class="nav-list">
                 <li><a href="../index.html" class="nav-link">Inicio</a></li>
-                <li><a href="./paginas/giftCard.html" class="nav-link">GiftCard</a></li>
-                <li><a href="./paginas/cursos.html" class="nav-link">Cursos</a></li>
-                <li><a href="./paginas/inscripcionCurso.html" class="nav-link">Inscripción</a></li>
-                <li><a href="./paginas/calendario.html" class="nav-link"> Proximos </a></li>
-                <li><a href="./paginas/perfil.html" class="nav-link">Mi Perfil</a></li>
+                <li><a href="../paginas/giftCard.html" class="nav-link">GiftCard</a></li>
+                <li><a href="../paginas/cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="../paginas/inscripcionCurso.html" class="nav-link">Inscripción</a></li>
+                <li><a href="../paginas/calendario.html" class="nav-link"> Proximos </a></li>
+                <li><a href="../paginas/perfil.html" class="nav-link">Mi Perfil</a></li>
 
             </ul>
         </nav>
@@ -177,22 +177,20 @@
                         type="text"
                         inputmode="numeric" 
                         name="vencimiento" 
+                        id="vencimiento"
                         placeholder="MM/AA" 
                         pattern="(0[1-9]|1[0-2])\/[0-9]{2}" 
                         required>
                 </div>
                 <div class="codigo-seguridad">
                     <label for="vencimiento">Código de Seguridad</label>
-                    <input 
-                        type="password"
-                        inputmode="numeric" 
-                        name="codigo-seguridad" 
-                        placeholder="000" 
-                        pattern="[0-9]"
-                        maxlength="3"
-                        required>
+                    <input  type="password" inputmode="numeric"  name="codigo-seguridad" id="codigo-seguridad"
+                     placeholder="000"   pattern="[0-9] {3}"  maxlength="3" required>
+                     <!--le agregue el {3 } a patter porq solo permitia un numero
+                     agregue id  -->
                 </div>
             </div>
+
 
             </article>
             <article class="persona">
@@ -211,8 +209,8 @@
   <!-- Popup de confirmación -->
   <div id="popup" class="popup-confirmacion">
     <div class="popup-contenido">
-      <h3>✅ ¡Usted se inscribio correctamente!</h3>
-      <p> Sus datos fueron registrados con éxito.</p>
+      <h3>✅ ¡El pago se realizo correctamente!</h3>
+      <p> Recibirá en su correo las instrucciones para acceder al curso.</p>
       
   
       <a href="#" class="cerrar-popup">Cerrar</a>
