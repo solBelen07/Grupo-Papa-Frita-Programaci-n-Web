@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario De Inscripción</title>
     <!-- Link a CSS  -->
     <link rel="stylesheet" href="../styles/formularioDePagoStyle.css">
-     <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/header_footer.css">
 </head>
+
 <body>
-           <!-- Encabezado -->
+    <!-- Encabezado -->
     <header class="main-header">
         <section class="logo">
-            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma" class="logo-desktop"></a>
-        
+            <a href="../index.html"> <img src="../img/logoPagBlanco.png" alt="Logo de la plataforma"
+                    class="logo-desktop"></a>
+
             <a href="../index.html"> <img src="../img/iconoBlancoLogoCelu.png" alt="Logo móvil" class="logo-mobile"></a>
         </section>
         <!-- Barra de Navegación -->
@@ -40,7 +43,6 @@
         <section class="search-bar">
             <input list="Cursos" placeholder="Buscar curso...">
             <datalist id="Cursos">
-                <option value="Programación de videojuegos">
                 <option value="Marketing Digital">
                 <option value="Diseño Gráfico">
                 <option value="Desarrollo Web">
@@ -55,169 +57,160 @@
         </section>
 
         <section class="user-actions">
-             <a href="../paginas/inicioSesion.html"> 
-         <button class="login-button"> 
-            <img src="../img/logo-fondo-transparente.png" alt="Imagen de logo iniciar sesion" class="logo-iniciarSesion-Responsive"> 
-                Iniciar Sesión </button></a>
-                
+            <a href="../paginas/inicioSesion.html">
+                <button class="login-button">
+                    <img src="../img/logo-fondo-transparente.png" alt="Imagen de logo iniciar sesion"
+                        class="logo-iniciarSesion-Responsive">
+                    Iniciar Sesión </button></a>
+
             <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
 
 
-        <input type="checkbox" name="Carro" id="Carro" value="Carro" checked />
-           <!-- icono carrito -->
+            <input type="checkbox" name="Carro" id="Carro" value="Carro" checked />
+            <!-- icono carrito -->
 
-        <article class="carrito">   
-            <label for="Carro" >
-            <img src="../img/carrito.png" alt="Carrito de compra" class="carrito_icono">
-            </label>
-             <span class="cart-count">3</span>
-
-            </article>
-
-         <!-- Menu Desplegable Carrito -->       
-           <section class="caja_carrito"> 
-
-            <article class="producto1_carrito">
-                <img src="../img/ingles.jpg" class="Imagen_agregar_carrito">
-                <h3>Curso: Ingles avanzado</h3>
-                <h4>Precio : 120.000$</h4>
-
-                <section class="expandir_borrar">
-                <a href="../paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">
-                <img src="../Imagenes/icono_flechas_expandiendo.webp">
-                </a>
-
-                <img src="../Imagenes/icono_basura.png">
-                </section>
-
-            </article>   
-
-            <article class="producto2_carrito">
-
-                <img src="../img/backend.jpg" class="Imagen_agregar_carrito">
-                <h3>Curso: Programación Back-end</h3>
-                <h4>Precio : 250.000$</h4>
-                
-                <section class="expandir_borrar">
-
-                <a href="../paginas/detalleDelCurso/detalleCursoBackend.html">
-                <img src="../Imagenes/icono_flechas_expandiendo.webp">
-                </a>
-                <img src="../Imagenes/icono_basura.png">
-                </section>
+            <article class="carrito">
+                <label for="Carro">
+                    <img src="../img/carrito.png" alt="Carrito de compra" class="carrito_icono">
+                </label>
+                <span class="cart-count">3</span>
 
             </article>
 
-            <article class="producto3_carrito">
+            <!-- Menu Desplegable Carrito -->
+            <section class="caja_carrito">
 
-                <img src="../Imagenes/gift_card.png " class="Imagen_agregar_carrito">
-                <h3>Regalo. Gift Card</h3>
-                <h4>Precio : 400.000$</h4>
-                
-                <section class="expandir_borrar">
-                <a href="../Imagenes/gift_card.png " target="_blank">
-                <img src="../Imagenes/icono_flechas_expandiendo.webp">
-                </a>
+                <article class="producto1_carrito">
+                    <img src="../img/ingles.jpg" class="Imagen_agregar_carrito">
+                    <h3>Curso: Ingles avanzado</h3>
+                    <h4>Precio : 120.000$</h4>
 
-               
-                <img src="../Imagenes/icono_basura.png">
+                    <section class="expandir_borrar">
+                        <a href="../paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">
+                            <img src="../Imagenes/icono_flechas_expandiendo.webp">
+                        </a>
 
-                </section>
+                        <img src="../Imagenes/icono_basura.png">
+                    </section>
 
-            </article>
+                </article>
 
-            <article class="confirmar_carrito">
-            <h4>Total a pagar : 770.000$ </h4>
-            <a href="../paginas/inicioSesionPago.html"> 
-                <button>Continuar con la compra</button>
-            </a>
-            </article>
+                <article class="producto2_carrito">
 
-           </section>
+                    <img src="../img/backend.jpg" class="Imagen_agregar_carrito">
+                    <h3>Curso: Programación Back-end</h3>
+                    <h4>Precio : 250.000$</h4>
+
+                    <section class="expandir_borrar">
+
+                        <a href="../paginas/detalleDelCurso/detalleCursoBackend.html">
+                            <img src="../Imagenes/icono_flechas_expandiendo.webp">
+                        </a>
+                        <img src="../Imagenes/icono_basura.png">
+                    </section>
+
+                </article>
+
+                <article class="producto3_carrito">
+
+                    <img src="../Imagenes/gift_card.png " class="Imagen_agregar_carrito">
+                    <h3>Regalo. Gift Card</h3>
+                    <h4>Precio : 400.000$</h4>
+
+                    <section class="expandir_borrar">
+                        <a href="../Imagenes/gift_card.png " target="_blank">
+                            <img src="../Imagenes/icono_flechas_expandiendo.webp">
+                        </a>
+
+
+                        <img src="../Imagenes/icono_basura.png">
+
+                    </section>
+
+                </article>
+
+                <article class="confirmar_carrito">
+                    <h4>Total a pagar : 770.000$ </h4>
+                    <a href="../paginas/inicioSesionPago.html">
+                        <button>Continuar con la compra</button>
+                    </a>
+                </article>
+
+            </section>
         </section>
 
 
     </header>
 
-<main class="main-content">
-    <section class="formulario-inscripcion">
-    <h2>Detalle de Pago</h2>
-        
-    <form action="#popup">
-        <article class="persona">
-          <label>Email:</label>
-          <input type="email" name="email" placeholder="email" required>
-          
-        </article>
-        <h3>Pago con Tarjeta</h3> 
+    <main class="main-content">
+        <section class="formulario-inscripcion">
+            <h2>Detalle de Pago</h2>
 
-            <article class="curso curso-1">
-            <label for="tarjetas-disponibles">Elegir Opción:</label>
-            <select id="tarjetas-disponibles" name="tarjetas-disponibles">
-                <option value="debito">Debito</option>
-                <option value="amex">Amex</option>
-                <option value="cabal">Cabal</option>
-                <option value="mastercard">Mastercard</option>
-                <option value="naranja">Naranja</option>
-                <option value="visa">Visa</option>
-            </select>
-            </article>
-            <article class="datos-tarjeta">
-            <label for="card">Numero de Tarjeta:</label>
-            <input type="text" 
-                inputmode="numeric" 
-                pattern="[0-9]{13,19}" 
-                name="card" 
-                maxlength="19"
-                placeholder="XXXX XXXX XXXX XXXX" required>
-            <div class="vencimiento-y-codigo-de-seguridad">
-                <div class="vencimiento">
-                    <label for="vencimiento">Fecha de vencimiento</label>
-                    <input 
-                        type="text"
-                        inputmode="numeric" 
-                        name="vencimiento" 
-                        id="vencimiento"
-                        placeholder="MM/AA" 
-                        pattern="(0[1-9]|1[0-2])\/[0-9]{2}" 
-                        required>
-                </div>
-                <div class="codigo-seguridad">
-                    <label for="vencimiento">Código de Seguridad</label>
-                    <input  type="password" inputmode="numeric"  name="codigo-seguridad" id="codigo-seguridad"
-                     placeholder="000"   pattern="[0-9] {3}"  maxlength="3" required>
-                     <!--le agregue el {3 } a patter porq solo permitia un numero
+            <form action="#popup">
+                <article class="persona">
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="email" required>
+
+                </article>
+                <h3>Pago con Tarjeta</h3>
+
+                <article class="curso curso-1">
+                    <label for="tarjetas-disponibles">Elegir Opción:</label>
+                    <select id="tarjetas-disponibles" name="tarjetas-disponibles">
+                        <option value="debito">Debito</option>
+                        <option value="amex">Amex</option>
+                        <option value="cabal">Cabal</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="naranja">Naranja</option>
+                        <option value="visa">Visa</option>
+                    </select>
+                </article>
+                <article class="datos-tarjeta">
+                    <label for="card">Numero de Tarjeta:</label>
+                    <input type="text" inputmode="numeric" pattern="[0-9]{13,19}" name="card" maxlength="19"
+                        placeholder="XXXX XXXX XXXX XXXX" required>
+                    <div class="vencimiento-y-codigo-de-seguridad">
+                        <div class="vencimiento">
+                            <label for="vencimiento">Fecha de vencimiento</label>
+                            <input type="text" inputmode="numeric" name="vencimiento" id="vencimiento"
+                                placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+                        </div>
+                        <div class="codigo-seguridad">
+                            <label for="vencimiento">Código de Seguridad</label>
+                            <input type="password" inputmode="numeric" name="codigo-seguridad" id="codigo-seguridad"
+                                placeholder="000" pattern="[0-9]{3}" maxlength="3" required>
+                            <!--le agregue el {3 } a patter porq solo permitia un numero
                      agregue id  -->
+                        </div>
+                    </div>
+
+
+                </article>
+                <article class="persona">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre-titular" placeholder="Como Figura en la Tarjeta" required>
+
+                </article>
+                <button type="submit" class="boton-enlace">Confirmar Pago</button>
+
+
+            </form>
+
+
+
+
+            <!-- Popup de confirmación -->
+            <div id="popup" class="popup-confirmacion">
+                <div class="popup-contenido">
+                    <h3>✅ ¡El pago se realizo correctamente!</h3>
+                    <p> Recibirá en su correo las instrucciones para acceder al curso.</p>
+
+
+                    <a href="#" class="cerrar-popup">Cerrar</a>
                 </div>
             </div>
 
-
-            </article>
-            <article class="persona">
-            <label>Nombre:</label>
-            <input type="text" name="nombre-titular" placeholder="Como Figura en la Tarjeta" required>
-          
-            </article>
-        <button type="submit" class="boton-enlace">Confirmar Pago</button>
-    
-
-    </form>
-
-        
-
-
-  <!-- Popup de confirmación -->
-  <div id="popup" class="popup-confirmacion">
-    <div class="popup-contenido">
-      <h3>✅ ¡El pago se realizo correctamente!</h3>
-      <p> Recibirá en su correo las instrucciones para acceder al curso.</p>
-      
-  
-      <a href="#" class="cerrar-popup">Cerrar</a>
-    </div>
-  </div>
-
-    </section>
+        </section>
     </main>
 
 
@@ -246,22 +239,23 @@
 
         </section>
 
-        
-         <section class="redes-sociales">
-            <p class="parrafo-socialMedia">REDES SOCIALES</p>
-           <nav class="redes-sociales-nav">
-            <a href="https://www.instagram.com/unlamoficial/" target="_blank"> 
-              <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">  
-            </a>
 
-            <a href="https://www.facebook.com/UnlamOficial/" target="_blank"> 
-                <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
-            </a>
-            <a href="https://wa.me/5491155844612" target="_blank">
-                <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
-            </a>
+        <section class="redes-sociales">
+            <p class="parrafo-socialMedia">REDES SOCIALES</p>
+            <nav class="redes-sociales-nav">
+                <a href="https://www.instagram.com/unlamoficial/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo Instagram" class="social-icon">
+                </a>
+
+                <a href="https://www.facebook.com/UnlamOficial/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo de Facebook" class="social-icon">
+                </a>
+                <a href="https://wa.me/5491155844612" target="_blank">
+                    <img src="../img/whatsapp.png" alt="Logo de whastapp" class="social-icon">
+                </a>
             </nav>
         </section>
     </footer>
 </body>
+
 </html>

@@ -46,9 +46,7 @@
 
 /* PROPIEDADES A LOS DIV QUE SON HIJOS DIRECTOS*/
 .vencimiento-y-codigo-de-seguridad > div {
-  flex: 1 1 0;    
-  min-width: 0;   
-  padding: 0;     
+  width: 100%;
 }
 
 .vencimiento-y-codigo-de-seguridad input,
@@ -104,6 +102,7 @@
   justify-content: center;
   align-items: center;
   z-index: 999;
+  /* Para que quede encima de todo */
 }
 
 .popup-confirmacion:target {
