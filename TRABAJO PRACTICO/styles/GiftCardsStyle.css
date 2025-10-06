@@ -268,7 +268,6 @@
     font-size: 12px;
   }
 }
-
 @media screen and (max-width: 1301px) {
   .Box_main {
     gap: 0.5em;
@@ -402,19 +401,23 @@
     padding: 1rem;
     gap: 1.5rem;
     margin-top: 0;
-
   }
+  .Box_Preview{
+    margin-bottom: -20em;
+  }
+  .Box_form .data label {
+  font-size: 2em;
+}
 .Cuadro_Preview .Destinatario {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .Cuadro_Preview .Mensaje{
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .Cuadro_Preview .Monto{
-  font-size: 3em;
+  font-size: 2.5em;
 }
-.Cuadro_Preview .m
-  .Box_form {
+.Cuadro_Preview .m .Box_form {
     width: 100%;
     margin: 0;
   }
@@ -427,8 +430,10 @@
   }
 
    .Box_form form .confirmacion{
-    flex-direction: row;
-    gap: 0.8rem;
+    gap: 1.8rem;
+    margin-left: -5em;
+    margin-top: 4em;
+
     /* margin-top: 1rem; */
   }
 
@@ -462,7 +467,7 @@
   }
 
   .colores {
-    gap: 3.2em;
+    gap: 2.2em;
   }
 
   .colores .color {
@@ -471,20 +476,21 @@
   }
 
   .Box_form .form_style .Formulario_estilo select {
-    width: 18em;
-    height: 2em;
-    font-size: 1em;
+    width: 19em;
+    height: 3em;
+    font-size: 1.5em;
   }
 
   .Box_form .form_style .Formulario_estilo_tamaño select {
-    height: 1.5em;
-    font-size: 1em;
+   height: 2.5em;
+    font-size: 1.5em;
+    width: 5em;
   }
 
 .Cuadro_Preview{
-  height: 30em;
-  width: auto;
-
+  height: 28em;
+    width: auto;
+    margin-top: 26em;
 }
 .Box_form form .confirmacion button{
   width: 12em;
@@ -499,24 +505,9 @@ gap: 3em;
 #monto{
   width: 48%;
 }
- .Box_form form .confirmacion{
-  gap: 1.8rem;
-    margin-left: -6em;
- }
+ 
 }
 
-
-
-
-
-
-
-
-@media (max-width: 500px) {
-.Box_main {
-    font-size: 4px;
-  }
-}
 
 
 @media (max-width: 342px) {
@@ -625,4 +616,57 @@ gap: 3em;
   }
 
 }
+}
+
+@media (max-width: 320px) {
+.Box_main{
+  margin-top: 16em;
+}
+.Box_form .data label {
+  font-size: 1.3em;
+}
+  .Box_form .form_style .Formulario_estilo select {
+    width: 15em;
+    height: 3em;
+    font-size: 1em;
+  }
+  .Box_form .form_style .Formulario_estilo_tamaño select {
+    height: 2.5em;
+    font-size: 1em;
+    width: 5em;
+  }
+    .Formulario_fondo .fondo {
+    width: 10em;
+    height: auto;
+    margin-top: 1em;
+  }
+
+    .Box_form form .confirmacion {
+  height: auto;
+margin-top: 5.5em;
+    margin-left: -1em;
+  }
+.Mensaje-Monto {
+    gap: 1em;
+    margin-top: auto;
+  }
+ .Cuadro_Preview {
+    height: 26em;
+    width: auto;
+    margin-top: auto;
+  }
+ .colores {
+    gap: 1.2em;
+    margin-top: 0.5em;
+  }
+  .colores .color {
+    width: 3.3em;
+    height: 3.3em;
+  }
+    .Mensaje-Monto h3 {
+    font-size: 4em;
+  }
+    .Mensaje-Monto h2 {
+    font-size: 5em;
+  }
 }
