@@ -76,46 +76,6 @@ section {
     background-color: #AB7DEB;
 }
 
-.popup-confirmacion {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
-.popup-confirmacion:target {
-    display: flex;
-}
-
-.popup-contenido {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.popup-contenido h3 {
-    color: #AB7DEB;
-    margin-bottom: 1rem;
-}
-
-.cerrar-popup {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #dc3545;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-}
 
 /*  CREAR CUENTA */
 
@@ -140,30 +100,40 @@ section {
     font-size: 1em;
 }
 
+/* POPUP EN OLVIDE CONTRASEÑA  */
 .popup-confirmacion2 {
-    position: fixed;
-    left: 30em;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: none;
+    /* Si esta en static se posiciona abajo */
+ position: fixed;
+ right: 100;
+  background: rgba(0, 0, 0, 0.4);
+  /* Hace que el fondo se vea borroso */
+  backdrop-filter: blur(6px);
+  display: none;
+ 
 
 }
 
+/* Cuando se apreta el boton , que se active  */
 .popup-confirmacion2:target {
     display: flex;
 }
 
 .popup-contenido2 {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+ background: #ffffff;
+  padding: 2em;
+  border-radius: 1.2em;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  animation: aparecer 0.4s ease;
 }
 
 .popup-contenido2 h3 {
-    color: #AB7DEB;
-    margin-bottom: 1rem;
+ color: #7E57C2;
+  margin-bottom: 0.8em;
+  font-size: 1.3em;
 }
 
 .cerrar-popup {
