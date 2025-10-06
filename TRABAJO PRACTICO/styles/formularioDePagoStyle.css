@@ -44,10 +44,11 @@
   align-items: flex-start;
 }
 
+/* PROPIEDADES A LOS DIV QUE SON HIJOS DIRECTOS*/
 .vencimiento-y-codigo-de-seguridad > div {
-  flex: 1 1 0;    /* ocupan igual espacio */
-  min-width: 0;   /* IMPORTANTE: permite que inputs width:100% se reduzcan correctamente */
-  padding: 0;     /* opcional, ya tenés gap para separación */
+  flex: 1 1 0;    
+  min-width: 0;   
+  padding: 0;     
 }
 
 .vencimiento-y-codigo-de-seguridad input,
