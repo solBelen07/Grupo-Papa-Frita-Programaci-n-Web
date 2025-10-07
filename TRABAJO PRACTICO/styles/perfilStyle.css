@@ -140,7 +140,20 @@ h1 {
   display: flex;
 }
 
-/* Botón principal */
+/* Botones */
+.botones-container {
+  grid-column: span 2; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.botones-container .boton-enviar {
+  width: 48%;
+  text-align: center;
+}
+
 .boton-enviar {
   background-color: #9575CD;
   border: none;
@@ -166,21 +179,51 @@ h1 {
 
 /* RESPONSIVE */
 @media (max-width: 700px) {
-  .form-perfil {
-    grid-template-columns: 1fr;
+  .section-perfil .form-perfil {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1rem;
+    align-items: start;
   }
 
-  .section-perfil {
-    padding: 2em;
+  .section-perfil .form-perfil label {
+    width: 100%;
+    margin: 0;
   }
 
-  .foto-perfil {
-    width: 90px;
-    height: 90px;
+
+  .section-perfil .form-perfil .caja-input {
+    width: 100% ;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    padding: 0.6rem 0.9rem;
   }
 
-  h1 {
-    font-size: 1.5em;
+  .perfil-encabezado {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .foto-perfil { 
+    width: 80px; height: 80px;
+   }
+
+
+  .botones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    grid-column: 1 / -1;
+  }
+
+  .botones-container .boton-enviar {
+    width: 80%;
+    max-width: 320px;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+    text-align: center;
   }
 }
 

@@ -10,7 +10,9 @@ img {
   height: auto;
   display: block;
 }
-
+a{
+  color:#7E57C2;
+}
 
 
 /*MAIN*/
@@ -106,13 +108,13 @@ img {
 }
 .course-card .price {
     font-weight: bold;
-    color: #333333;
+    color: #7E57C2;
+    margin: 0.25em 0;
 }
 .course-card a {
   color: #6a0dad;
   font-weight: bold;
 }
-
 
 
 /* Logos de medios de pago */

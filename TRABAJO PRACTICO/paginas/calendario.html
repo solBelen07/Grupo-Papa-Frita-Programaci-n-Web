@@ -8,6 +8,7 @@
     <!-- Link a CSS  -->
     <link rel="stylesheet" href="../styles/header_footer.css">
     <link rel="stylesheet" href="../styles/calendariostyle.css">
+     <link rel="icon" type="image/png" href="../img/favicon.ico">
     <!-- Link a animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -44,20 +45,21 @@
 
         <!-- Barra de búsqueda -->
         <section class="search-bar">
-            <input list="Cursos" placeholder="Buscar curso...">
-            <datalist id="Cursos">
-                <option value="Marketing Digital">
-                <option value="Diseño Gráfico">
-                <option value="Desarrollo Web">
-                <option value="Ciberseguridad">
-                <option value="Inteligencia Artificial">
-                <option value="Finanzas Personales">
-                <option value="Inglés">
-            </datalist>
-            <button class="search-button">
-                <img src="../img/lupa.png" alt="Buscar">
-            </button>
-        </section>
+  <form action="" method="get" onchange="this.action=this.curso.value">
+    <select name="curso" required>
+      <option value="">Seleccioná un curso</option>
+      <option value="./detalleDelCurso/detalleCursoFrontend.html">Programación Front-End</option>
+      <option value="./detalleDelCurso/detalleCursoBackend.html">Programación Back-End</option>
+      <option value="./detalleDelCurso/detalleCursoCiberseguridad.html">Ciberseguridad</option>
+      <option value="./detalleDelCurso/detalleCursoInglesAvanzado.html">Inglés Avanzado</option>
+      <option value="./detalleDelCurso/detalleCursoMarketingDigital.html">Marketing Digital</option>
+      <option value="./detalleDelCurso/detalleCursoFinanzasPersonales.html">Finanzas Personales</option>
+    </select>
+    <button type="submit" class="search-button">
+      <img src="../img/lupa.png" alt="Buscar">
+    </button>
+  </form>
+</section>
 
         <section class="user-actions">
              <a href="../paginas/inicioSesion.html"> 
@@ -153,8 +155,9 @@
      
 
            <section class="calendar-header">
-            <a href="./calendario.html" class="boton-link ocultar">←</a>
-            <h2 class="titulo-mes-anio">Octubre 2025</h2>
+            <span class="boton-link-ocultar"></span>
+            <h2 class="titulo-mes-anio">Octubre 2025
+            </h2>
             <a href="./calendarioNoviembre.html" class="boton-link">→</a>
         </section>
 
@@ -183,7 +186,7 @@
             <article class="dia diaValido">6</article>
             <article class="dia diaValido">7</article>
             <!-- DIA ACTUAL -REENTREGA MARCA EL "HOY" -->
-            <article class="dia diaValido">8</article>
+            <article class="dia diaValido dia-actual ">8</article>
             <article class="dia diaValido">9</article>
             <article class="dia diaValido">10</article>
             <article class="dia diaValido">11</article>

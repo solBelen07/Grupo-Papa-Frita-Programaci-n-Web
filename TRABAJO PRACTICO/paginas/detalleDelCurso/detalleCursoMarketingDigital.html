@@ -7,6 +7,7 @@
     <!-- Link a CSS  -->
     <link rel="stylesheet" href="../../styles/detalleCurso.css">
     <link rel="stylesheet" href="../../styles/header_footer.css">
+     <link rel="icon" type="image/png" href="../../img/favicon.ico">
 </head>
 <body>
         <!-- Encabezado -->
@@ -38,20 +39,21 @@
 
         <!-- Barra de búsqueda -->
         <section class="search-bar">
-            <input list="Cursos" placeholder="Buscar curso...">
-            <datalist id="Cursos">
-                <option value="Marketing Digital">
-                <option value="Diseño Gráfico">
-                <option value="Desarrollo Web">
-                <option value="Ciberseguridad">
-                <option value="Inteligencia Artificial">
-                <option value="Finanzas Personales">
-                <option value="Inglés">
-            </datalist>
-            <button class="search-button">
-                <img src="../../img/lupa.png" alt="Buscar">
-            </button>
-        </section>
+  <form action="" method="get" onchange="this.action=this.curso.value">
+    <select name="curso" required>
+      <option value="">Seleccioná un curso</option>
+      <option value="./detalleCursoFrontend.html">Programación Front-End</option>
+      <option value="./detalleCursoBackend.html">Programación Back-End</option>
+      <option value="./detalleCursoCiberseguridad.html">Ciberseguridad</option>
+      <option value="./detalleCursoInglesAvanzado.html">Inglés Avanzado</option>
+      <option value="./detalleCursoMarketingDigital.html">Marketing Digital</option>
+      <option value="./detalleCursoFinanzasPersonales.html">Finanzas Personales</option>
+    </select>
+    <button type="submit" class="search-button">
+      <img src="../../img/lupa.png" alt="Buscar">
+    </button>
+  </form>
+</section>
 
         <section class="user-actions">
              <a href="../../paginas/inicioSesion.html"> 
@@ -240,7 +242,7 @@
             
             <article class="block-informacion-contenidos_precio-y-boton">
                 <span class="block-informacion-contenidos__precio">Precio final: $90.000,00 ARS</span>
-                <a href="../inscripcionCursoParticular.html"><button class="block-informacion-contenidos__boton">Inscribirse</button></a>
+                <a href="../inscripcionCurso.html"><button class="block-informacion-contenidos__boton">Inscribirse</button></a>
             </article>       
         </article>        
         <article class="block-informacion-contenidos__imagen">
@@ -296,18 +298,18 @@
                     <article>
                         <img src="../../img/frontend.jpg" alt="Curso de Programación Front-end">
                         <h3>Programación Front-end</h3>
-                        <p>Duración: 40 hs</p>
+                        <p>Duración: 44 hs</p>
                         <p class="price">$120.000</p>
                         <h4>Ver Detalle</h4>
                     </article>
                     </a>
 
-                    <a href="./detalleCursoMarketingDigital.html"  class="course-card">
+                    <a href="./detalleCursoBackend.html"  class="course-card">
                     <article>
-                        <img src="../../img/marketing.jpg" alt="Curso de Marketing Digital">
-                        <h3>Marketing Digital</h3>
-                        <p>Duración: 38 hs.</p>
-                        <p class="price">$90.000</p>
+                        <img src="../../img/backend.jpg" alt="Curso de Back-End">
+                        <h3>Programación Back-End</h3>
+                        <p>Duración: 44 hs.</p>
+                        <p class="price">$250.000</p>
                         <h4>Ver Detalle</h4>
                     </article>
                     </a>
@@ -326,7 +328,7 @@
                     <article>
                         <img src="../../img/ciberseguridad.jpg" alt="Curso de Ciberseguridad">
                         <h3>Ciberseguridad</h3>
-                        <p>Duración: 65 hs.</p>
+                        <p>Duración: 49 hs.</p>
                         <p class="price">$400.000</p>
                         <h4>Ver Detalle</h4>
                     </article>

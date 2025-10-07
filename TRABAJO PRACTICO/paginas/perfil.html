@@ -7,6 +7,7 @@
   <title>Mi perfil - Edulogic</title>
   <link rel="stylesheet" href="../styles/header_footer.css">
   <link rel="stylesheet" href="../styles/perfilStyle.css">
+   <link rel="icon" type="image/png" href="../img/favicon.ico">
 </head>
 
 <body>
@@ -37,6 +38,25 @@
         <li><a href="./calendario.html" class="nav-link"> Proximos </a></li>
       </ul>
     </nav>
+    
+     <section class="search-bar">
+  <form action="" method="get" onchange="this.action=this.curso.value">
+    <select name="curso" required>
+      <option value="">Seleccioná un curso</option>
+      <option value="./detalleDelCurso/detalleCursoFrontend.html">Programación Front-End</option>
+      <option value="./detalleDelCurso/detalleCursoBackend.html">Programación Back-End</option>
+      <option value="./detalleDelCurso/detalleCursoCiberseguridad.html">Ciberseguridad</option>
+      <option value="./detalleDelCurso/detalleCursoInglesAvanzado.html">Inglés Avanzado</option>
+      <option value="./detalleDelCurso/detalleCursoMarketingDigital.html">Marketing Digital</option>
+      <option value="./detalleDelCurso/detalleCursoFinanzasPersonales.html">Finanzas Personales</option>
+    </select>
+    <button type="submit" class="search-button">
+      <img src="../img/lupa.png" alt="Buscar">
+    </button>
+  </form>
+</section>
+
+
   </header>
 
   <!--perfil-->
@@ -51,12 +71,12 @@
 
         <label>
           <span>Nombre completo</span>
-          <input type="text" value="Ana Sofía Flores" class="caja-input bloqueado">
+          <input type="text" value="Ana Sofía Flores" class="caja-input bloqueado" readonly>
         </label>
 
         <label>
           <span>DNI</span>
-          <input type="text" value="38.759.021" class="caja-input bloqueado">
+          <input type="text" value="38.759.021" class="caja-input bloqueado" readonly>
         </label>
 
         <label>
@@ -94,7 +114,10 @@
           <input type="text" value="Argentina" class="caja-input">
         </label>
 
-        <a href="#popup-cerrar" class="boton-enviar">Cerrar sesión</a>
+        <div class="botones-container">
+          <a href="#popup-guardar" class="boton-enviar">Guardar cambios</a>
+          <a href="#popup-cerrar" class="boton-enviar">Cerrar sesión</a>
+        </div>
 
         <!-- Pop-up de confirmación -->
         <div id="popup-cerrar" class="popup-confirmacion">
@@ -103,6 +126,16 @@
             <p>Serás redirigido al inicio.</p>
 
             <a href="../index.html" class="boton-enviar">Ir al inicio</a>
+
+          </div>
+        </div>
+
+        <div id="popup-guardar" class="popup-confirmacion">
+          <div class="popup-contenido">
+            <h3>✅ ¡Sus cambios han sido guardados correctamente!</h3>
+            
+
+            <a href="#" class="boton-enviar">Cerrar</a>
 
           </div>
         </div>

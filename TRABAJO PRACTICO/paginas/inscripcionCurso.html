@@ -8,6 +8,7 @@
     <!-- Link a CSS  -->
     <link rel="stylesheet" href="../styles/formularioInscripcion.css">
     <link rel="stylesheet" href="../styles/header_footer.css">
+     <link rel="icon" type="image/png" href="../img/favicon.ico">
 </head>
 
 <body>
@@ -40,21 +41,22 @@
         </nav>
 
         <!-- Barra de búsqueda -->
-        <section class="search-bar">
-            <input list="Cursos" placeholder="Buscar curso...">
-            <datalist id="Cursos">
-                <option value="Marketing Digital">
-                <option value="Diseño Gráfico">
-                <option value="Desarrollo Web">
-                <option value="Ciberseguridad">
-                <option value="Inteligencia Artificial">
-                <option value="Finanzas Personales">
-                <option value="Inglés">
-            </datalist>
-            <button class="search-button">
-                <img src="../img/lupa.png" alt="Buscar">
-            </button>
-        </section>
+         <section class="search-bar">
+  <form action="" method="get" onchange="this.action=this.curso.value">
+    <select name="curso" required>
+      <option value="">Seleccioná un curso</option>
+      <option value="./detalleDelCurso/detalleCursoFrontend.html">Programación Front-End</option>
+    <option value="./detalleDelCurso/detalleCursoBackend.html">Programación Back-End</option>
+      <option value="./detalleDelCurso/detalleCursoCiberseguridad.html">Ciberseguridad</option>
+      <option value="./detalleDelCurso/detalleCursoInglesAvanzado.html">Inglés Avanzado</option>
+      <option value="./detalleDelCurso/detalleCursoMarketingDigital.html">Marketing Digital</option>
+      <option value="./detalleDelCurso/detalleCursoFinanzasPersonales.html">Finanzas Personales</option>
+    </select>
+    <button type="submit" class="search-button">
+      <img src="../img/lupa.png" alt="Buscar">
+    </button>
+  </form>
+</section>
 
         <section class="user-actions">
             <a href="../paginas/inicioSesion.html">
@@ -151,26 +153,21 @@
             <form action="./formularioDePago.html">
                 <div class="persona">
                     <label>Alumno:</label>
-                    <input type="text" name="nombre1" placeholder="Nombre y Apellido" required minlength="9">
-                    <input type="number" name="dni1" placeholder="DNI" required min="1000000" max="99999999">
+                    <input type="text" name="nombre1" placeholder="Nombre y Apellido" required minlength="5">
+                    <input type="text" inputmode="numeric" name="dni1" placeholder="DNI" pattern="[0-9]{8,12}" required minlength="8">
                 </div>
-
-
-
 
 
                 <div class="curso curso-1">
                     <label for="curso1">Curso 1:</label>
-                    <select id="curso1" name="curso1">
+                    <select id="curso1" name="curso1" required>
                         <option value="">-- Elegí un curso --</option>
-                        <option value="programacion-videojuegos">Programación de Videojuegos</option>
-                        <option value="marketing">Marketing Digital</option>
-                        <option value="diseno">Diseño Gráfico</option>
-                        <option value="web">Desarrollo Web</option>
+                        <option value="frontend">Programación Front-End</option>
+                        <option value="backend">Programación Back-End</option>
                         <option value="ciberseguridad">Ciberseguridad</option>
-                        <option value="ia">Inteligencia Artificial</option>
+                        <option value="ingles">Inglés Avanzado</option>
+                        <option value="marketing">Marketing Digital</option>
                         <option value="finanzas">Finanzas Personales</option>
-                        <option value="ingles">Inglés</option>
                     </select>
                 </div>
 
@@ -181,14 +178,12 @@
                     <label for="curso2">Curso 2:</label>
                     <select id="curso2" name="curso2">
                         <option value="">-- Elegí un curso --</option>
-                        <option value="programacion-videojuegos">Programación de Videojuegos</option>
-                        <option value="marketing">Marketing Digital</option>
-                        <option value="diseno">Diseño Gráfico</option>
-                        <option value="web">Desarrollo Web</option>
+                        <option value="frontend">Programación Front-End</option>
+                        <option value="backend">Programación Back-End</option>
                         <option value="ciberseguridad">Ciberseguridad</option>
-                        <option value="ia">Inteligencia Artificial</option>
+                        <option value="ingles">Inglés Avanzado</option>
+                        <option value="marketing">Marketing Digital</option>
                         <option value="finanzas">Finanzas Personales</option>
-                        <option value="ingles">Inglés</option>
                     </select>
 
                     <label for="mostrar-curso-2" class="toggle-label quitar">Quitar Curso 2</label>
@@ -202,14 +197,13 @@
                     <label for="curso3">Curso 3:</label>
                     <select id="curso3" name="curso3">
                         <option value="">-- Elegí un curso --</option>
-                        <option value="programacion-videojuegos">Programación de Videojuegos</option>
-                        <option value="marketing">Marketing Digital</option>
-                        <option value="diseno">Diseño Gráfico</option>
-                        <option value="web">Desarrollo Web</option>
+                        <option value="frontend">Programación Front-End</option>
+                        <option value="backend">Programación Back-End</option>
                         <option value="ciberseguridad">Ciberseguridad</option>
-                        <option value="ia">Inteligencia Artificial</option>
+                        <option value="ingles">Inglés Avanzado</option>
+                        <option value="marketing">Marketing Digital</option>
                         <option value="finanzas">Finanzas Personales</option>
-                        <option value="ingles">Inglés</option>
+
                     </select>
 
                     <label for="mostrar-curso-3" class="toggle-label quitar">Quitar Curso 3</label>
@@ -232,10 +226,6 @@
 
         </section>
     </main>
-
-
-
-
 
 
     <!-- Footer -->

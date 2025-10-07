@@ -8,6 +8,7 @@
     <!-- Link a CSS  -->
     <link rel="stylesheet" href="../styles/formularioDePagoStyle.css">
     <link rel="stylesheet" href="../styles/header_footer.css">
+     <link rel="icon" type="image/png" href="../img/favicon.ico">
 </head>
 
 <body>
@@ -40,30 +41,31 @@
         </nav>
 
         <!-- Barra de búsqueda -->
-        <section class="search-bar">
-            <input list="Cursos" placeholder="Buscar curso...">
-            <datalist id="Cursos">
-                <option value="Marketing Digital">
-                <option value="Diseño Gráfico">
-                <option value="Desarrollo Web">
-                <option value="Ciberseguridad">
-                <option value="Inteligencia Artificial">
-                <option value="Finanzas Personales">
-                <option value="Inglés">
-            </datalist>
-            <button class="search-button">
-                <img src="../img/lupa.png" alt="Buscar">
-            </button>
-        </section>
+         <section class="search-bar">
+  <form action="" method="get" onchange="this.action=this.curso.value">
+    <select name="curso" required>
+      <option value="">Seleccioná un curso</option>
+      <option value="./detalleDelCurso/detalleCursoFrontend.html">Programación Front-End</option>
+      <option value="./detalleDelCurso/detalleCursoBackend.html">Programación Back-End</option>
+      <option value="./detalleDelCurso/detalleCursoCiberseguridad.html">Ciberseguridad</option>
+      <option value="./detalleDelCurso/detalleCursoInglesAvanzado.html">Inglés Avanzado</option>
+      <option value="./detalleDelCurso/detalleCursoMarketingDigital.html">Marketing Digital</option>
+      <option value="./detalleDelCurso/detalleCursoFinanzasPersonales.html">Finanzas Personales</option>
+    </select>
+    <button type="submit" class="search-button">
+      <img src="../img/lupa.png" alt="Buscar">
+    </button>
+  </form>
+</section>
 
         <section class="user-actions">
-            <a href="../paginas/inicioSesion.html">
+            <!-- <a href="../paginas/inicioSesion.html">
                 <button class="login-button">
                     <img src="../img/logo-fondo-transparente.png" alt="Imagen de logo iniciar sesion"
                         class="logo-iniciarSesion-Responsive">
                     Iniciar Sesión </button></a>
 
-            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a>
+            <a href="../paginas/registrarse.html"><button class="signup-button">Registrarse</button></a> -->
 
 
             <input type="checkbox" name="Carro" id="Carro" value="Carro" checked />
@@ -149,7 +151,7 @@
             <form action="#popup">
                 <article class="persona">
                     <label>Email:</label>
-                    <input type="email" name="email" placeholder="email" required>
+                    <input type="email" name="email" placeholder="Email@explample.com" required>
 
                 </article>
                 <h3>Pago con Tarjeta</h3>
@@ -173,7 +175,7 @@
                         <div class="vencimiento">
                             <label for="vencimiento">Fecha de vencimiento</label>
                             <input type="text" inputmode="numeric" name="vencimiento" id="vencimiento"
-                                placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+                                placeholder="MMAA" pattern="(0[1-9]|1[0-2])[0-9]{2}"  maxlength="4" required>
                         </div>
                         <div class="codigo-seguridad">
                             <label for="vencimiento">Código de Seguridad</label>
@@ -188,7 +190,7 @@
                 </article>
                 <article class="persona">
                     <label>Nombre:</label>
-                    <input type="text" name="nombre-titular" placeholder="Como Figura en la Tarjeta" required>
+                    <input type="text" name="nombre-titular" placeholder="Como figura en la tarjeta" required>
 
                 </article>
                 <button type="submit" class="boton-enlace">Confirmar Pago</button>

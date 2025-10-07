@@ -102,38 +102,42 @@ section {
 
 /* POPUP EN OLVIDE CONTRASEÑA  */
 .popup-confirmacion2 {
-    /* Si esta en static se posiciona abajo */
- position: fixed;
- right: 100;
-  background: rgba(0, 0, 0, 0.4);
-  /* Hace que el fondo se vea borroso */
-  backdrop-filter: blur(6px);
+  position: fixed;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(5px);
   display: none;
- 
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 
+  
 }
 
 /* Cuando se apreta el boton , que se active  */
 .popup-confirmacion2:target {
-    display: flex;
+  display: flex;
 }
 
 .popup-contenido2 {
- background: #ffffff;
-  padding: 2em;
-  border-radius: 1.2em;
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 1em;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  width: 90%;
-  max-width: 400px;
-  position: relative;
+  width: 80%;
+  max-width: 280px; 
   animation: aparecer 0.4s ease;
+    
+
 }
 
 .popup-contenido2 h3 {
  color: #7E57C2;
   margin-bottom: 0.8em;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 .cerrar-popup {

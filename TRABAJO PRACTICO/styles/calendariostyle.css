@@ -20,26 +20,6 @@ body {
   animation-duration: 1.5s;
 }
 
-.boton-link {
-  text-align: center;
-  width: 3em;
-  height: 3em;
-  line-height: 3em;
-  background-color: #9575CD;
-  border-radius: 24px;
-  text-decoration: none;
-  color: white;
-}
-
-.boton-link.ocultar {
-  font-size: 0;
-}
-
-.boton-link:hover {
-  background-color: #AB7DEB;
-  border-bottom: 2px solid #7E57C2;
-}
-
 .calendar-container {
   background-color: #ffffff;
   border-radius: 8px;
@@ -52,14 +32,34 @@ body {
 .calendar-header {
   background-color: #A58AD9;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   align-items: center;
   padding: 0.123em 0em;
   border-radius: 6px;
+  
+}
+.boton-link {
+  text-align: center;
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  background-color: #9575CD;
+  border-radius: 24px;
+  text-decoration: none;
+  color: white;
+
+}
+.boton-link-ocultar {
+  color:#A58AD9;
+  background-color: #A58AD9;
 }
 
+.boton-link:hover {
+  background-color: #AB7DEB;
+  border-bottom: 2px solid #7E57C2;
+}
 /* lunes a Domingo */
 .diaSemana {
   background-color: #D1C4E9;
@@ -112,13 +112,8 @@ body {
 }
 
 .dia-actual {
-  width: 2em;
-  height: 1.5em;
-  align-items: center;
-  text-align: center;
-  background-color: #7E57C2;
-  border-radius: 16px;
-  padding-top: 0.3em;
+  color: #7E57C2;
+  font-weight: bold;
 }
 
 /* PARA LOS LINKS DE LOS CURSOS */
@@ -169,7 +164,7 @@ body {
   .calendar-header {
     margin-bottom: 0.5em;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 0.5em;
   }
@@ -279,7 +274,7 @@ body {
 
   .dia,
   .dia-curso {
-    height: 3.5em;
+    height: 6.5em;
   }
 
   .boton-link {

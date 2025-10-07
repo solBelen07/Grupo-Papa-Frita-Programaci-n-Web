@@ -8,6 +8,7 @@
     <!-- Link a CSS  -->
     <link rel="stylesheet" href="../styles/cursos.css">
     <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
 
 </head>
 
@@ -42,19 +43,20 @@
 
         <!-- Barra de búsqueda -->
         <section class="search-bar">
-            <input list="Cursos" placeholder="Buscar curso...">
-            <datalist id="Cursos">
-                <option value="Marketing Digital">
-                <option value="Diseño Gráfico">
-                <option value="Desarrollo Web">
-                <option value="Ciberseguridad">
-                <option value="Inteligencia Artificial">
-                <option value="Finanzas Personales">
-                <option value="Inglés">
-            </datalist>
-            <button class="search-button">
-                <img src="../img/lupa.png" alt="Buscar">
-            </button>
+            <form action="" method="get" onchange="this.action=this.curso.value">
+                <select name="curso" required>
+                    <option value="">Seleccioná un curso</option>
+                    <option value="./detalleDelCurso/detalleCursoFrontend.html">Programación Front-End</option>
+                    <option value="./detalleDelCurso/detalleCursoBackend.html">Programación Back-End</option>
+                    <option value="./detalleDelCurso/detalleCursoCiberseguridad.html">Ciberseguridad</option>
+                    <option value="./detalleDelCurso/detalleCursoInglesAvanzado.html">Inglés Avanzado</option>
+                    <option value="./detalleDelCurso/detalleCursoMarketingDigital.html">Marketing Digital</option>
+                    <option value="./detalleDelCurso/detalleCursoFinanzasPersonales.html">Finanzas Personales</option>
+                </select>
+                <button type="submit" class="search-button">
+                    <img src="../img/lupa.png" alt="Buscar">
+                </button>
+            </form>
         </section>
 
         <section class="user-actions">
@@ -143,23 +145,26 @@
 
     </header>
     <!-- cursos -->
-    <main>
+    <main class="main-seccioPrincipal">
         <h2 class="h2-cursos-disponibles">Cursos disponibles</h2>
 
-        <a href="./detalleDelCurso/detalleCursoFinanzasPersonales.html">
+        <!-- CURSO DE FRONT-END -->
+        <a href="./detalleDelCurso/detalleCursoFrontend.html">
             <section class="block-informacion-curso">
-                <img class="block-informacion-curso_imagen" src="../img/finanzasperso.jpg" alt="">
+                <img class="block-informacion-curso_imagen" src="../img/frontend.jpg" alt="">
+
                 <article>
                     <article class="block-informacion-curso_titulo-y-precio">
                         <span>
-                            <h3>Finanzas Personales</h3>
-                            <h4>Duración: 30 hs.</h4>
+                            <h3>Programacion Front-End</h3>
+                            <h4>Duracion: 44 hs
+                        </span></h4>
+
                         </span>
                         <span class="block-informacion-curso_titulo-y-precio_precio">
-                            <h3>$75.000</h3>
+                            <h3>$120.000</h3>
                         </span>
                     </article>
-
                     <!-- valoracion en esrellas -->
                     <div class="rating-container">
                         <span class="star-checked">&#9733;</span>
@@ -168,15 +173,46 @@
                         <span class="star-checked">&#9733;</span>
                         <span class="star">&#9733;</span>
                     </div>
-                    <p class="block-informacion-curso_presentacion">Este curso está diseñado para ayudarte a tomar el
-                        control de tu dinero y desarrollar hábitos financieros saludables. A lo largo de la capacitación
-                        aprenderás a organizar tus ingresos y gastos, planificar un presupuesto realista, comprender el
-                        uso responsable del crédito y sentar bases sólidas para el ahorro y la inversión. Con un enfoque
-                        práctico y ejemplos cotidianos, te brindaremos herramientas que podrás aplicar de inmediato para
-                        alcanzar mayor estabilidad y seguridad económica.</p>
+                    <p class="block-informacion-curso_presentacion">Este curso introduce a los estudiantes en el
+                        desarrollo de interfaces web interactivas y atractivas, enfocadas en la experiencia del usuario.
+                        Se aprenderá a estructurar páginas con HTML, darles estilo con CSS y dotarlas de dinamismo
+                        mediante JavaScript.</p>
                 </article>
             </section>
         </a>
+
+        <!-- CURSO DE BACK-END -->
+        <a href="./detalleDelCurso/detalleCursoBackend.html">
+            <section class="block-informacion-curso">
+                <img class="block-informacion-curso_imagen" src="../img/backend.jpg" alt="">
+
+                <article>
+                    <article class="block-informacion-curso_titulo-y-precio">
+                        <span>
+                            <h3>Programacion Back-End</h3>
+                            <h4>Duracion: 44 hs.</h4>
+
+                        </span>
+                        <span class="block-informacion-curso_titulo-y-precio_precio">
+                            <h3>$250.000</h3>
+                        </span>
+                    </article>
+                    <!-- valoracion en esrellas -->
+                    <div class="rating-container">
+                        <span class="star-checked">&#9733;</span>
+                        <span class="star-checked">&#9733;</span>
+                        <span class="star-checked">&#9733;</span>
+                        <span class="star-checked">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="block-informacion-curso_presentacion">Este curso brinda los conocimientos necesarios para
+                        desarrollar la lógica y la estructura interna de aplicaciones web. El estudiante aprenderá a
+                        trabajar con servidores, bases de datos y APIs, integrando la comunicación con el front end y
+                        garantizando la seguridad y eficiencia del sistema.</p>
+                </article>
+            </section>
+        </a>
+        <!-- CURSO DE CIBERSEGURIDAD -->
         <a href="./detalleDelCurso/detalleCursoCiberseguridad.html">
             <section class="block-informacion-curso">
                 <img class="block-informacion-curso_imagen" src="../img/ciberseguridad.jpg" alt="">
@@ -184,7 +220,7 @@
                     <article class="block-informacion-curso_titulo-y-precio">
                         <span>
                             <h3>Ciberseguridad</h3>
-                            <h4>Duración: 65 hs.</h4>
+                            <h4>Duración: 49 hs.</h4>
                         </span>
                         <span class="block-informacion-curso_titulo-y-precio_precio">
                             <h3>$400.000</h3>
@@ -208,6 +244,7 @@
                 </article>
             </section>
         </a>
+        <!-- CURSO DE INGLÉS AVANZADO -->
         <a href="./detalleDelCurso/detalleCursoInglesAvanzado.html">
             <section class="block-informacion-curso">
                 <img class="block-informacion-curso_imagen" src="../img/ingles.jpg" alt="">
@@ -239,67 +276,8 @@
                 </article>
             </section>
         </a>
-        <a href="./detalleDelCurso/detalleCursoBackend.html">
-            <section class="block-informacion-curso">
-                <img class="block-informacion-curso_imagen" src="../img/backend.jpg" alt="">
 
-                <article>
-                    <article class="block-informacion-curso_titulo-y-precio">
-                        <span>
-                            <h3>Programacion Back-End</h3>
-                            <h4>Duracion: 52 hs.</h4>
-
-                        </span>
-                        <span class="block-informacion-curso_titulo-y-precio_precio">
-                            <h3>$250.000</h3>
-                        </span>
-                    </article>
-                    <!-- valoracion en esrellas -->
-                    <div class="rating-container">
-                        <span class="star-checked">&#9733;</span>
-                        <span class="star-checked">&#9733;</span>
-                        <span class="star-checked">&#9733;</span>
-                        <span class="star-checked">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                    </div>
-                    <p class="block-informacion-curso_presentacion">Este curso brinda los conocimientos necesarios para
-                        desarrollar la lógica y la estructura interna de aplicaciones web. El estudiante aprenderá a
-                        trabajar con servidores, bases de datos y APIs, integrando la comunicación con el front end y
-                        garantizando la seguridad y eficiencia del sistema.</p>
-                </article>
-            </section>
-        </a>
-        <a href="./detalleDelCurso/detalleCursoFrontend.html">
-            <section class="block-informacion-curso">
-                <img class="block-informacion-curso_imagen" src="../img/frontend.jpg" alt="">
-
-                <article>
-                    <article class="block-informacion-curso_titulo-y-precio">
-                        <span>
-                            <h3>Programacion Front-End</h3>
-                            <h4>Duracion: 40 hs
-                        </span></h4>
-
-                        </span>
-                        <span class="block-informacion-curso_titulo-y-precio_precio">
-                            <h3>$120.000</h3>
-                        </span>
-                    </article>
-                    <!-- valoracion en esrellas -->
-                    <div class="rating-container">
-                        <span class="star-checked">&#9733;</span>
-                        <span class="star-checked">&#9733;</span>
-                        <span class="star-checked">&#9733;</span>
-                        <span class="star-checked">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                    </div>
-                    <p class="block-informacion-curso_presentacion">Este curso introduce a los estudiantes en el
-                        desarrollo de interfaces web interactivas y atractivas, enfocadas en la experiencia del usuario.
-                        Se aprenderá a estructurar páginas con HTML, darles estilo con CSS y dotarlas de dinamismo
-                        mediante JavaScript.</p>
-                </article>
-            </section>
-        </a>
+        <!-- CURSO DE FINANZAS PERSONALES  -->
         <a href="./detalleDelCurso/detalleCursoMarketingDigital.html">
             <section class="block-informacion-curso">
                 <img class="block-informacion-curso_imagen" src="../img/marketing.jpg" alt="">
@@ -329,15 +307,45 @@
                 </article>
             </section>
         </a>
+        <a href="./detalleDelCurso/detalleCursoFinanzasPersonales.html">
+            <section class="block-informacion-curso">
+                <img class="block-informacion-curso_imagen" src="../img/finanzasperso.jpg" alt="">
+                <article>
+                    <article class="block-informacion-curso_titulo-y-precio">
+                        <span>
+                            <h3>Finanzas Personales</h3>
+                            <h4>Duración: 30 hs.</h4>
+                        </span>
+                        <span class="block-informacion-curso_titulo-y-precio_precio">
+                            <h3>$75.000</h3>
+                        </span>
+                    </article>
 
+                    <!-- valoracion en esrellas -->
+                    <div class="rating-container">
+                        <span class="star-checked">&#9733;</span>
+                        <span class="star-checked">&#9733;</span>
+                        <span class="star-checked">&#9733;</span>
+                        <span class="star-checked">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                    <p class="block-informacion-curso_presentacion">Este curso está diseñado para ayudarte a tomar el
+                        control de tu dinero y desarrollar hábitos financieros saludables. A lo largo de la capacitación
+                        aprenderás a organizar tus ingresos y gastos, planificar un presupuesto realista, comprender el
+                        uso responsable del crédito y sentar bases sólidas para el ahorro y la inversión. Con un enfoque
+                        práctico y ejemplos cotidianos, te brindaremos herramientas que podrás aplicar de inmediato para
+                        alcanzar mayor estabilidad y seguridad económica.</p>
+                </article>
+            </section>
+        </a>
         <!--  Paginación  -->
         <div class="pagination-container">
             <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#">« Anterior</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="#">« Anterior</a></li> 
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Siguiente »</a></li>
+                <li class="page-item"><a class="page-link" href="#">Siguiente »</a></li> -->
             </ul>
         </div>
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/header_footer.css">
     <link rel="stylesheet" href="./styles/indexStyle.css">
 
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
 
 </head>
 
@@ -41,21 +42,24 @@
         </nav>
 
         <!-- Barra de búsqueda -->
-        <section class="search-bar">
-            <input list="Cursos" placeholder="Buscar curso...">
-            <datalist id="Cursos">
-                <option value="Marketing Digital">
-                <option value="Diseño Gráfico">
-                <option value="Desarrollo Web">
-                <option value="Ciberseguridad">
-                <option value="Inteligencia Artificial">
-                <option value="Finanzas Personales">
-                <option value="Inglés">
-            </datalist>
-            <button class="search-button">
-                <img src="./img/lupa.png" alt="Buscar">
-            </button>
-        </section>
+<section class="search-bar">
+  <form action="" method="get" onchange="this.action=this.curso.value">
+    <select name="curso" required>
+      <option value="">Seleccioná un curso</option>
+      <option value="paginas/detalleDelCurso/detalleCursoFrontend.html">Programación Front-End</option>
+      <option value="paginas/detalleDelCurso/detalleCursoBackend.html">Programación Back-End</option>
+      <option value="paginas/detalleDelCurso/detalleCursoCiberseguridad.html">Ciberseguridad</option>
+      <option value="paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">Inglés Avanzado</option>
+      <option value="paginas/detalleDelCurso/detalleCursoMarketingDigital.html">Marketing Digital</option>
+      <option value="paginas/detalleDelCurso/detalleCursoFinanzasPersonales.html">Finanzas Personales</option>
+    </select>
+    <button type="submit" class="search-button">
+      <img src="./img/lupa.png" alt="Buscar">
+    </button>
+  </form>
+</section>
+
+
    
 
         <section class="user-actions">
@@ -181,7 +185,7 @@
                 <article class="course-card">
                     <img src="./img/frontend.jpg" alt="Curso de Programación Front-end">
                     <h3>Programación Front-end</h3>
-                    <p>Duración: 40 hs.</p>
+                    <p>Duración: 44 hs.</p>
                     <p class="price">$120.000</p>
                     <h4>Ver Detalle</h4>
                 </article>
@@ -191,8 +195,29 @@
                 <article class="course-card">
                     <img src="./img/backend.jpg" alt="Curso de Programación Back-end">
                     <h3>Programación Back-end</h3>
-                    <p>Duración: 52 hs.</p>
+                    <p>Duración: 44 hs.</p>
                     <p class="price">$250.000</p>
+                    <h4>Ver Detalle</h4>
+                </article>
+                </a>
+
+                <a href="./paginas/detalleDelCurso/detalleCursoCiberseguridad.html">
+                <article class="course-card">
+                    <img src="./img/ciberseguridad.jpg" alt="Curso de Ciberseguridad">
+                    <h3>Ciberseguridad</h3>
+                    <p>Duración: 49 hs.</p>
+                    <p class="price">$400.000</p>
+                    <h4>Ver Detalle</h4>
+                </article>
+                </a>
+
+                
+                <a href="./paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">
+                <article class="course-card">
+                    <img src="./img/ingles.jpg" alt="Curso de Inglés">
+                    <h3>Inglés Avanzado</h3>
+                    <p>Duración: 44 hs.</p>
+                    <p class="price">$120.000</p>
                     <h4>Ver Detalle</h4>
                 </article>
                 </a>
@@ -217,25 +242,7 @@
                 </article>
                 </a>
 
-                <a href="./paginas/detalleDelCurso/detalleCursoCiberseguridad.html">
-                <article class="course-card">
-                    <img src="./img/ciberseguridad.jpg" alt="Curso de Ciberseguridad">
-                    <h3>Ciberseguridad</h3>
-                    <p>Duración: 65 horas</p>
-                    <p class="price">$400.000</p>
-                    <h4>Ver Detalle</h4>
-                </article>
-                </a>
-
-                <a href="./paginas/detalleDelCurso/detalleCursoInglesAvanzado.html">
-                <article class="course-card">
-                    <img src="./img/ingles.jpg" alt="Curso de Inglés">
-                    <h3>Inglés Avanzado</h3>
-                    <p>Duración: 44 hs.</p>
-                    <p class="price">$120.000</p>
-                    <h4>Ver Detalle</h4>
-                </article>
-                </a>
+                
 
             </div>
         </section>
