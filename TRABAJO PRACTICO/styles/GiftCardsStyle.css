@@ -117,6 +117,8 @@ el  ~  permite aplicar los estilos  a .imagen_monto que sean hermanos del input 
 }
 
 .Box_form form .confirmacion button {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
   width: 12em;
   height: 3em;
 }

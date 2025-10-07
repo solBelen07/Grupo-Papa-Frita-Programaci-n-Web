@@ -27,20 +27,39 @@ color: #6a0dad;
     justify-content: space-evenly;
 }
 
-.botones_carrito button{
-border-radius: 1em;
-width: 11em;
+.botones_carrito a{
+  text-decoration: none;
+  background-color: #7e57c2;
+  color: white;
+  padding: 0.5em 1.1em;
+  border: none;
+  border-radius: 0.6em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-.botones_carrito button:hover{
+.botones_carrito a:hover{
   border: 3px solid #7E57C2;
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
-.boton_inicio button{
+.boton_inicio a{
  color:white;
 background-color: rgb(4, 10, 191);
 
 }
-.boton_otra button{
+.boton_otra a{
 color:white;
 background-color: #6a0dad; 
+}
+
+@media (max-width: 362px) {
+.ventana_confirmada{
+font-size: 11px;
+}
+}
+@media (max-width: 253px) {
+.ventana_confirmada{
+font-size: 8px;
+}
 }
