@@ -102,7 +102,7 @@ section {
 
 /* POPUP EN OLVIDE CONTRASEÑA  */
 .popup-confirmacion2 {
-  position: absolute;  
+  position: fixed;  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -117,12 +117,8 @@ section {
 }
 
 /* Cuando se apreta el boton , que se active  */
-
-
-
 .popup-confirmacion2:target {
   display: flex;
-
 }
 
 .popup-contenido2 {
