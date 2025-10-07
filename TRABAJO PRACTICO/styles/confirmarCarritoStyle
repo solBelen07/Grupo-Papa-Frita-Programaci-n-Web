@@ -1,0 +1,46 @@
+body{
+     background-image: url("../Imagenes/giftcard_background.JPG");
+     background-repeat: no-repeat; /* evita que se repita */
+     background-size: cover;       /* hace que cubra toda la pantalla */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     backdrop-filter: blur(1em);
+}
+.ventana_confirmada{
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+  width: 30em;
+  height: 8em;
+  border: solid 0.5em purple;
+  background: white;
+  border-radius: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+.ventana_confirmada h2{
+color: #6a0dad; 
+}
+.botones_carrito{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botones_carrito button{
+border-radius: 1em;
+width: 11em;
+}
+.botones_carrito button:hover{
+  border: 3px solid #7E57C2;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.boton_inicio button{
+ color:white;
+background-color: rgb(4, 10, 191);
+
+}
+.boton_otra button{
+color:white;
+background-color: #6a0dad; 
+}
