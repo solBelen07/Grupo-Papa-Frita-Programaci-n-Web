@@ -140,7 +140,20 @@ h1 {
   display: flex;
 }
 
-/* Botón principal */
+/* Botones */
+.botones-container {
+  grid-column: span 2; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.botones-container .boton-enviar {
+  width: 48%;
+  text-align: center;
+}
+
 .boton-enviar {
   background-color: #9575CD;
   border: none;

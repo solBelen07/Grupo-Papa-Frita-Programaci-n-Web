@@ -113,7 +113,10 @@
           <input type="text" value="Argentina" class="caja-input">
         </label>
 
-        <a href="#popup-cerrar" class="boton-enviar">Cerrar sesión</a>
+        <div class="botones-container">
+          <a href="#popup-guardar" class="boton-enviar">Guardar cambios</a>
+          <a href="#popup-cerrar" class="boton-enviar">Cerrar sesión</a>
+        </div>
 
         <!-- Pop-up de confirmación -->
         <div id="popup-cerrar" class="popup-confirmacion">
@@ -122,6 +125,16 @@
             <p>Serás redirigido al inicio.</p>
 
             <a href="../index.html" class="boton-enviar">Ir al inicio</a>
+
+          </div>
+        </div>
+
+        <div id="popup-guardar" class="popup-confirmacion">
+          <div class="popup-contenido">
+            <h3>✅ ¡Sus cambios han sido guardados correctamente!</h3>
+            
+
+            <a href="#" class="boton-enviar">Cerrar</a>
 
           </div>
         </div>
