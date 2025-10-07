@@ -151,7 +151,7 @@
             <form action="#popup">
                 <article class="persona">
                     <label>Email:</label>
-                    <input type="email" name="email" placeholder="email" required>
+                    <input type="email" name="email" placeholder="Email@explample.com" required>
 
                 </article>
                 <h3>Pago con Tarjeta</h3>
@@ -174,8 +174,8 @@
                     <div class="vencimiento-y-codigo-de-seguridad">
                         <div class="vencimiento">
                             <label for="vencimiento">Fecha de vencimiento</label>
-                            <input type="text" inputmode="decimal" name="vencimiento" id="vencimiento"
-                                placeholder="MM-AA" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+                            <input type="text" inputmode="numeric" name="vencimiento" id="vencimiento"
+                                placeholder="MMAA" pattern="(0[1-9]|1[0-2])[0-9]{2}"  maxlength="4" required>
                         </div>
                         <div class="codigo-seguridad">
                             <label for="vencimiento">Código de Seguridad</label>
@@ -190,7 +190,7 @@
                 </article>
                 <article class="persona">
                     <label>Nombre:</label>
-                    <input type="text" name="nombre-titular" placeholder="Como Figura en la Tarjeta" required>
+                    <input type="text" name="nombre-titular" placeholder="Como figura en la tarjeta" required>
 
                 </article>
                 <button type="submit" class="boton-enlace">Confirmar Pago</button>
