@@ -9,22 +9,27 @@ body{
      backdrop-filter: blur(1em);
 }
 .ventana_confirmada{
- display: grid;
- grid-template-rows: 1fr 1fr;
-  width: 30em;
-  height: 8em;
-  border: solid 0.5em purple;
-  background: white;
-  border-radius: 0.5em;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 1.2em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
   justify-content: center;
   align-items: center;
 }
 .ventana_confirmada h2{
-color: #6a0dad; 
+  color: #7E57C2;
+  margin-bottom: 0.8em;
+  font-size: 1.3em;
 }
+
 .botones_carrito{
     display: flex;
     justify-content: space-evenly;
+    gap: 1em;
 }
 
 .botones_carrito a{
@@ -45,12 +50,12 @@ color: #6a0dad;
 }
 .boton_inicio a{
  color:white;
-background-color: rgb(4, 10, 191);
+ background-color: #9575CD;
 
 }
 .boton_otra a{
 color:white;
-background-color: #6a0dad; 
+ background-color: #9575CD;
 }
 
 @media (max-width: 362px) {
@@ -58,8 +63,8 @@ background-color: #6a0dad;
 font-size: 11px;
 }
 }
-@media (max-width: 253px) {
+@media (max-width: 298px) {
 .ventana_confirmada{
-font-size: 8px;
+font-size: 9px;
 }
 }
