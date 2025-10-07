@@ -191,10 +191,6 @@ h1 {
     margin: 0;
   }
 
-  h1 {
-    font-size: 1.4em;
-    text-align: center;
-  }
 
   .section-perfil .form-perfil .caja-input {
     width: 100% ;
@@ -212,7 +208,7 @@ h1 {
     width: 80px; height: 80px;
    }
 
-  /* Botones: uno debajo del otro, centrados y más pequeños */
+
   .botones-container {
     display: flex;
     flex-direction: column;
