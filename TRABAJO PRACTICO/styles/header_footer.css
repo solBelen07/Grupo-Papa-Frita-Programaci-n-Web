@@ -612,7 +612,7 @@ font-weight: 600;
 }
 
 /*TABLETS*/
-@media (min-width: 320px) and (max-width: 1105px) {
+@media (min-width: 300px) and (max-width: 1105px) {
 
   /* HEADER */
   .main-header {
@@ -784,10 +784,13 @@ font-weight: 600;
 }
 
 @media (max-width: 383px) {
+    .main-header {
+    font-size: 12px;
+    }
   .dropbtn {
 padding: 0em;
   }
  .user-actions .login-button .logo-iniciarSesion-Responsive {
-    width: 64%;
+   
   }
 }
