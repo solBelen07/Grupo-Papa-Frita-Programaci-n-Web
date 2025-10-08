@@ -749,7 +749,7 @@ font-weight: 600;
 
   
   .dropdown-content {
-    position: static;
+    
     box-shadow: none;
     min-width: 100%;
     border: 1px solid #ccc;
