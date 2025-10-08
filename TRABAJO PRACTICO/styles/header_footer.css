@@ -126,7 +126,7 @@ display: none;
   position: absolute;
   background-color: white;
   min-width: 250px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(5, 4, 4, 0.2);
   border-radius: 8px;
   padding: 0;
   margin-top: 0.5em;
@@ -230,22 +230,6 @@ display: none;
 
 
 
-
-/* Responsive */
-@media (max-width: 480px) {
-  .search-bar {
-    max-width: 90%;
-  }
-
-  .search-bar input {
-    font-size: 0.9em;
-  }
-
-  .search-bar .links a {
-    font-size: 0.9em;
-    padding: 0.5em;
-  }
-}
 
 
 
@@ -628,12 +612,12 @@ font-weight: 600;
 }
 
 /*TABLETS*/
-@media (min-width: 481px) and (max-width: 1105px) {
+@media (min-width: 320px) and (max-width: 1105px) {
 
   /* HEADER */
   .main-header {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1em;
    
@@ -709,6 +693,7 @@ font-weight: 600;
 
   }
 
+
   /* FOOTER */
   .container-footer {
     flex-direction: row;
@@ -743,12 +728,16 @@ font-weight: 600;
 
 
 /*RESPONSIVE*/
-@media (max-width: 600px) {
-  .search-bar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.5em;
-  }
+
+  @media (max-width: 600px){
+
+    .main-header {
+    font-size: 14px;
+    padding: 0em;
+    }
+    .search-bar {
+      flex-direction: row;
+    }
 
 
   .dropbtn {
@@ -769,12 +758,35 @@ font-weight: 600;
     padding: 1em;
     border-bottom: 1px solid #eee;
   }
-
+  }
 
   .search-button {
     align-self: flex-end;
     padding: 0.9em;
   }
+
+
+/* Responsive */
+@media (max-width: 480px) {
+  .search-bar {
+    max-width: 90%;
+  }
+
+  .search-bar input {
+    font-size: 0.9em;
+  }
+
+  .search-bar .links a {
+    font-size: 0.9em;
+    padding: 0.5em;
+  }
 }
 
-
+@media (max-width: 383px) {
+  .dropbtn {
+padding: 0em;
+  }
+ .user-actions .login-button .logo-iniciarSesion-Responsive {
+    width: 64%;
+  }
+}
