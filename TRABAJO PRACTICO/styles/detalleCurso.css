@@ -14,6 +14,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+a{
+  color:#7E57C2;
+}
+
 /* Estilos de los Cursos */
 .block-informacion-curso {
   margin: 2% 10% 2% 10%;
@@ -245,9 +249,11 @@ h4 {
 }
 
 .course-card .price {
-  font-weight: bold;
-  color: #333333;
+    font-weight: bold;
+    color: #7E57C2;
+    margin: 0.25em 0;
 }
+
 
 .course-card a {
   color: #6a0dad;

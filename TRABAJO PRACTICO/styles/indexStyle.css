@@ -116,6 +116,10 @@ a{
   font-weight: bold;
 }
 
+h4 {
+  color: rgb(48, 48, 48);
+  margin: 0.25em;
+}
 
 /* Logos de medios de pago */
 .payment-methods h2 {
