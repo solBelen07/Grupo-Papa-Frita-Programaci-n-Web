@@ -41,8 +41,27 @@
         </nav>
 
         <!-- Barra de búsqueda -->
-        <section class="search-bar">
-  <form action="" method="get" onchange="this.action=this.curso.value">
+      
+ <section class="search-bar">
+
+    <section class="search-bar">
+  <div class="dropdown">
+    <button class="dropbtn">Seleccioná un curso ▼</button>
+    <ul class="dropdown-content">
+      <li><a href="./detalleDelCurso/detalleCursoFrontend.html">Programación Front-End</a></li>
+      <li><a href="./detalleDelCurso/detalleCursoBackend.html">Programación Back-End</a></li>
+      <li><a href="./detalleDelCurso/detalleCursoCiberseguridad.html">Ciberseguridad</a></li>
+      <li><a href="./detalleDelCurso/detalleCursoInglesAvanzado.html">Inglés Avanzado</a></li>
+      <li><a href="./detalleDelCurso/detalleCursoMarketingDigital.html">Marketing Digital</a></li>
+      <li><a href="./detalleDelCurso/detalleCursoFinanzasPersonales.html">Finanzas Personales</a></li>
+    </ul>
+  </div>
+
+  <button class="search-button">
+    <img src="../img/lupa.png" alt="Buscar">
+  </button>
+</section>
+  <!--<form action="" method="get" onchange="this.action=this.curso.value">
     <select name="curso" required>
       <option value="">Seleccioná un curso</option>
       <option value="./detalleDelCurso/detalleCursoFrontend.html">Programación Front-End</option>
@@ -56,7 +75,7 @@
       <img src="../img/lupa.png" alt="Buscar">
     </button>
   </form>
-</section>
+</section>-->
 
         <section class="user-actions">
             <a href="../paginas/inicioSesion.html">
